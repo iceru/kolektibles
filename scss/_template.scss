@@ -1,0 +1,95 @@
+.navbar {
+    padding: 0;
+
+    .menu-list {
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 3rem 2rem;
+                position: relative;
+                color: #434343;
+
+                a {
+                    display: inline-block;
+                    letter-spacing: 0.235px;
+
+                    &.active,
+                    &:hover {
+                        font-weight: bold;
+                        color: #01143A;
+                        letter-spacing: 0;
+
+                        &::after {
+                            content: '';
+                            top: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            border-radius: 0px 0px 10px 10px;
+                            height: 4px;
+                            background-color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+
+        .item {
+            margin: 0 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 5px 6px;
+            border-radius: 20px;
+            border: 1px solid #EAEAEA;
+        }
+
+        .dropdown-menu.show {
+            margin-top: 1.5rem;
+            border-radius: 1rem;
+            border: none;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+            padding: 0;
+
+            .dropdown-item {
+                padding: 12px 24px;
+                border-radius: 1rem;
+                color: #131313;
+
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                    color: #131313;
+                }
+            }
+        }
+
+        .dropdown-switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+
+            .form-check {
+                min-height: 0;
+
+                .form-check-input {
+                    margin-left: -2.25em;
+                }
+            }
+        }
+    }
+}
