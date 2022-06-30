@@ -87,6 +87,95 @@ h6 {
   margin-left: -2.25em;
 }
 
+.cta .container {
+  background-color: #37FFC8;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+@media (min-width: 1200px) {
+  .cta .container {
+    padding: 69px 100px;
+  }
+}
+.cta .container h1 {
+  font-size: 65px;
+  padding-right: 2rem;
+  line-height: 94.25px;
+}
+.cta .container p {
+  padding-right: 12rem;
+}
+
+.search .container {
+  align-items: center;
+  background: #F6F9FF;
+  border-radius: 2rem;
+  padding: 36px 38px;
+}
+.search .container .search-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+.search .container .search-bar .form-control {
+  border-radius: 250px;
+  padding: 36px 57px;
+}
+.search .container .search-bar .btn {
+  border-radius: 50%;
+  height: 78px;
+  width: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .container .tops {
+  display: flex;
+  align-items: center;
+}
+.search .container .tops .item {
+  margin: 0 1.5rem;
+}
+
+.features .subtitle {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.features .subtitle img {
+  margin-right: 1rem;
+}
+.features h2 {
+  margin-bottom: 2rem;
+}
+.features h2 span {
+  color: #37FFC8;
+}
+.features p {
+  font-size: 14px;
+}
+
+.sign-up {
+  background-color: #152139;
+  color: white;
+}
+.sign-up .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  border-radius: 2rem;
+}
+.sign-up .container p {
+  font-size: 14px;
+}
+
+.apps {
+  background-color: #152139;
+  color: white;
+}
+
 body,
 html {
   margin: 0;
