@@ -3,9 +3,12 @@
         background-color: $secondary;
         border-radius: 1rem;
         padding: 1rem;
+        position: relative;
 
         @include breakpoint(desktop) {
             padding: 69px 100px;
+            padding-bottom: 250px;
+            margin-bottom: 271px;
         }
 
         h1 {
@@ -16,9 +19,30 @@
 
         p {
             padding-right: 12rem;
+            margin-bottom: 28px;
+        }
+
+        .image-1 {
+            position: absolute;
+            top: 0;
+            left: 30%;
+        }
+
+        .image-line {
+            position: absolute;
+            right: 62px;
+            top: 0;
+        }
+
+        .image-2 {
+            position: absolute;
+            bottom: -210px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
+
 
 .search {
     .container {
@@ -26,11 +50,22 @@
         background: #F6F9FF;
         border-radius: 2rem;
         padding: 36px 38px;
+        margin-bottom: 80px;
+
+        .popular {
+            display: flex;
+            align-items: center;
+
+            .form-select {
+                background-color: transparent;
+                text-align: center;
+            }
+        }
 
         .search-bar {
             display: flex;
             align-items: center;
-            margin: 0 30px;
+            position: relative;
 
             .form-control {
                 border-radius: 250px;
@@ -44,21 +79,68 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: absolute;
+                right: 11px;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
 
         .tops {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             align-items: center;
 
             .item {
-                margin: 0 1.5rem;
+                text-align: center;
+
+                img {
+                    margin-bottom: 12px;
+                }
+
+                .name {
+                    font-size: 12px;
+                }
             }
         }
     }
 }
 
+.categories {
+    margin-bottom: 127px;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        h4 {
+            font-size: 32px;
+        }
+
+        .counts {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .item {
+        background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, #F6F9FF 100%);
+        border-radius: 16px;
+        padding: 24px;
+        padding-top: 3px;
+        margin-bottom: 26px;
+    }
+}
+
 .features {
+    margin-bottom: 70px;
+
     .subtitle {
         margin-bottom: 3rem;
         display: flex;
@@ -69,48 +151,86 @@
         }
     }
 
+    .item {
+        margin-bottom: 60px;
+        align-items: center;
+    }
+
     h2 {
         margin-bottom: 2rem;
+        font-size: 48px;
+        line-height: 145%;
+        letter-spacing: -0.002em;
 
         span {
             color: $secondary;
         }
     }
 
+    p {
+        font-size: 14px;
+        line-height: 175%;
+        letter-spacing: -0.002em;
+        color: #878787;
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+
     .images {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         img {
-            width: 100%;
+            width: auto;
         }
     }
 
-    p {
-        font-size: 14px;
+    .last-feature {
+        p {
+            width: 40%;
+        }
     }
 }
 
 .sign-up {
-    background-color: #152139;
-    color: white;
-
     .container {
         display: flex;
+        background-color: #152139;
+        color: white;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         padding: 100px 0;
         border-radius: 2rem;
+        margin-bottom: -275px;
+        position: relative;
+
+        h2 {
+            font-size: 48px;
+            line-height: 145%;
+            letter-spacing: -0.002em;
+            margin-bottom: 30px;
+        }
 
         p {
             font-size: 14px;
+            margin-bottom: 60px;
+            width: 25%;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 28px 147px;
+            font-size: 24px;
         }
     }
 }
 
 .apps {
-    background-color: #152139;
+    background-color: #000C25;
     color: white;
+    padding-top: 450px;
 }
 
 .footer {
