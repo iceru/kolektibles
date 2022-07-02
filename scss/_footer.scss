@@ -1,3 +1,30 @@
+.index .footer {
+    background-color: #000C25;
+    color: #A6A6A6;
+
+    .container {
+        .top-section {
+            .logo {
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            .menu-title {
+                color: white;
+            }
+
+            .footer-menu li a {
+                color: #A6A6A6;
+            }
+        }
+
+        .bottom-section {
+            color: white;
+        }
+    }
+}
+
 .footer {
     .container {
         padding: 2rem 0;
@@ -52,6 +79,7 @@
                 background-color: $primary;
                 border-radius: 50%;
                 font-size: 32px;
+                border: 1px solid $secondary;
             }
         }
 

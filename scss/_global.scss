@@ -25,3 +25,18 @@ p {
     justify-content: center;
     margin-top: 38px;
 }
+
+
+
+.counts {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: .5rem;
+    }
+
+    p span {
+        color: #878787;
+    }
+}

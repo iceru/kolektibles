@@ -1,0 +1,28 @@
+.collection-categories {
+    .categories {
+        .item {
+            padding-top: 2rem;
+
+            .cat-info {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .detail-category {
+        margin-bottom: 2rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 2rem;
+                font-size: 48px;
+                line-height: 145%;
+                letter-spacing: -0.002em;
+            }
+        }
+    }
+}

@@ -118,15 +118,6 @@
         h4 {
             font-size: 32px;
         }
-
-        .counts {
-            display: flex;
-            align-items: center;
-
-            img {
-                margin-right: .5rem;
-            }
-        }
     }
 
     .item {
@@ -135,6 +126,23 @@
         padding: 24px;
         padding-top: 3px;
         margin-bottom: 26px;
+        display: block;
+
+        .cat-img {
+            margin-bottom: 27px;
+            text-align: center;
+            padding: .75rem;
+            padding-bottom: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .cat-info {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -231,12 +239,42 @@
     background-color: #000C25;
     color: white;
     padding-top: 450px;
-}
+    padding-bottom: 200px;
 
-.footer {
-    .topSection {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid grey;
+    .container {
+        .row {
+            align-items: center;
+        }
+
+        .apps-img {
+            img {
+                padding-right: 4rem;
+            }
+        }
+
+        h2 {
+            font-size: 48px;
+            color: #BCCBE8;
+            margin-bottom: 2rem;
+            line-height: 69.6px;
+
+            span {
+                color: $secondary;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24.5px;
+            margin-bottom: 2rem;
+        }
+
+        .stores {
+            display: flex;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
     }
 }
