@@ -165,11 +165,6 @@
     }
 
     h2 {
-        margin-bottom: 2rem;
-        font-size: 48px;
-        line-height: 145%;
-        letter-spacing: -0.002em;
-
         span {
             color: $secondary;
         }
@@ -215,9 +210,6 @@
         position: relative;
 
         h2 {
-            font-size: 48px;
-            line-height: 145%;
-            letter-spacing: -0.002em;
             margin-bottom: 30px;
         }
 
@@ -253,10 +245,8 @@
         }
 
         h2 {
-            font-size: 48px;
             color: #BCCBE8;
             margin-bottom: 2rem;
-            line-height: 69.6px;
 
             span {
                 color: $secondary;
