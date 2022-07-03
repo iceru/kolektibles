@@ -11,9 +11,13 @@ h6 {
 }
 
 h2 {
-  font-weight: 700;
   font-size: 48px;
   line-height: 145%;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 175%;
 }
 
 p {
@@ -101,6 +105,7 @@ p {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   margin-bottom: 20px;
+  display: block;
 }
 .collections .collection .item-img img {
   border-radius: 10px 10px 0px 0px;
@@ -115,6 +120,22 @@ p {
   font-weight: bold;
   color: black;
   margin-bottom: 1rem;
+  display: flex;
+  font-size: 14px;
+}
+.collections .collection .item-info .item-title .po {
+  background-color: #01143A;
+  color: #37FFC8;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 .collections .collection .item-info .info {
   display: flex;
@@ -570,24 +591,62 @@ p {
 .collection-categories .collections {
   margin-bottom: 44px;
 }
-.collection-categories .collections .item-title {
-  display: flex;
+
+.collection-detail .header-page {
+  margin-bottom: 62px;
 }
-.collection-categories .collections .item-title .po {
-  background-color: #01143A;
-  color: #37FFC8;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 30%;
-  height: 40px;
+.collection-detail .collection-detail-content {
+  margin-bottom: 115px;
+}
+.collection-detail .collection-detail-content .row {
+  align-items: center;
+}
+.collection-detail .collection-detail-content .row .cd-img img {
+  width: 100%;
+  border-radius: 48px;
+}
+.collection-detail .collection-detail-content .row .cd-info {
+  color: black;
+}
+@media (min-width: 1400px) {
+  .collection-detail .collection-detail-content .row .cd-info {
+    padding-left: 6rem;
+  }
+}
+.collection-detail .collection-detail-content .row .cd-info .cd-title {
+  margin-bottom: 2rem;
+}
+.collection-detail .collection-detail-content .row .cd-info .cd-stats {
+  margin-bottom: 2rem;
+}
+.collection-detail .collection-detail-content .row .cd-info .cd-stats .item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 12px;
-  border-radius: 8px;
+  color: #474747;
+  font-weight: 700;
 }
-.collection-categories .collections .item-title .text {
-  font-size: 14px;
+.collection-detail .collection-detail-content .row .cd-info .cd-stats .item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.collection-detail .collection-detail-content .row .cd-info .cd-stats .item span {
+  color: #848484;
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+.collection-detail .collection-detail-content .row .cd-info .cd-stats .item img {
+  margin-right: 18px;
+}
+.collection-detail .value-tracker {
+  margin-bottom: 108px;
+}
+.collection-detail .value-tracker h4 {
+  margin-bottom: 2rem;
+}
+.collection-detail .collections {
+  margin-bottom: 100px;
+}
+.collection-detail .collections h4 {
+  margin-bottom: 3rem;
 }
 
 .search-results .header-search {

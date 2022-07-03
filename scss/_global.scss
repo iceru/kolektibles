@@ -8,9 +8,13 @@ h6 {
 }
 
 h2 {
-    font-weight: 700;
     font-size: 48px;
     line-height: 145%;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 175%;
 }
 
 p {
@@ -111,6 +115,7 @@ p {
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
         margin-bottom: 20px;
+        display: block;
 
         .item-img {
             img {
@@ -128,6 +133,23 @@ p {
                 font-weight: bold;
                 color: black;
                 margin-bottom: 1rem;
+                display: flex;
+                font-size: 14px;
+
+                .po {
+                    background-color: $primary;
+                    color: $secondary;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    width: 30%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 12px;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                }
             }
 
             .info {

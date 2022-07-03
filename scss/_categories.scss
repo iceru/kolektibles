@@ -25,27 +25,79 @@
 
     .collections {
         margin-bottom: calc(64px - 20px);
+    }
+}
 
-        .item-title {
-            display: flex;
+.collection-detail {
+    .header-page {
+        margin-bottom: 62px;
+    }
 
-            .po {
-                background-color: $primary;
-                color: $secondary;
-                font-weight: bold;
-                text-transform: uppercase;
-                width: 30%;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-right: 12px;
-                border-radius: 8px;
+    .collection-detail-content {
+        margin-bottom: 115px;
+
+        .row {
+            align-items: center;
+
+            .cd-img {
+                img {
+                    width: 100%;
+                    border-radius: 48px;
+                }
             }
 
-            .text {
-                font-size: 14px;
+            .cd-info {
+                color: black;
+
+                @include breakpoint(largeDesktop) {
+                    padding-left: 6rem;
+                }
+
+                .cd-title {
+                    margin-bottom: 2rem;
+                }
+
+                .cd-stats {
+                    margin-bottom: 2rem;
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        color: #474747;
+                        font-weight: 700;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.5rem;
+                        }
+
+                        span {
+                            color: #848484;
+                            font-weight: 400;
+                            margin-left: .25rem;
+                        }
+
+                        img {
+                            margin-right: 18px;
+                        }
+                    }
+                }
             }
+        }
+    }
+
+    .value-tracker {
+        margin-bottom: 108px;
+
+        h4 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .collections {
+        margin-bottom: 100px;
+
+        h4 {
+            margin-bottom: 3rem;
         }
     }
 }
