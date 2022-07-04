@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/app.css">
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
@@ -22,279 +20,81 @@
     <title>Kolektibles</title>
 </head>
 
-<body class="index">
-    <nav data-includeHTML="components/navigation.html">
-    </nav>
-    <div class="cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 content">
-                    <h1>For Collectors to Inspire</h1>
-                    <p>Value your collections and share their story to the community</p>
-                    <button type="button" class="btn btn-primary">Sign up now</button>
-                </div>
-            </div>
-            <div class="image-line">
-                <img src="/images/cta-line.png" alt="">
-            </div>
-            <div class="image-1">
-                <img src="/images/cta-1.png" alt="">
-            </div>
-            <div class="image-2">
-                <img src="/images/cta-2.png" alt="">
-            </div>
+<body>
+    <div class="coming-soon">
+        <div class="coming-img">
+            <img src="/images/Coming.png" alt="">
         </div>
-    </div>
-    <div class="search">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-2 popular">
-                    <select class="form-select" name="popular-keywords" id="popular-keywords">
-                        <option>Gundam</option>
-                        <option>Bakudo</option>
-                        <option>Kamitsu no yaiba</option>
-                        <option>Keris Jawa</option>
-                        <option>Baimax Nendoroid</option>
-                    </select>
-                </div>
-                <div class="col-12 col-lg-7">
-                    <div class="search-bar">
-                        <input type="text" class="form-control" name="search" id="search" aria-describedby="helpId"
-                            placeholder="Search collections/collector">
-                        <button type="button" class="btn btn-secondary">
-                            <img src="/images/icons/Search.svg" alt="">
-                        </button>
+            <nav>
+                <img src="/images/logo.png" alt="">
+            </nav>
+
+            <div class="cta">
+                <h1>Get ready to join <br>
+                    the Biggest Collection <br> Platform
+                </h1>
+            </div>
+
+            <div class="row content">
+                <div class="col-12 col-lg-6">
+                    <div class="timer">
+                        <h6>Coming Soon</h6>
+                        <h1 id="countdown"></h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    <div class="tops">
-                        <div class="item">
-                            <img src="/images/top-collections.png" alt="">
-                            <div class="name">Top collections</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/images/top-collectors.png" alt="">
-                            <div class="name">Top collectors</span>
+                <div class="col-12 col-lg-6 right-side">
+                    <h5>Get notified <br>
+                        when we lauch</h5>
+                    <p>And be Kolektibles Newsletter Army</p>
+                    <div class="email">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <div class="input">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="">
+                                <button type="button" class="btn btn-secondary fw-bold">Notify Me</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <footer>
+                Copyright Kolektibles 2022
+            </footer>
         </div>
     </div>
 
-    <div class="categories">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title">
-                        <h4>Collection Categories</h4>
-                        <div class="counts">
-                            <img src="/images/icons/Chart.svg" alt="">
-                            <p>There are 25,765 items in <span>10 categories</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/statue.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Statue</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/gundam.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Gundam</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/action.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Action Figure</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/vehicle.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Vehicle model</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/doll.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Doll & Toys</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/painting.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Painting</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/antique.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Antique</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4 col-lg-3">
-                    <a href="#" class="item">
-                        <div class="cat-img">
-                            <img src="images/categories/cards.png" alt="">
-                        </div>
-                        <div class="cat-info">
-                            <h6>Trading cards</h6>
-                            <p>1,256 items</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-12 btn-more">
-                    <button type="button" class="btn btn-outline-dark ">View all categories</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 31, 2022 10:00:00").getTime();
 
-    <div class="features">
-        <div class="container">
-            <div class="item row">
-                <div class="col-12 col-lg-6">
-                    <p class="subtitle">
-                        <img src="/images/icons/Category.svg" alt="">
-                        Manage Collection
-                    </p>
-                    <h2>
-                        <span>Organize</span> your collections to value better
-                    </h2>
-                    <p>Put your collections in organized list to make them pop out and it definitely increases their
-                        value</p>
-                    <h5>2,356 collection items </h5>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img src="/images/Organize.png" class="w-100" alt="">
-                </div>
-            </div>
-            <div class="item row">
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <p class="subtitle">
-                        <img src="/images/icons/users.svg" alt="">
-                        Community Sharing
-                    </p>
-                    <h2>
-                        <span>Sharing </span> stories with other collectors
-                    </h2>
-                    <p>Share a story about how passionate you are into a collection and let the others react to make it
-                        alive</p>
-                    <h5>1,200 collectors</h5>
-                </div>
-                <div class="col-12 col-lg-6 order-2 order-lg-1 pe-0 pe-lg-5">
-                    <img src="/images/Sharing.png" class="w-100" alt="">
-                </div>
-            </div>
-            <div class="item row text-center last-feature">
-                <div class="col-12">
-                    <p class="subtitle">
-                        Value Tracker
-                        <img src="/images/icons/Activity.svg" alt="">
-                    </p>
-                    <h2>
-                        Track the <span>value</span> of your collections
-                    </h2>
-                    <p class="mx-auto">See the market value of your collections on real-time infographics and make some
-                        move for higher
-                        potential profit</p>
-                </div>
-                <div class="col-12">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-8">
-                            <img src="/images/Chart.png" alt="">
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <img src="/images/Gundam.png" alt="">
-                        </div>
-                    </div>
-                </div>
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-                <div class="col-12 btn-more">
-                    <button type="button" class="btn btn-outline-dark ">Learn more features</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Get today's date and time
+            var now = new Date().getTime();
 
-    <div class="sign-up">
-        <div class="container">
-            <h2>Become a collector now!</h2>
-            <p>Take more chances for collections and find the spotlight to higher their value</p>
-            <button type="button" class="btn btn-secondary">Sign up</button>
-        </div>
-    </div>
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-    <div class="apps">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 apps-img">
-                    <img src="/images/Apps.png" class="w-100" alt="Install Apps">
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h2>Get closer to your collection & community, <span>install</span> now!</h2>
-                    <p>Quick access to check activities on your Kolektibles account and respond instantly to comments
-                        and discussion directly on mobile</p>
-                    <div class="stores">
-                        <img src="/images/App Store.png" alt="">
-                        <img src="/images/Google Play.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    <footer class="footer-index" data-includeHTML="components/footer.html">
-    </footer>
+            // Display the result in the element with id="demo"
+            document.getElementById("countdown").innerHTML = days + " : " + hours + " : "
+                + minutes + " : " + seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </body>
-
-<script>
-    $(document).ready(function () {
-        $("*[data-includeHTML]").each(function () {
-            $(this).load($(this).attr("data-includeHTML"));
-        });
-    });
-</script>
 
 </html>

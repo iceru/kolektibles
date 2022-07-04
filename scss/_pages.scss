@@ -1,31 +1,3 @@
-.search-results {
-    .header-search {
-        margin-bottom: 60px;
-
-        h3 {
-            font-size: 32px;
-            line-height: 145%;
-            margin-bottom: 1.5rem;
-        }
-    }
-
-    .actions {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .category {
-            display: flex;
-
-            .item {
-                display: block;
-                margin-right: 3rem;
-                font-weight: 500;
-            }
-        }
-    }
-}
-
 .coming-soon {
     nav {
         padding: 64px 0;
