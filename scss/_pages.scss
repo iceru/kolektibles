@@ -59,6 +59,35 @@
         }
     }
 
+    @include breakpoint(untilTablet) {
+        .container {
+            padding: 0 1rem;
+        }
+
+        nav {
+            padding: 2rem 0;
+        }
+
+        .cta {
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+
+            h1 {
+                font-size: 40px;
+                line-height: normal;
+            }
+        }
+
+        .timer {
+            margin-bottom: 2rem;
+
+            h1 {
+                font-size: 36px;
+                line-height: normal;
+            }
+        }
+    }
+
     .content {
         margin-bottom: 90px;
     }

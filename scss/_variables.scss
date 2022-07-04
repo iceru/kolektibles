@@ -40,3 +40,26 @@ $secondary: #37FFC8;
         }
     }
 }
+
+.btn {
+    &.btn-primary {
+        color: $secondary;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    &.btn-secondary {
+        color: $primary;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &.btn-outline-dark {
+        border-color: #A4A4A4;
+        color: #A4A4A4;
+    }
+}
