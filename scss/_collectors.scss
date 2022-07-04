@@ -1,0 +1,202 @@
+.collectors {
+    margin-bottom: 4rem;
+
+    .collector {
+        text-align: center;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        padding-bottom: 42px;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        .header-img {
+            padding: 0 .75rem;
+
+            .col-6 {
+                padding: 0;
+
+                &:first-child {
+                    border-radius: 16px 0px 0px 0px;
+                }
+
+                &:last-child {
+                    border-radius: 0px 16px 0px 0px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .clr-img {
+            margin-top: -5rem;
+            margin-bottom: 1.5rem;
+
+            img {
+                // border: 6px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .clr-name {
+            font-size: 24px;
+            line-height: 145%;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .clr-categories {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item {
+                position: relative;
+
+                &:not(:last-child) {
+                    margin-right: 12px;
+
+                    &:after {
+                        content: '•';
+                        position: absolute;
+                        right: -8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        .clr-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+
+                &:first-child {
+                    margin-right: 36px;
+                }
+
+                img {
+                    margin-right: 14px;
+                    height: 18px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+.header-collector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 86px;
+
+    .profile-img {
+        margin-right: 53px;
+
+        img {
+            width: 185px;
+            height: 185px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .profile-name {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+
+        h5 {
+            margin-right: .75rem;
+        }
+
+        .step-point {
+            background-color: $primary;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+    }
+
+    .profile-cat {
+        margin-bottom: 2rem;
+        color: #525252;
+        display: flex;
+        font-size: 14px;
+
+        .item {
+            position: relative;
+
+            &:not(:last-child) {
+                margin-right: 12px;
+
+                &:after {
+                    content: '•';
+                    position: absolute;
+                    right: -8px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+.collector-about {
+    .prop {
+        color: #6E6D7A;
+    }
+
+    .data {
+        color: #1D1D1D;
+        font-weight: 500;
+    }
+
+    .about {
+        h5 {
+            margin-bottom: 2rem;
+        }
+
+        .row {
+            margin-bottom: 2rem;
+
+            .cat-items {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                .cat-item {
+                    background-color: #7B61FF;
+                    color: white;
+                    padding: .5rem 1rem;
+                    border-radius: 10px;
+                    margin-right: .5rem;
+                    white-space: nowrap;
+                    margin-bottom: .5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .presence {
+        h5 {
+            color: #7D8CAB;
+            margin-bottom: 2rem;
+        }
+
+        .row {
+            margin-bottom: 2rem;
+
+        }
+    }
+}

@@ -3,6 +3,7 @@
     color: #A6A6A6;
 
     .container {
+
         .top-section {
             .logo {
                 img {
@@ -28,6 +29,10 @@
 .footer {
     .container {
         padding: 2rem 0;
+
+        >.row {
+            padding: 0 1rem;
+        }
 
         .top-section {
             .logo {

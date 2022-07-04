@@ -5,6 +5,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -15,6 +16,12 @@ h2 {
 h4 {
     font-size: 32px;
     line-height: 175%;
+}
+
+
+h5 {
+    font-size: 24px;
+    line-height: 145%;
 }
 
 p {
@@ -47,7 +54,11 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
+
+    h2 {
+        margin-bottom: 0;
+    }
 }
 
 .breadcrumbs {
@@ -136,12 +147,16 @@ p {
                 display: flex;
                 font-size: 14px;
 
+                .text {
+                    width: 78%;
+                }
+
                 .po {
                     background-color: $primary;
                     color: $secondary;
                     font-weight: bold;
                     text-transform: uppercase;
-                    width: 30%;
+                    width: 40px;
                     height: 40px;
                     display: flex;
                     align-items: center;
@@ -155,18 +170,22 @@ p {
             .info {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
 
                 .stats {
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
 
                     .item {
                         display: flex;
                         align-items: center;
                         font-size: 12px;
-                        margin-right: 1.5rem;
                         color: #848484;
+                        margin-bottom: .5rem;
+
+                        &:first-child {
+                            margin-right: 1.5rem;
+                        }
 
                         span {
                             font-weight: 700;
@@ -204,6 +223,37 @@ p {
             .time {
                 color: #848484;
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+.vertical-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .list-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            a {
+                color: #6E6D7A;
+            }
+
+            &.active {
+                a {
+                    font-weight: bold;
+                    color: black;
+                }
             }
         }
     }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="collector-page ">
+    <nav data-includeHTML="components/navigation.html">
+    </nav>
+    <div class="container">
+        <div class="header-collector">
+            <div class="profile-img">
+                <img src="/images/collectors/collector-1.png" alt="">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">
+                    <h5>Anthony Halim</h5>
+                    <div class="step-point">
+                        <img src="/images/icons/check.png" alt="">
+                    </div>
+                </div>
+                <div class="profile-cat">
+                    <div class="item">
+                        Statue
+                    </div>
+                    <div class="item">
+                        Action Figure
+                    </div>
+                    <div class="item">
+                        Vehicle Models
+                    </div>
+                    <div class="item">
+                        Cards
+                    </div>
+                </div>
+                <div class="profile-follow">
+                    <button type="button" class="btn btn-secondary">Follow</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="vertical-menu">
+            <ul class="list-menu">
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Following</a></li>
+                <li><a href="#">Followers</a></li>
+                <li class="active"><a href="#">About Frans Sanjaya</a></li>
+            </ul>
+            <div class="filter-btn">
+                <button type="button" class="btn btn-outline-dark">
+                    <img src="/images/icons/Filter.svg" alt="">
+                    Filter
+                </button>
+            </div>
+        </div>
+
+        <div class="collector-about">
+            <div class="row">
+                <div class="col-12 col-lg-6 about">
+                    <h5>About Collector</h5>
+                    <div class="row">
+                        <div class="col-5 prop">
+                            Name
+                        </div>
+                        <div class="col-7 data">
+                            Frans Sanjaya
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 prop">
+                            Location
+                        </div>
+                        <div class="col-7 data">
+                            Bandung, Jawa Barat
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 prop">
+                            My collection categories
+                        </div>
+                        <div class="col-7 data cat-items">
+                            <div class="cat-item">
+                                Statue
+                            </div>
+                            <div class="cat-item">
+                                Action figure
+                            </div>
+                            <div class="cat-item">
+                                Dolls & toys
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 prop">
+                            Bio
+                        </div>
+                        <div class="col-7 data">
+                            I will review figure, toys, statue, and mani moreeee..hehehehe. <br><br>
+                            Whenever i am doing unboxing
+                            hottoys ironman i kept on having some goosebumps because its really super amazingggg!! <br>
+                            hahahha
+                            enjoy yah guys!!! <br>
+                            keep contact with me.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 presence">
+                    <h5>ONLINE PRESENCE</h5>
+                    <div class="row">
+                        <div class="col-3 prop">
+                            Youtube
+                        </div>
+                        <div class="col-9 data">
+                            https://www.youtube.com/channel/UCBkJL-fVKCSN4X8RICwLCGQ
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 prop">
+                            Instagram
+                        </div>
+                        <div class="col-9 data">
+                            https://www.instagram.com/frans_sanjaya/
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 prop">
+                            Facebook
+                        </div>
+                        <div class="col-9 data">
+                            https://www.facebook.com/frans.sanjaya
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-index" data-includeHTML="components/footer.html">
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>
