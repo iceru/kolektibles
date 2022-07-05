@@ -92,8 +92,11 @@
         }
 
         .form-check {
-            margin-bottom: 28px;
             color: #6D7588;
+
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
         }
 
         .form-control {
@@ -104,9 +107,16 @@
             margin-bottom: 1rem;
             padding-bottom: 1rem;
 
-            &:not(:last-child) {
+            &:not(:nth-last-child(2)) {
                 border-bottom: 1px solid #E7E7E9;
             }
+        }
+
+        .btn {
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            padding: 11px;
         }
     }
 }

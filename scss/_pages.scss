@@ -47,6 +47,7 @@
         margin: auto;
         position: relative;
         margin-top: -2rem;
+        margin-bottom: 4rem;
 
         .form-control {
             box-shadow: 0px 4px 20px rgba(95, 158, 141, 0.15);
@@ -60,6 +61,29 @@
             right: 2rem;
             top: 50%;
             transform: translateY(-50%);
+        }
+    }
+
+    .accordion {
+        margin-bottom: 100px;
+
+        .accordion-item {
+            border: none;
+        }
+
+        .accordion-button {
+            border-radius: 0 !important;
+            border: none;
+            border-bottom: 1px solid #E9E9E9;
+            font-weight: 500;
+            color: #3E4553;
+            background-color: white !important;
+            box-shadow: none !important;
+        }
+
+        .accordion-body {
+            color: #7B8496;
+            line-height: 175%;
         }
     }
 }

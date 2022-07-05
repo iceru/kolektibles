@@ -12834,6 +12834,7 @@ p {
   margin: auto;
   position: relative;
   margin-top: -2rem;
+  margin-bottom: 4rem;
 }
 .faq .search-bar .form-control {
   box-shadow: 0px 4px 20px rgba(95, 158, 141, 0.15);
@@ -12846,6 +12847,25 @@ p {
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.faq .accordion {
+  margin-bottom: 100px;
+}
+.faq .accordion .accordion-item {
+  border: none;
+}
+.faq .accordion .accordion-button {
+  border-radius: 0 !important;
+  border: none;
+  border-bottom: 1px solid #E9E9E9;
+  font-weight: 500;
+  color: #3E4553;
+  background-color: white !important;
+  box-shadow: none !important;
+}
+.faq .accordion .accordion-body {
+  color: #7B8496;
+  line-height: 175%;
 }
 
 .coming-soon nav {
@@ -13005,8 +13025,10 @@ p {
   margin-bottom: 1rem;
 }
 .events-page .filter-events .form-check {
-  margin-bottom: 28px;
   color: #6D7588;
+}
+.events-page .filter-events .form-check:not(:last-child) {
+  margin-bottom: 28px;
 }
 .events-page .filter-events .form-control {
   border-color: #DBDEE2;
@@ -13015,8 +13037,14 @@ p {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
-.events-page .filter-events .section:not(:last-child) {
+.events-page .filter-events .section:not(:nth-last-child(2)) {
   border-bottom: 1px solid #E7E7E9;
+}
+.events-page .filter-events .btn {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 11px;
 }
 
 body,
