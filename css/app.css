@@ -12990,6 +12990,7 @@ p {
 }
 .events-page .upcoming .item .event-img {
   width: 100%;
+  border-radius: 1rem;
 }
 @media (min-width: 1200px) {
   .events-page .upcoming .item .event-img {
@@ -13045,6 +13046,156 @@ p {
   text-align: center;
   width: 100%;
   padding: 11px;
+}
+
+@media (min-width: 1200px) {
+  .event-detail-page .event-detail {
+    width: 90%;
+    margin: auto;
+  }
+}
+.event-detail-page .ed-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.event-detail-page .ed-title h5, .event-detail-page .ed-title .h5 {
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+.event-detail-page .ed-alert {
+  margin-bottom: 2.5rem;
+}
+.event-detail-page .ed-alert .alert {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.event-detail-page .ed-alert .alert .alert-container {
+  display: flex;
+  align-items: center;
+}
+.event-detail-page .ed-alert .alert.alert-warning {
+  color: #BE6F10;
+  background-color: #FFF5DF;
+  border: 2px solid #FBBF33;
+}
+.event-detail-page .ed-alert .alert.alert-danger {
+  color: #FF0000;
+  background-color: #FFE2E1;
+  border: 2px solid #FF0000;
+}
+.event-detail-page .ed-alert .alert.alert-info {
+  color: #00A3FF;
+  background-color: #DFF4FF;
+  border: 2px solid #00A3FF;
+}
+.event-detail-page .ed-alert .alert.alert-info .alert-btn .btn {
+  color: #00A3FF;
+  border-color: #00A3FF;
+  display: flex;
+  align-items: center;
+}
+.event-detail-page .ed-alert .alert.alert-info .alert-btn .next-arrow {
+  width: 6.68px;
+  height: 6.68px;
+  border-top: 1px solid #00A3FF;
+  border-left: 1px solid #00A3FF;
+  transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+  margin-left: 0.75rem;
+}
+.event-detail-page .ed-alert .alert.alert-success {
+  color: #00AA5B;
+  background-color: #DFFFF0;
+  border: 2px solid #00AA5B;
+}
+.event-detail-page .ed-alert .alert .alert-img {
+  margin-right: 2rem;
+}
+.event-detail-page .ed-alert .alert .alert-text h6, .event-detail-page .ed-alert .alert .alert-text .h6 {
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}
+.event-detail-page .ed-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.event-detail-page .ed-header h2, .event-detail-page .ed-header .h2 {
+  margin-bottom: 46px;
+}
+.event-detail-page .ed-header .ed-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-detail-page .ed-content {
+  padding-bottom: 100px;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #D0D0D0;
+}
+.event-detail-page .ed-content .description h5, .event-detail-page .ed-content .description .h5 {
+  color: #A4A4A4;
+  font-weight: 400;
+}
+.event-detail-page .ed-content .description p,
+.event-detail-page .ed-content .description h5,
+.event-detail-page .ed-content .description .h5 {
+  margin-bottom: 1.5rem;
+}
+.event-detail-page .ed-content .description .images {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.event-detail-page .ed-content .description .images img {
+  margin-right: 11px;
+}
+.event-detail-page .ed-content .info .item {
+  margin-bottom: 3rem;
+}
+.event-detail-page .ed-content .info .item .info-title {
+  color: #848484;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.event-detail-page .ed-content .info .item .info-title img {
+  margin-right: 1rem;
+}
+.event-detail-page .ed-content .info .item .info-desc {
+  font-weight: 600;
+}
+.event-detail-page .ed-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.event-detail-page .ed-footer .back {
+  display: flex;
+  align-items: center;
+  color: #646464;
+}
+.event-detail-page .ed-footer .back img {
+  margin-right: 20px;
+}
+.event-detail-page .ed-footer .next {
+  display: flex;
+  align-items: center;
+}
+.event-detail-page .ed-footer .next .text {
+  font-weight: bold;
+  max-width: 250px;
+  font-size: 18px;
+  text-align: right;
+}
+.event-detail-page .ed-footer .next img {
+  margin-left: 1.5rem;
+  max-height: 91px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
 }
 
 body,
