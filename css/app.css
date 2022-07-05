@@ -12148,6 +12148,13 @@ p {
   font-weight: bold;
   color: black;
 }
+.vertical-menu .filter-btn .btn {
+  display: flex;
+  align-items: center;
+}
+.vertical-menu .filter-btn .btn img {
+  margin-right: 1rem;
+}
 
 .paginations {
   display: flex;
@@ -12336,9 +12343,16 @@ p {
   }
 }
 .cta .container h1, .cta .container .h1 {
-  font-size: 65px;
+  font-size: 60px;
   padding-right: 2rem;
-  line-height: 94.25px;
+  margin-bottom: 1.5rem;
+  line-height: 84.25px;
+}
+@media (min-width: 1400px) {
+  .cta .container h1, .cta .container .h1 {
+    font-size: 64px;
+    line-height: 94.25px;
+  }
 }
 .cta .container p {
   padding-right: 12rem;
@@ -12916,6 +12930,93 @@ p {
 }
 .coming-soon footer {
   color: #D0D5DD;
+}
+
+.events-page .cta-events {
+  margin-bottom: 4rem;
+}
+.events-page .cta-events .row {
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .events-page .cta-events .row > div:first-child * {
+    width: 70%;
+  }
+  .events-page .cta-events .row > div:first-child .btn {
+    width: auto;
+  }
+}
+.events-page .cta-events .row h5, .events-page .cta-events .row .h5 {
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.events-page .cta-events .row h2, .events-page .cta-events .row .h2 {
+  margin-bottom: 1rem;
+}
+.events-page .cta-events .row p {
+  font-size: 14px;
+  margin-bottom: 2rem;
+  color: #636363;
+}
+.events-page .cta-events .row img {
+  width: 100%;
+}
+.events-page .upcoming h4, .events-page .upcoming .h4 {
+  margin-bottom: 2rem;
+}
+.events-page .upcoming .item {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.events-page .upcoming .item .event-img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .events-page .upcoming .item .event-img {
+    padding-right: 2rem;
+  }
+}
+.events-page .upcoming .item h5, .events-page .upcoming .item .h5 {
+  margin-bottom: 18px;
+}
+.events-page .upcoming .item p {
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #636363;
+}
+.events-page .upcoming .item .actions {
+  display: flex;
+}
+.events-page .upcoming .item .actions .btn:first-child {
+  margin-right: 1.5rem;
+}
+.events-page .upcoming .item .actions .btn-gray {
+  background: rgba(163, 163, 163, 0.15);
+  padding: 12px;
+}
+.events-page .filter-events {
+  padding: 32px;
+  border: 1px solid #E7E7E9;
+  border-radius: 16px;
+}
+.events-page .filter-events .filter-title {
+  color: #474747;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.events-page .filter-events .form-check {
+  margin-bottom: 28px;
+  color: #6D7588;
+}
+.events-page .filter-events .form-control {
+  border-color: #DBDEE2;
+}
+.events-page .filter-events .section {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.events-page .filter-events .section:not(:last-child) {
+  border-bottom: 1px solid #E7E7E9;
 }
 
 body,

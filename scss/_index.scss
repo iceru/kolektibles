@@ -13,9 +13,15 @@
         }
 
         h1 {
-            font-size: 65px;
+            font-size: 60px;
             padding-right: 2rem;
-            line-height: 94.25px;
+            margin-bottom: 1.5rem;
+            line-height: 84.25px;
+
+            @include breakpoint(largeDesktop) {
+                font-size: 64px;
+                line-height: 94.25px;
+            }
         }
 
         p {

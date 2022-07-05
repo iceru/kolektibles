@@ -1,0 +1,112 @@
+.events-page {
+    .cta-events {
+        margin-bottom: 4rem;
+
+        .row {
+            align-items: center;
+
+            @include breakpoint(desktop) {
+                >div:first-child {
+                    * {
+                        width: 70%;
+                    }
+
+                    .btn {
+                        width: auto;
+                    }
+                }
+            }
+
+            h5 {
+                font-weight: 500;
+                margin-bottom: 4rem;
+            }
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 2rem;
+                color: #636363;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .upcoming {
+        h4 {
+            margin-bottom: 2rem;
+        }
+
+        .item {
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .event-img {
+                width: 100%;
+
+                @include breakpoint(desktop) {
+                    padding-right: 2rem;
+                }
+            }
+
+            h5 {
+                margin-bottom: 18px;
+            }
+
+            p {
+                margin-bottom: 28px;
+                font-size: 14px;
+                color: #636363;
+            }
+
+            .actions {
+                display: flex;
+
+                .btn:first-child {
+                    margin-right: 1.5rem;
+                }
+
+                .btn-gray {
+                    background: rgba(163, 163, 163, 0.15);
+                    padding: 12px;
+                }
+            }
+        }
+    }
+
+    .filter-events {
+        padding: 32px;
+        border: 1px solid #E7E7E9;
+        border-radius: 16px;
+
+        .filter-title {
+            color: #474747;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .form-check {
+            margin-bottom: 28px;
+            color: #6D7588;
+        }
+
+        .form-control {
+            border-color: #DBDEE2;
+        }
+
+        .section {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #E7E7E9;
+            }
+        }
+    }
+}

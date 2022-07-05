@@ -257,6 +257,17 @@ p {
             }
         }
     }
+
+    .filter-btn {
+        .btn {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
 }
 
 .paginations {
