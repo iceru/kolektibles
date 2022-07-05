@@ -12253,6 +12253,9 @@ p {
 .index .footer .container .top-section .footer-menu li a {
   color: #A6A6A6;
 }
+.index .footer .container .top-section .question {
+  border: 1px solid #37FFC8;
+}
 .index .footer .container .bottom-section {
   color: white;
 }
@@ -12303,7 +12306,7 @@ p {
   background-color: #01143A;
   border-radius: 50%;
   font-size: 32px;
-  border: 1px solid #37FFC8;
+  box-shadow: 0px 12px 20px rgba(187, 187, 187, 0.23);
 }
 .footer .container .bottom-section {
   display: flex;
@@ -12479,9 +12482,6 @@ p {
   color: #37FFC8;
 }
 .features p {
-  font-size: 14px;
-  line-height: 175%;
-  letter-spacing: -0.002em;
   color: #878787;
   margin-bottom: 2rem;
   width: 60%;
@@ -12514,7 +12514,6 @@ p {
   margin-bottom: 30px;
 }
 .sign-up .container p {
-  font-size: 14px;
   margin-bottom: 60px;
   width: 25%;
   text-align: center;
@@ -12544,8 +12543,6 @@ p {
   color: #37FFC8;
 }
 .apps .container p {
-  font-size: 14px;
-  line-height: 24.5px;
   margin-bottom: 2rem;
 }
 .apps .container .stores {
@@ -12958,7 +12955,7 @@ p {
 .events-page .cta-events .row {
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .events-page .cta-events .row > div:first-child * {
     width: 70%;
   }
@@ -12974,9 +12971,7 @@ p {
   margin-bottom: 1rem;
 }
 .events-page .cta-events .row p {
-  font-size: 14px;
   margin-bottom: 2rem;
-  color: #636363;
 }
 .events-page .cta-events .row img {
   width: 100%;
@@ -13002,8 +12997,6 @@ p {
 }
 .events-page .upcoming .item p {
   margin-bottom: 28px;
-  font-size: 14px;
-  color: #636363;
 }
 .events-page .upcoming .item .actions {
   display: flex;
@@ -13196,6 +13189,114 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 6px;
+}
+
+.about-page .about-title h5, .about-page .about-title .h5 {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.about-page .about-header {
+  margin-bottom: 100px;
+}
+.about-page .about-header p {
+  margin-top: 1rem;
+}
+.about-page .about-header .col-lg-6 {
+  margin-bottom: 4rem;
+}
+.about-page .about-header .about-img img {
+  width: 100%;
+}
+.about-page .benefits {
+  margin-bottom: 92px;
+}
+.about-page .benefits h4, .about-page .benefits .h4 {
+  margin-bottom: 2rem;
+}
+.about-page .benefits .item-img {
+  margin-bottom: 2rem;
+}
+.about-page .benefits .item-img img {
+  width: 100%;
+}
+.about-page .benefits .title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.about-page .benefits .title img {
+  margin-right: 1rem;
+}
+.about-page .benefits .desc {
+  font-size: 14px;
+  color: #636363;
+}
+.about-page .contact {
+  margin-bottom: 100px;
+}
+.about-page .contact h5, .about-page .contact .h5 {
+  font-weight: 400;
+  margin-bottom: 39px;
+}
+.about-page .contact h4, .about-page .contact .h4 {
+  margin-bottom: 28px;
+}
+
+.contact-page .contact-header {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.contact-page .contact-header h5, .contact-page .contact-header .h5 {
+  font-weight: 500;
+}
+.contact-page .content h2, .contact-page .content .h2 {
+  margin-bottom: 2rem;
+}
+.contact-page .content p {
+  margin-bottom: 40px;
+}
+.contact-page .content h5, .contact-page .content .h5 {
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.contact-page .socials {
+  margin: 0;
+  padding: 0;
+}
+.contact-page .socials li {
+  display: flex;
+  margin-bottom: 0.75rem;
+  color: #5C5C5C;
+}
+.contact-page .socials li img {
+  margin-right: 0.75rem;
+  width: 1rem;
+}
+.contact-page .form-message {
+  margin-bottom: 120px;
+  margin-top: 1rem;
+}
+.contact-page .form-message h5, .contact-page .form-message .h5 {
+  margin-bottom: 2rem;
+}
+.contact-page .form-message .form-group {
+  margin-bottom: 0.75rem;
+}
+.contact-page .form-message .form-group:nth-last-child(2) {
+  margin-bottom: 2rem;
+}
+.contact-page .form-message .form-group .form-label {
+  color: #5C5C5C;
+  margin-bottom: 0.5rem;
+}
+.contact-page .form-message .btn-groups {
+  display: flex;
+  align-items: center;
+}
+.contact-page .form-message .btn-groups .btn {
+  margin-right: 1.5rem;
+  font-weight: 700;
 }
 
 body,

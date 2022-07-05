@@ -3,7 +3,6 @@
     color: #A6A6A6;
 
     .container {
-
         .top-section {
             .logo {
                 img {
@@ -17,6 +16,10 @@
 
             .footer-menu li a {
                 color: #A6A6A6;
+            }
+
+            .question {
+                border: 1px solid $secondary;
             }
         }
 
@@ -84,7 +87,7 @@
                 background-color: $primary;
                 border-radius: 50%;
                 font-size: 32px;
-                border: 1px solid $secondary;
+                box-shadow: 0px 12px 20px rgba(187, 187, 187, 0.23);
             }
         }
 

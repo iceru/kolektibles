@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="contact-page">
+    <nav data-includeHTML="components/navigation.html">
+    </nav>
+    <div class="container">
+        <div class="contact-header">
+            <h5>Contact us</h5>
+        </div>
+
+        <div class="contact-content">
+            <div class="row">
+                <div class="col-12 col-lg-6 content">
+                    <h2>
+                        Contact us for any support, offer & collaboration
+                    </h2>
+                    <p>
+                        If you need any question that you do not find in FAQs or you have any idea of collaboration,
+                        please do not hesitate to send us your precious message
+                    </p>
+                    <h5>hello@kolektibles.com</h5>
+                    <ul class="socials">
+                        <li>
+                            <img src="/images/icons/icon-social-media-youtube.svg" alt="">
+                            <a href="#">kolektibles.app</a>
+                        </li>
+                        <li>
+                            <img src="/images/icons/icon-social-media-instagram.svg" alt="">
+                            <a href="#">kolektibles.id</a>
+                        </li>
+                        <li>
+                            <img src="/images/icons/icon-social-media-linkedin.svg" alt="">
+                            <a href="#">kolektibles.company</a>
+                        </li>
+                        <li>
+                            <img src="/images/icons/icon-social-media-facebook.svg" alt="">
+                            <a href="#">Kolektibles Anak Indonesia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1">
+                    <div class="form-message">
+                        <h5>
+                            Send us a message
+                        </h5>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="" class="form-label">Fullname</label>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Email address</label>
+                                <input type="email" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Subject</label>
+                                <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                    placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Message</label>
+                                <textarea class="form-control" name="" id="" rows="4"></textarea>
+                            </div>
+                            <div class="btn-groups">
+                                <button type="button" class="btn btn-outline-dark">Reset</button>
+                                <button type="button" class="btn btn-secondary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-index" data-includeHTML="components/footer.html">
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>

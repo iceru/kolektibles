@@ -1,0 +1,147 @@
+.about-page {
+    .about-title {
+        h5 {
+            font-weight: 500;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .about-header {
+        margin-bottom: 100px;
+
+        p {
+            margin-top: 1rem;
+        }
+
+        .col-lg-6 {
+            margin-bottom: 4rem;
+        }
+
+        .about-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .benefits {
+        margin-bottom: 92px;
+
+        h4 {
+            margin-bottom: 2rem;
+        }
+
+        .item-img {
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #636363;
+        }
+    }
+
+    .contact {
+        margin-bottom: 100px;
+
+        h5 {
+            font-weight: 400;
+            margin-bottom: 39px;
+        }
+
+        h4 {
+            margin-bottom: 28px;
+        }
+    }
+}
+
+.contact-page {
+    .contact-header {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+
+        h5 {
+            font-weight: 500;
+        }
+    }
+
+    .content {
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+    }
+
+    .socials {
+        margin: 0;
+        padding: 0;
+
+
+        li {
+            display: flex;
+            margin-bottom: .75rem;
+            color: #5C5C5C;
+
+            img {
+                margin-right: .75rem;
+                width: 1rem;
+            }
+        }
+    }
+
+    .form-message {
+        margin-bottom: 120px;
+        margin-top: 1rem;
+
+        h5 {
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: .75rem;
+
+            &:nth-last-child(2) {
+                margin-bottom: 2rem;
+            }
+
+            .form-label {
+                color: #5C5C5C;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .btn-groups {
+            display: flex;
+            align-items: center;
+
+            .btn {
+                margin-right: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
