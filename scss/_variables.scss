@@ -1,6 +1,6 @@
 $primary: #01143A;
 $secondary: #37FFC8;
-
+$success :#01A97B;
 
 /* BREAKPOINTS */
 @mixin breakpoint($point) {
@@ -55,6 +55,14 @@ $secondary: #37FFC8;
 
         &:hover {
             color: $primary;
+        }
+    }
+
+    &.btn-success {
+        color: white;
+
+        &:hover {
+            color: white;
         }
     }
 
