@@ -1,0 +1,120 @@
+.si-row {
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.sign-in-page {
+    .si-row {
+        align-items: flex-start;
+    }
+}
+
+.si-img {
+    margin-top: 1rem;
+
+    img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+.si-content {
+    margin-top: 2rem;
+
+    h4 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .btn-groups {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 28px;
+
+        .btn {
+            padding: 16px 60px;
+            border-color: #DBDEE2;
+            text-align: center;
+            margin: 0 .5rem;
+        }
+    }
+
+    .or {
+        color: #A1A1A1;
+        position: relative;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &:before {
+            border-top: 1px solid #DBDEE2;
+            content: "";
+            margin: 0 auto;
+            /* this centers the line to the full width specified */
+            position: absolute;
+            /* positioning must be absolute here, and relative positioning must be applied to the parent */
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 95%;
+            z-index: -1;
+        }
+
+        span {
+            background: #fff;
+            padding: 0 15px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: .75rem;
+
+        label {
+            margin-bottom: .5rem;
+        }
+
+        .label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .5rem;
+
+            label {
+                margin-bottom: 0;
+            }
+
+            .forgot {
+                color: #A1A1A1;
+            }
+        }
+    }
+
+    .form-check {
+        color: #6D7588;
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 68px;
+
+        .btn {
+            font-weight: bold;
+        }
+    }
+
+    .create {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #5C5C5C;
+        }
+    }
+}
