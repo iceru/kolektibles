@@ -45,9 +45,29 @@
                 </div>
             </div>
             <div class="item">
-                <a href="#">
-                    <img src="/images/icons/Notification.svg " alt="">
-                </a>
+                <div class="dropdown">
+                    <a href="#" role="button" id="notification" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/images/icons/Notification.svg" alt="">
+                    </a>
+
+                    <ul class="dropdown-menu notification" aria-labelledby="notification">
+                        <li class="dropdown-title">Notifications</li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-title">Today</li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="dropdown-img">
+                                    <img src="/images/user/user-small-1.png" alt="">
+                                </div>
+                                <div class="dropdown-text">
+                                    <p>Hendrick Shinigami like your collection “Fireman” <span>2 hours ago</span> </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="item">
                 <div class="dropdown">
