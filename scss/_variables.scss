@@ -75,5 +75,12 @@ $success :#00AA5B;
     &.btn-outline-dark {
         border-color: #A4A4A4;
         color: #A4A4A4;
+
+        &:hover,
+        &:focus {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
     }
 }

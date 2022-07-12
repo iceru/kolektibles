@@ -1,5 +1,6 @@
 .collection-categories {
     .categories {
+
         .item {
             padding-top: 2rem;
 
@@ -12,6 +13,12 @@
 
     .detail-category {
         margin-bottom: 2rem;
+        position: relative;
+
+        .bg-img {
+            right: 0;
+            top: -4rem;
+        }
 
         .container {
             display: flex;
@@ -27,6 +34,15 @@
         margin-bottom: calc(64px - 20px);
     }
 }
+
+.collection-sub-categories-detail {
+    .filter-content {
+        padding-bottom: 45px;
+        margin-top: -16px;
+    }
+}
+
+
 
 .collection-detail {
     .header-page {

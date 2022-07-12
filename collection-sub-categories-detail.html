@@ -24,7 +24,7 @@
     <title>Kolektibles</title>
 </head>
 
-<body class="collection-categories">
+<body class="collection-sub-categories-detail">
     <nav data-includeHTML="components/navigation.html">
     </nav>
     <div class="container">
@@ -52,10 +52,35 @@
                 <h2>Nendoroids</h2>
             </div>
             <div class="filter">
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-dark" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/images/icons/Filter.svg" alt="">
                     Filter
                 </button>
+            </div>
+        </div>
+
+        <div class="collapse filter-content" id="collapseExample">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <label for="search" class="form-label">Search keywords or tags</label>
+                    <input type="text" class="form-control" name="search" id="search" placeholder="Search collection">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <label for="collection" class="form-label">Collection categories</label>
+                    <select class="form-select" name="collection" id="collection">
+                        <option>All categories</option>
+                        <option>Nendoroids</option>
+                        <option>-</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <label for="sort" class="form-label">Sort</label>
+                    <select class="form-select" name="sort" id="sort">
+                        <option>Latest</option>
+                        <option>Newest</option>
+                    </select>
+                </div>
             </div>
         </div>
 
