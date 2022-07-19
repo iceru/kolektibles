@@ -294,3 +294,29 @@ p {
         color: rgba(49, 53, 59, 0.68);
     }
 }
+
+
+.profile-cat {
+    margin-bottom: 2rem;
+    color: #525252;
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 12px;
+
+            &:after {
+                content: '•';
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

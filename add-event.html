@@ -34,48 +34,70 @@
 
             <form action="">
                 <a href="#" class="add-img">
-                    <img src="/images/icons/Image.svg" alt="">
-                    <label for="image">
-                        Drag and drop an image, or Browse
+                    <label for="image" class="add-img-label">
+                        <img src="/images/icons/Image.svg" alt="">
+                        <div>Drag and drop an image, or <span>Browse</span></div>
                         <input type="file" name="image" id="image" style="display: none;">
                     </label>
                 </a>
                 <div class="row">
                     <div class="col-12">
-                        <label for="event-name" class="form-label">Event name</label>
-                        <input type="text" class="form-control" name="event-name" id="event-name" placeholder="">
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <label for="start-date" class="form-label">Start date</label>
-                        <div class="input-icon">
-                            <input type="text" class="form-control" name="start-date" id="start-date" placeholder="">
-                            <img src="/images/icons/Calendar.svg" alt="">
+                        <div class="form-group">
+                            <label for="event-name" class="form-label">Event name</label>
+                            <input type="text" class="form-control" name="event-name" id="event-name" placeholder="">
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
-                        <label for="end-date" class="form-label">End date</label>
-                        <div class="input-icon">
-                            <input type="text" class="form-control" name="end-date" id="end-date" placeholder="">
-                            <img src="/images/icons/Calendar.svg" alt="">
+                        <div class="form-group">
+                            <label for="start-date" class="form-label">Start date</label>
+                            <div class="input-icon">
+                                <input type="text" class="form-control" name="start-date" id="start-date"
+                                    placeholder="">
+                                <img src="/images/icons/Calendar.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <label for="end-date" class="form-label">End date</label>
+                            <div class="input-icon">
+                                <input type="text" class="form-control" name="end-date" id="end-date" placeholder="">
+                                <img src="/images/icons/Calendar.svg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <label for="event-type" class="form-label">Event type</label>
-                        <select class="form-control" name="event-type" id="event-type">
-                            <option>Public</option>
-                            <option>Private</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="event-type" class="form-label">Event type</label>
+                            <select class="form-control" name="event-type" id="event-type">
+                                <option>Public</option>
+                                <option>Private</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-12">
-                        <label for="short-desc" class="form-label">Short description</label>
-                        <textarea class="form-control" name="short-desc" id="short-desc" rows="4"></textarea>
+                        <div class="form-group textarea">
+                            <label for="short-desc" class="form-label">Short description</label>
+                            <textarea class="form-control" name="short-desc" id="short-desc" rows="4"></textarea>
+                        </div>
                     </div>
                     <div class="col-12">
-                        <label for="short-desc" class="form-label">Complete event description</label>
-                        <textarea class="form-control" name="short-desc" id="short-desc" rows="6"></textarea>
+                        <div class="form-group textarea">
+                            <label for="short-desc" class="form-label">Complete event description</label>
+                            <textarea class="form-control" name="short-desc" id="short-desc" rows="6"></textarea>
+                        </div>
                     </div>
                     <div class="col-12">
-
+                        <div class="form-group textarea">
+                            <label for="short-desc" class="form-label">Images (optional)</label>
+                            <div class="images">
+                                <img src="/images/events/img-upload.png" alt="">
+                                <img src="/images/events/img-upload.png" alt="">
+                                <img src="/images/events/img-upload.png" alt="">
+                                <img src="/images/events/img-upload.png" alt="">
+                                <img src="/images/events/img-upload.png" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12">
                         <div class="btn-groups">

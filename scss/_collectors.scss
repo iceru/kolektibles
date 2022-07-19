@@ -127,28 +127,6 @@
         }
     }
 
-    .profile-cat {
-        margin-bottom: 2rem;
-        color: #525252;
-        display: flex;
-        font-size: 14px;
-
-        .item {
-            position: relative;
-
-            &:not(:last-child) {
-                margin-right: 12px;
-
-                &:after {
-                    content: '•';
-                    position: absolute;
-                    right: -8px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-    }
 }
 
 .collector-about {
@@ -197,6 +175,47 @@
         .row {
             margin-bottom: 2rem;
 
+        }
+    }
+}
+
+.follows {
+    margin-bottom: 100px;
+
+    .follow-user {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 20px;
+
+        .fu-img {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            img {
+                border-radius: 50%;
+                width: 139px;
+                height: 139px;
+            }
+        }
+
+        .fu-name {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .fu-desc {
+            margin-bottom: 1rem;
+        }
+
+        .fu-btn {
+            text-align: center;
+
+            .btn {
+                padding: .5rem 1.5rem;
+            }
         }
     }
 }

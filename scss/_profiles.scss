@@ -1,0 +1,100 @@
+.my-assets {
+    margin-bottom: 75px;
+
+    .ma-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.collection-value {
+    margin-bottom: 100px;
+
+    >.row {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    h5 {
+        margin-bottom: 2rem;
+    }
+
+    .cv-img {
+        img {
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+
+    .cv-title {
+        font-weight: 18px;
+        font-weight: 700;
+    }
+
+    .cv-price {
+        p {
+            font-size: 14px;
+            color: #C8C8C8;
+            margin-bottom: .5rem;
+        }
+
+        h6 {
+            font-size: 24px;
+        }
+
+        &.market,
+        &.active {
+            h6 {
+                color: $success;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-left: 12px;
+
+                    path {
+                        fill: $success;
+                    }
+                }
+            }
+        }
+    }
+
+    .cv-year {
+        p {
+            font-size: 14px;
+            color: #C8C8C8;
+            margin-bottom: .5rem;
+        }
+
+        .year {
+            font-size: 18px;
+        }
+    }
+}
+
+.saved-collections-page {
+    .collection .item-user {
+        .user {
+            font-weight: 700;
+
+            @include breakpoint(desktop) {
+                img {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
+
+.archived-page {
+    .collections .collection .item-img {
+        img {
+            filter: saturate(0);
+        }
+    }
+}

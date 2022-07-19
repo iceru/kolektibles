@@ -36,46 +36,6 @@
         }
     }
 
-    .upcoming {
-        h4 {
-            margin-bottom: 2rem;
-        }
-
-        .item {
-            align-items: center;
-            margin-bottom: 2rem;
-
-            .event-img {
-                width: 100%;
-                border-radius: 1rem;
-
-                @include breakpoint(desktop) {
-                    padding-right: 2rem;
-                }
-            }
-
-            h5 {
-                margin-bottom: 18px;
-            }
-
-            p {
-                margin-bottom: 28px;
-            }
-
-            .actions {
-                display: flex;
-
-                .btn:first-child {
-                    margin-right: 1.5rem;
-                }
-
-                .btn-gray {
-                    background: rgba(163, 163, 163, 0.15);
-                    padding: 12px;
-                }
-            }
-        }
-    }
 
     .filter-events {
         padding: 32px;
@@ -114,6 +74,48 @@
             text-align: center;
             width: 100%;
             padding: 11px;
+        }
+    }
+}
+
+
+.upcoming {
+    h4 {
+        margin-bottom: 2rem;
+    }
+
+    .item {
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .event-img {
+            width: 100%;
+            border-radius: 1rem;
+
+            @include breakpoint(desktop) {
+                padding-right: 2rem;
+            }
+        }
+
+        h5 {
+            margin-bottom: 18px;
+        }
+
+        p {
+            margin-bottom: 28px;
+        }
+
+        .actions {
+            display: flex;
+
+            .btn:first-child {
+                margin-right: 1.5rem;
+            }
+
+            .btn-gray {
+                background: rgba(163, 163, 163, 0.15);
+                padding: 12px;
+            }
         }
     }
 }
@@ -305,6 +307,80 @@
                 object-fit: contain;
                 border-radius: 6px;
             }
+        }
+    }
+}
+
+.add-event-page {
+    .new-event {
+        width: 70%;
+        margin: auto;
+
+        >h4 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .add-img-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        background-color: #F5F5F5;
+        padding: 150px 100px;
+        cursor: pointer;
+        margin-bottom: 4rem;
+
+        span {
+            color: $success;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+
+        .form-label {
+            margin-bottom: .5rem;
+        }
+
+        &.textarea {
+            margin-bottom: 2rem;
+        }
+
+        .input-icon {
+            position: relative;
+
+            img {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 20%;
+
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .btn-groups {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            margin: 0 1rem;
+            font-weight: bold;
         }
     }
 }
