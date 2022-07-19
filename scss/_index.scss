@@ -131,22 +131,47 @@
                 transform: translateY(-50%);
             }
         }
+    }
 
-        .tops {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+    .tops-mobile {
+        display: none;
+    }
 
-            .item {
-                text-align: center;
+    @include breakpoint(untilTablet) {
+        .container {
+            padding: 2rem;
+            margin-bottom: 2rem;
 
-                img {
-                    margin-bottom: 12px;
+            .popular {
+                display: none;
+            }
+
+            .search-bar {
+                .form-control {
+                    padding: 2rem;
                 }
+            }
+        }
 
-                .name {
-                    font-size: 12px;
-                }
+        .tops-mobile {
+            display: block;
+        }
+    }
+
+    .tops {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        .item {
+            text-align: center;
+
+            img {
+                margin-bottom: 12px;
+            }
+
+            .name {
+                font-size: 12px;
             }
         }
     }
@@ -193,13 +218,35 @@
         .cat-info {
             display: flex;
             justify-content: space-between;
+
+            p {
+                display: block;
+            }
         }
     }
 
     @include breakpoint(untilTablet) {
+
+        .counts {
+            display: none;
+        }
+
         .item {
+            padding: 4px;
+            padding-bottom: 1rem;
+
+            .cat-img {
+                padding: 0;
+                margin-bottom: 14px;
+            }
+
             .cat-info {
-                display: none;
+                text-align: center;
+                justify-content: center;
+
+                p {
+                    display: none;
+                }
             }
         }
     }
@@ -218,14 +265,6 @@
             left: auto;
             right: 0;
             top: 45%;
-        }
-    }
-
-    @include breakpoint(untilTablet) {
-        .value-img {
-            img {
-                width: 100%;
-            }
         }
     }
 
@@ -269,6 +308,34 @@
     .last-feature {
         p {
             width: 40%;
+        }
+    }
+
+
+    @include breakpoint(untilTablet) {
+        .item {
+            margin-bottom: 120px;
+        }
+
+        text-align: center;
+
+        p {
+            width: 100%;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-bottom: 28px;
+        }
+
+        .value-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        h5 {
+            margin-bottom: 48px;
         }
     }
 }
