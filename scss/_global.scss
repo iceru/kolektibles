@@ -71,6 +71,12 @@ p {
 .bg-img {
     position: absolute;
     z-index: -1;
+
+    @include breakpoint(untilTablet) {
+        img {
+            max-width: 100px;
+        }
+    }
 }
 
 .breadcrumbs {

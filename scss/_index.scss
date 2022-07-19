@@ -12,6 +12,13 @@
             margin-bottom: 271px;
         }
 
+        @include breakpoint(untilTablet) {
+            border-radius: 0;
+            padding: 76px 1rem;
+            padding-bottom: 220px;
+            margin-bottom: 74px;
+        }
+
         h1 {
             font-size: 60px;
             padding-right: 2rem;
@@ -21,6 +28,12 @@
             @include breakpoint(largeDesktop) {
                 font-size: 64px;
                 line-height: 94.25px;
+            }
+
+            @include breakpoint(untilTablet) {
+                font-size: 48px;
+                line-height: 145%;
+                letter-spacing: -0.002em;
             }
         }
 
@@ -46,6 +59,32 @@
             bottom: -210px;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        .image-mobile {
+            display: none;
+        }
+
+        @include breakpoint(untilTablet) {
+
+            .image-1,
+            .image-line,
+            .image-2 {
+                display: none;
+            }
+
+            .image-mobile {
+                display: block;
+                position: absolute;
+                bottom: -70px;
+                left: 46.5%;
+                transform: translateX(-50%);
+                width: 100vw;
+
+                img {
+                    width: 110%;
+                }
+            }
         }
     }
 }
@@ -156,6 +195,14 @@
             justify-content: space-between;
         }
     }
+
+    @include breakpoint(untilTablet) {
+        .item {
+            .cat-info {
+                display: none;
+            }
+        }
+    }
 }
 
 .features {
@@ -171,6 +218,14 @@
             left: auto;
             right: 0;
             top: 45%;
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        .value-img {
+            img {
+                width: 100%;
+            }
         }
     }
 

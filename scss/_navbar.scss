@@ -130,4 +130,21 @@
             }
         }
     }
+
+    .hamburger {
+        display: none;
+    }
+
+    @include breakpoint(untilTablet) {
+        padding: 2rem;
+
+        .hamburger {
+            display: block;
+        }
+
+        .menu-list,
+        .actions {
+            display: none;
+        }
+    }
 }

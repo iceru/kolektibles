@@ -10994,6 +10994,11 @@ p {
   position: absolute;
   z-index: -1;
 }
+@media (max-width: 992px) {
+  .bg-img img {
+    max-width: 100px;
+  }
+}
 
 .breadcrumbs {
   display: flex;
@@ -11302,6 +11307,21 @@ p {
 .navbar .actions .dropdown-switch .form-check .form-check-input {
   margin-left: -2.25em;
 }
+.navbar .hamburger {
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 2rem;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .navbar .menu-list,
+.navbar .actions {
+    display: none;
+  }
+}
 
 .index .footer {
   background-color: #000C25;
@@ -11408,6 +11428,14 @@ p {
     margin-bottom: 271px;
   }
 }
+@media (max-width: 992px) {
+  .cta .container {
+    border-radius: 0;
+    padding: 76px 1rem;
+    padding-bottom: 220px;
+    margin-bottom: 74px;
+  }
+}
 .cta .container h1, .cta .container .h1 {
   font-size: 60px;
   padding-right: 2rem;
@@ -11418,6 +11446,13 @@ p {
   .cta .container h1, .cta .container .h1 {
     font-size: 64px;
     line-height: 94.25px;
+  }
+}
+@media (max-width: 992px) {
+  .cta .container h1, .cta .container .h1 {
+    font-size: 48px;
+    line-height: 145%;
+    letter-spacing: -0.002em;
   }
 }
 .cta .container p {
@@ -11439,6 +11474,27 @@ p {
   bottom: -210px;
   left: 50%;
   transform: translateX(-50%);
+}
+.cta .container .image-mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .cta .container .image-1,
+.cta .container .image-line,
+.cta .container .image-2 {
+    display: none;
+  }
+  .cta .container .image-mobile {
+    display: block;
+    position: absolute;
+    bottom: -70px;
+    left: 46.5%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+  .cta .container .image-mobile img {
+    width: 110%;
+  }
 }
 
 .search .container {
@@ -11529,6 +11585,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .categories .item .cat-info {
+    display: none;
+  }
+}
 
 .features {
   margin-bottom: 70px;
@@ -11543,6 +11604,11 @@ p {
   left: auto;
   right: 0;
   top: 45%;
+}
+@media (max-width: 992px) {
+  .features .value-img img {
+    width: 100%;
+  }
 }
 .features .subtitle {
   margin-bottom: 3rem;
