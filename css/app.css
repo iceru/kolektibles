@@ -11000,7 +11000,7 @@ p {
   }
 }
 
-.breadcrumbs {
+.breadcrumbs .container {
   display: flex;
   align-items: center;
 }
@@ -11312,7 +11312,7 @@ p {
 }
 @media (max-width: 992px) {
   .navbar {
-    padding: 2rem;
+    padding: 2rem 0;
   }
   .navbar .hamburger {
     display: block;
@@ -11321,6 +11321,59 @@ p {
 .navbar .actions {
     display: none;
   }
+}
+
+.offcanvas .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offcanvas .offcanvas-body .sidebar-img {
+  text-align: center;
+  margin-bottom: 81px;
+  margin-top: 1rem;
+}
+.offcanvas .offcanvas-body .sidebar-img img {
+  width: 162px;
+  height: auto;
+}
+.offcanvas .offcanvas-body .sidebar-search {
+  margin-bottom: 74px;
+  position: relative;
+  width: 85%;
+}
+.offcanvas .offcanvas-body .sidebar-search .form-control {
+  border-radius: 12px;
+  border-color: #B5BED0;
+  padding: 14px;
+}
+.offcanvas .offcanvas-body .sidebar-search .icon-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
+.offcanvas .offcanvas-body .sidebar-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.offcanvas .offcanvas-body .sidebar-menu ul li {
+  margin-bottom: 64px;
+  color: #01143A;
+}
+.offcanvas .offcanvas-body .sidebar-menu ul li a {
+  font-size: 32px;
+  line-height: 39px;
+}
+.offcanvas .offcanvas-body .sidebar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offcanvas .offcanvas-body .sidebar-actions .item {
+  margin: 0 1rem;
 }
 
 .index .footer {
@@ -11345,6 +11398,11 @@ p {
 
 .footer .container {
   padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .footer .container {
+    padding: 2rem 1rem;
+  }
 }
 .footer .container > .row {
   padding: 0 1rem;
@@ -11391,6 +11449,15 @@ p {
   font-size: 32px;
   box-shadow: 0px 12px 20px rgba(187, 187, 187, 0.23);
 }
+@media (max-width: 992px) {
+  .footer .container .top-section .description {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .footer .container .top-section .footer-menu {
+    margin-bottom: 56px;
+  }
+}
 .footer .container .bottom-section {
   display: flex;
   justify-content: space-between;
@@ -11403,8 +11470,10 @@ p {
   display: flex;
 }
 .footer .container .bottom-section .copyright .item {
-  margin-right: 2rem;
   position: relative;
+}
+.footer .container .bottom-section .copyright .item:not(:last-child) {
+  margin-right: 2rem;
 }
 .footer .container .bottom-section .copyright .item:not(:last-child):after {
   content: "•";
@@ -11412,6 +11481,14 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: -1rem;
+}
+@media (max-width: 992px) {
+  .footer .container .bottom-section {
+    flex-direction: column;
+  }
+  .footer .container .bottom-section .copyright {
+    margin-bottom: 1rem;
+  }
 }
 
 .cta .container {
@@ -11453,6 +11530,7 @@ p {
     font-size: 48px;
     line-height: 145%;
     letter-spacing: -0.002em;
+    padding-right: 0;
   }
 }
 .cta .container p {
@@ -11484,16 +11562,19 @@ p {
 .cta .container .image-2 {
     display: none;
   }
+  .cta .container p {
+    padding-right: 0;
+  }
   .cta .container .image-mobile {
     display: block;
     position: absolute;
     bottom: -70px;
-    left: 46.5%;
+    left: 50%;
     transform: translateX(-50%);
     width: 100vw;
   }
   .cta .container .image-mobile img {
-    width: 110%;
+    width: 100%;
   }
 }
 
@@ -11541,7 +11622,8 @@ p {
     padding: 2rem;
     margin-bottom: 2rem;
   }
-  .search .container .popular {
+  .search .container .popular,
+.search .container .tops {
     display: none;
   }
   .search .container .search-bar .form-control {
@@ -11549,6 +11631,7 @@ p {
   }
   .search .tops-mobile {
     display: block;
+    margin-bottom: 86px;
   }
 }
 .search .tops {
@@ -11679,12 +11762,15 @@ p {
   .features .item {
     margin-bottom: 120px;
   }
-  .features p {
+  .features p,
+.features .last-feature p {
     width: 100%;
     justify-content: center;
   }
   .features h2, .features .h2 {
     margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 145%;
   }
   .features .value-img img {
     width: 100%;
@@ -11709,6 +11795,7 @@ p {
 }
 .sign-up .container h2, .sign-up .container .h2 {
   margin-bottom: 30px;
+  text-align: center;
 }
 .sign-up .container p {
   margin-bottom: 60px;
@@ -11718,6 +11805,18 @@ p {
 .sign-up .container .btn {
   padding: 28px 147px;
   font-size: 24px;
+}
+@media (max-width: 992px) {
+  .sign-up .container {
+    padding: 4rem 1rem;
+  }
+  .sign-up .container p {
+    width: 100%;
+  }
+  .sign-up .container .btn {
+    padding: 28px;
+    width: 80%;
+  }
 }
 
 .apps {
@@ -11766,6 +11865,25 @@ p {
 .apps .container .stores img {
   margin-right: 1rem;
 }
+@media (max-width: 992px) {
+  .apps .container {
+    text-align: center;
+  }
+  .apps .container .apps-img {
+    margin-bottom: 80px;
+  }
+  .apps .container .apps-img img {
+    text-align: center;
+    padding-right: 0;
+  }
+  .apps .container h2, .apps .container .h2 {
+    font-size: 32px;
+    line-height: 145%;
+  }
+  .apps .container .stores {
+    justify-content: center;
+  }
+}
 
 .collection-categories .categories .item {
   padding-top: 2rem;
@@ -11773,6 +11891,17 @@ p {
 .collection-categories .categories .item .cat-info {
   display: block;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .collection-categories .categories .counts {
+    display: flex;
+  }
+  .collection-categories .categories .title {
+    display: block;
+  }
+  .collection-categories .categories .title h4, .collection-categories .categories .title .h4 {
+    margin-bottom: 0.5rem;
+  }
 }
 .collection-categories .detail-category {
   margin-bottom: 2rem;
@@ -11788,6 +11917,23 @@ p {
 }
 .collection-categories .detail-category .container h2, .collection-categories .detail-category .container .h2 {
   margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .collection-categories .detail-category .container {
+    display: block;
+  }
+  .collection-categories .detail-category .container .img {
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+  .collection-categories .detail-category .container .img img {
+    width: 100%;
+  }
+  .collection-categories .detail-category .container h2, .collection-categories .detail-category .container .h2 {
+    font-size: 32px;
+    line-height: 145%;
+    margin-bottom: 1rem;
+  }
 }
 .collection-categories .collections {
   margin-bottom: 44px;
@@ -11847,6 +11993,9 @@ p {
 }
 .collection-detail .value-tracker h4, .collection-detail .value-tracker .h4 {
   margin-bottom: 2rem;
+}
+.collection-detail .value-tracker .vt-img img {
+  width: 100%;
 }
 .collection-detail .collections {
   margin-bottom: 100px;

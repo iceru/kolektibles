@@ -34,6 +34,7 @@
                 font-size: 48px;
                 line-height: 145%;
                 letter-spacing: -0.002em;
+                padding-right: 0;
             }
         }
 
@@ -73,16 +74,20 @@
                 display: none;
             }
 
+            p {
+                padding-right: 0;
+            }
+
             .image-mobile {
                 display: block;
                 position: absolute;
                 bottom: -70px;
-                left: 46.5%;
+                left: 50%;
                 transform: translateX(-50%);
                 width: 100vw;
 
                 img {
-                    width: 110%;
+                    width: 100%;
                 }
             }
         }
@@ -142,7 +147,8 @@
             padding: 2rem;
             margin-bottom: 2rem;
 
-            .popular {
+            .popular,
+            .tops {
                 display: none;
             }
 
@@ -155,6 +161,7 @@
 
         .tops-mobile {
             display: block;
+            margin-bottom: 86px;
         }
     }
 
@@ -319,13 +326,16 @@
 
         text-align: center;
 
-        p {
+        p,
+        .last-feature p {
             width: 100%;
             justify-content: center;
         }
 
         h2 {
             margin-bottom: 28px;
+            font-size: 32px;
+            line-height: 145%;
         }
 
         .value-img {
@@ -356,6 +366,7 @@
 
         h2 {
             margin-bottom: 30px;
+            text-align: center;
         }
 
         p {
@@ -367,6 +378,19 @@
         .btn {
             padding: 28px 147px;
             font-size: 24px;
+        }
+
+        @include breakpoint(untilTablet) {
+            padding: 4rem 1rem;
+
+            p {
+                width: 100%;
+            }
+
+            .btn {
+                padding: 28px;
+                width: 80%;
+            }
         }
     }
 }
@@ -427,6 +451,28 @@
 
             img {
                 margin-right: 1rem;
+            }
+        }
+
+        @include breakpoint(untilTablet) {
+            text-align: center;
+
+            .apps-img {
+                margin-bottom: 80px;
+
+                img {
+                    text-align: center;
+                    padding-right: 0;
+                }
+            }
+
+            h2 {
+                font-size: 32px;
+                line-height: 145%;
+            }
+
+            .stores {
+                justify-content: center;
             }
         }
     }

@@ -136,7 +136,7 @@
     }
 
     @include breakpoint(untilTablet) {
-        padding: 2rem;
+        padding: 2rem 0;
 
         .hamburger {
             display: block;
@@ -145,6 +145,73 @@
         .menu-list,
         .actions {
             display: none;
+        }
+    }
+}
+
+.offcanvas {
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sidebar-img {
+            text-align: center;
+            margin-bottom: 81px;
+            margin-top: 1rem;
+
+            img {
+                width: 162px;
+                height: auto;
+            }
+        }
+
+        .sidebar-search {
+            margin-bottom: 74px;
+            position: relative;
+            width: 85%;
+
+            .form-control {
+                border-radius: 12px;
+                border-color: #B5BED0;
+                padding: 14px;
+            }
+
+            .icon-search {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 14px;
+            }
+        }
+
+        .sidebar-menu {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+
+                li {
+                    margin-bottom: 64px;
+                    color: #01143A;
+
+                    a {
+                        font-size: 32px;
+                        line-height: 39px;
+                    }
+                }
+            }
+        }
+
+        .sidebar-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                margin: 0 1rem;
+            }
         }
     }
 }

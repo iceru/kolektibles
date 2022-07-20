@@ -33,9 +33,14 @@
     .container {
         padding: 2rem 0;
 
+        @include breakpoint(untilTablet) {
+            padding: 2rem 1rem;
+        }
+
         >.row {
             padding: 0 1rem;
         }
+
 
         .top-section {
             .logo {
@@ -91,6 +96,19 @@
             }
         }
 
+        @include breakpoint(untilTablet) {
+            .top-section {
+                .description {
+                    width: 80%;
+                    margin-bottom: 40px;
+                }
+
+                .footer-menu {
+                    margin-bottom: 56px;
+                }
+            }
+        }
+
         .bottom-section {
             display: flex;
             justify-content: space-between;
@@ -103,10 +121,11 @@
                 display: flex;
 
                 .item {
-                    margin-right: 2rem;
                     position: relative;
 
                     &:not(:last-child) {
+                        margin-right: 2rem;
+
                         &:after {
                             content: '•';
                             position: absolute;
@@ -115,6 +134,14 @@
                             right: -1rem;
                         }
                     }
+                }
+            }
+
+            @include breakpoint(untilTablet) {
+                flex-direction: column;
+
+                .copyright {
+                    margin-bottom: 1rem;
                 }
             }
         }

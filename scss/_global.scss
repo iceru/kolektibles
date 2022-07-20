@@ -80,8 +80,10 @@ p {
 }
 
 .breadcrumbs {
-    display: flex;
-    align-items: center;
+    .container {
+        display: flex;
+        align-items: center;
+    }
 
     .item {
         margin-right: 2rem;

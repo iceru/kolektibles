@@ -9,6 +9,20 @@
                 text-align: center;
             }
         }
+
+        @include breakpoint(untilTablet) {
+            .counts {
+                display: flex;
+            }
+
+            .title {
+                display: block;
+
+                h4 {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
     }
 
     .detail-category {
@@ -26,6 +40,27 @@
 
             h2 {
                 margin-bottom: 2rem;
+            }
+        }
+
+        @include breakpoint(untilTablet) {
+            .container {
+                display: block;
+
+                .img {
+                    width: 50%;
+                    margin-bottom: 1.5rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 145%;
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
@@ -106,6 +141,12 @@
 
         h4 {
             margin-bottom: 2rem;
+        }
+
+        .vt-img {
+            img {
+                width: 100%;
+            }
         }
     }
 
