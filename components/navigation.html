@@ -70,15 +70,15 @@
                 </div>
             </div>
             <div class="item">
-                <div class="dropdown">
+                <div class="dropdown ">
                     <a href="#" role="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="profile">
-                            <img src="/images/icons/icon-burger.svg" alt="">
+                            <img src="/images/icons/icon-burger.svg" class="burger" alt="">
                             <img src="/images/profile-thumbs.png" alt="">
                         </div>
                     </a>
 
-                    <ul class="dropdown-menu" aria-labelledby="profile">
+                    <ul class="dropdown-menu profile-dd" aria-labelledby="profile">
                         <li><a class="dropdown-item" href="/profile-collections.html">My Profile</a></li>
                         <li><a class="dropdown-item" href="#">My Assets</a></li>
                         <li><a class="dropdown-item" href="#">Saved Items</a></li>
@@ -93,11 +93,12 @@
                         <li class="dropdown-switch">
                             <label for="">Light</label>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch"
+                                <input class="form-check-input" type="checkbox" id="switch" role="switch"
                                     id="flexSwitchCheckDefault">
                             </div>
                             <label for="">Dark</label>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -187,7 +188,7 @@
                 <div class="dropdown">
                     <a href="#" role="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="profile">
-                            <img src="/images/icons/icon-burger.svg" alt="">
+                            <img src="/images/icons/icon-burger.svg" class="burger" alt="">
                             <img src="/images/profile-thumbs.png" alt="">
                         </div>
                     </a>
@@ -218,3 +219,23 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $('body').addClass('light');
+    });
+
+    // theme switch example for demo
+    document.getElementById('switch').addEventListener('click', () => {
+        $([".light [class*='-light']", ".dark [class*='-dark']"]).each((i, ele) => {
+            $(ele).toggleClass('bg-light bg-dark')
+            $(ele).toggleClass('text-light text-dark')
+            $(ele).toggleClass('navbar-light navbar-dark')
+        })
+
+        $('.cta .container .btn').toggleClass('btn-primary btn-secondary');
+        // toggle body class selector
+        $('body').toggleClass('light dark')
+    })
+</script>

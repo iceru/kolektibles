@@ -1,6 +1,8 @@
 $primary: #01143A;
 $secondary: #37FFC8;
 $success :#00AA5B;
+$light: white;
+$dark: #000C25;
 
 /* BREAKPOINTS */
 @mixin breakpoint($point) {

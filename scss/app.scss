@@ -3,6 +3,7 @@
 @import 'variables';
 @import '../assets/bootstrap-5.2.0-beta1/scss/bootstrap.scss';
 
+
 @import 'global';
 @import 'navbar';
 @import 'footer';
@@ -15,6 +16,7 @@
 @import 'contact-about';
 @import 'sign-in';
 @import 'profiles';
+@import 'dark';
 
 
 body,
@@ -23,6 +25,11 @@ html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #3C3C3C;
+
+    &.dark {
+        color: white;
+        background-color: $dark;
+    }
 }
 
 a,
