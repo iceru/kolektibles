@@ -11196,6 +11196,22 @@ p {
 .paginations .pagination {
   margin-bottom: 0;
 }
+.paginations .pagination .page-item.active .page-link {
+  border: 1px solid #808080;
+  border-radius: 6px;
+  background-color: #F0F0F0;
+  font-weight: bold;
+}
+.paginations .pagination .page-item .page-link {
+  color: rgba(53, 53, 53, 0.68);
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 0 7px;
+}
+.paginations .pagination .page-item .page-link.prev img {
+  transform: rotate(180deg);
+}
 
 .profile-cat {
   margin-bottom: 2rem;
