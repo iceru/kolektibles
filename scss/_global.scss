@@ -315,6 +315,12 @@ p {
                 }
             }
 
+            &.disabled {
+                .page-link {
+                    opacity: 0.7;
+                }
+            }
+
             .page-link {
                 color: rgba(53, 53, 53, 0.68);
                 border: none;

@@ -38,11 +38,16 @@
 .btn.btn-outline-success:hover {
   color: white;
 }
-.btn.btn-outline-dark {
+.btn.btn-outline-light {
   border-color: #A4A4A4;
   color: #A4A4A4;
 }
-.btn.btn-outline-dark:hover img, .btn.btn-outline-dark:focus img {
+.btn.btn-outline-light:hover, .btn.btn-outline-light:focus {
+  background-color: #000C25;
+  color: white;
+  border-color: #000C25;
+}
+.btn.btn-outline-light:hover img, .btn.btn-outline-light:focus img {
   filter: brightness(0) invert(1);
 }
 
@@ -11201,6 +11206,9 @@ p {
   border-radius: 6px;
   background-color: #F0F0F0;
   font-weight: bold;
+}
+.paginations .pagination .page-item.disabled .page-link {
+  opacity: 0.7;
 }
 .paginations .pagination .page-item .page-link {
   color: rgba(53, 53, 53, 0.68);

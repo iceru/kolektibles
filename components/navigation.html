@@ -229,9 +229,22 @@
     // theme switch example for demo
     document.getElementById('switch').addEventListener('click', () => {
         $([".light [class*='-light']", ".dark [class*='-dark']"]).each((i, ele) => {
-            $(ele).toggleClass('bg-light bg-dark')
-            $(ele).toggleClass('text-light text-dark')
-            $(ele).toggleClass('navbar-light navbar-dark')
+            debugger;
+            if ($(ele).hasClass('bg-light') || $(ele).hasClass('bg-dark')) {
+                $(ele).toggleClass('bg-light bg-dark')
+            }
+            if ($(ele).hasClass('text-light') || $(ele).hasClass('text-dark')) {
+                $(ele).toggleClass('text-light text-dark')
+            }
+            if ($(ele).hasClass('navbar-light') || $(ele).hasClass('navbar-dark')) {
+                $(ele).toggleClass('navbar-light navbar-dark')
+            }
+            if ($(ele).hasClass('btn-outline-light') || $(ele).hasClass('btn-outline-dark')) {
+                $(ele).toggleClass('btn-outline-light btn-outline-dark')
+            }
+            if ($(ele).hasClass('btn-light') || $(ele).hasClass('btn-dark')) {
+                $(ele).toggleClass('btn-light btn-dark')
+            }
         })
 
         $('.cta .container .btn').toggleClass('btn-primary btn-secondary');

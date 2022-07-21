@@ -94,7 +94,7 @@ $dark: #000C25;
         }
     }
 
-    &.btn-outline-dark {
+    &.btn-outline-light {
         border-color: #A4A4A4;
         color: #A4A4A4;
 
@@ -103,6 +103,10 @@ $dark: #000C25;
             img {
                 filter: brightness(0) invert(1);
             }
+
+            background-color: $dark;
+            color: $light;
+            border-color: $dark;
         }
     }
 }
