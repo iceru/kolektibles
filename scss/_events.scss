@@ -403,26 +403,11 @@
         }
     }
 
-    .form-group {
-        margin-bottom: 12px;
 
-        .form-label {
-            margin-bottom: .5rem;
-        }
+    .form-group {
 
         &.textarea {
             margin-bottom: 2rem;
-        }
-
-        .input-icon {
-            position: relative;
-
-            img {
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
         }
 
         .images {

@@ -11219,6 +11219,32 @@ p {
   transform: translateY(-50%);
 }
 
+.form-group {
+  margin-bottom: 12px;
+}
+.form-group .form-label {
+  margin-bottom: 0.5rem;
+}
+.form-group .input-icon {
+  position: relative;
+}
+.form-group .input-icon img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-group .images {
+  display: flex;
+  align-items: center;
+}
+.form-group .images img {
+  width: 20%;
+}
+.form-group .images img:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
 .navbar {
   padding: 0;
   margin-bottom: 2rem;
@@ -12546,6 +12572,76 @@ p {
   color: #D0D5DD;
 }
 
+@media (min-width: 1200px) {
+  .add-collection .new-event {
+    width: 80%;
+    margin: auto;
+  }
+}
+.add-collection .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.add-collection .steps .step {
+  text-align: center;
+  width: 33%;
+}
+.add-collection .steps .step.done .number {
+  background-color: #01143A;
+  border-color: #01143A;
+}
+.add-collection .steps .step.done .text {
+  font-weight: 500;
+  color: #01143A;
+}
+.add-collection .steps .step:not(:last-child) .number:after {
+  content: "";
+  height: 2px;
+  width: 20vw;
+  left: 34px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #C5C5C5;
+  z-index: 0;
+}
+.add-collection .steps .step .number {
+  border: 2px solid #B5B5B6;
+  color: #B5B5B6;
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.add-collection h4, .add-collection .h4 {
+  margin-bottom: 2rem;
+  color: black;
+}
+.add-collection .form-label {
+  color: #5C5C5C;
+}
+.add-collection .form-description {
+  margin-bottom: 4rem;
+}
+.add-collection .form-story .btn-groups {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.add-collection .form-story .btn-groups .btn {
+  font-weight: bold;
+}
+
 .events-page .cta-events {
   margin-bottom: 4rem;
 }
@@ -12864,23 +12960,8 @@ p {
 .add-event-page .add-img-label span {
   color: #00AA5B;
 }
-.add-event-page .form-group {
-  margin-bottom: 12px;
-}
-.add-event-page .form-group .form-label {
-  margin-bottom: 0.5rem;
-}
 .add-event-page .form-group.textarea {
   margin-bottom: 2rem;
-}
-.add-event-page .form-group .input-icon {
-  position: relative;
-}
-.add-event-page .form-group .input-icon img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .add-event-page .form-group .images {
   display: flex;
