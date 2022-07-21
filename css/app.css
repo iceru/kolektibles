@@ -11193,6 +11193,9 @@ p {
   font-size: 14px;
   color: rgba(49, 53, 59, 0.68);
 }
+.paginations .pagination {
+  margin-bottom: 0;
+}
 
 .profile-cat {
   margin-bottom: 2rem;
@@ -11466,6 +11469,7 @@ p {
 }
 .footer .container .top-section .description {
   width: 70%;
+  font-size: 14px;
 }
 .footer .container .top-section .menu-title {
   font-weight: 700;
@@ -12236,7 +12240,10 @@ p {
   margin-bottom: 1.5rem;
 }
 .collectors .collector .clr-img img {
+  border: 6px solid white;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 .collectors .collector .clr-name {
   font-size: 24px;
@@ -13387,6 +13394,36 @@ p {
 .dark .cta .container {
   background-color: #152139;
   color: white;
+}
+.dark .title-page .title {
+  color: white;
+}
+.dark .collectors .collector {
+  background-color: #0D1A31;
+}
+.dark .collectors .clr-img img {
+  border-color: #0D1A31;
+}
+.dark .collectors .clr-stats .item img {
+  filter: brightness(0) invert(1);
+}
+.dark .paginations .current-page {
+  color: white;
+}
+.dark .footer .container .top-section .description {
+  color: #A6A6A6;
+}
+.dark .footer .container .top-section .question {
+  box-shadow: none;
+}
+.dark .footer .container .top-section .footer-menu li {
+  color: #A6A6A6;
+}
+.dark .footer .container .top-section .menu-title {
+  color: white;
+}
+.dark .footer .container .bottom-section {
+  border-color: #2F2F2F;
 }
 
 body,
