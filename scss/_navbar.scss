@@ -1,5 +1,6 @@
 .navbar {
     padding: 0;
+    margin-bottom: 2rem;
 
     .menu-list {
         ul {
@@ -137,6 +138,7 @@
 
     @include breakpoint(untilTablet) {
         padding: 2rem 0;
+        margin-bottom: 1rem;
 
         .hamburger {
             display: block;

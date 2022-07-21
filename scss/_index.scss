@@ -60,6 +60,11 @@
             bottom: -210px;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
 
         .image-mobile {
@@ -315,6 +320,11 @@
     .last-feature {
         p {
             width: 40%;
+        }
+
+        .subtitle {
+            justify-content: center;
+            width: 100%;
         }
     }
 

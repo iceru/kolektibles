@@ -98,3 +98,75 @@
         }
     }
 }
+
+.edit-profile {
+    margin-bottom: 100px;
+
+    h5 {
+        margin-bottom: 2rem;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 6px .75rem;
+    }
+
+    .change-image {
+        margin-bottom: 2rem;
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 2rem;
+        }
+
+        .btn-gray {
+            background-color: #B8C2D6;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-label {
+        margin-bottom: 8px;
+    }
+
+    .btn-secondary {
+        margin-top: 3rem;
+        font-weight: bold;
+        padding: 14px 45px;
+        font-size: 1rem;
+    }
+
+    .presence {
+        h5 {
+            text-transform: uppercase;
+            color: #A5A5A5;
+        }
+
+        .form-select {
+            font-weight: bold;
+            color: #6D7588;
+        }
+
+        .col-1 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .btn {
+                padding: 11px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
