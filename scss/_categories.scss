@@ -296,4 +296,31 @@
             }
         }
     }
+
+    .status-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px;
+        background-color: #F8FCFE;
+        border-radius: 16px;
+        margin-bottom: 100px;
+
+        .btn {
+            font-weight: bold;
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-right: 40px;
+            }
+
+            .btn-secondary {
+                margin-right: 2rem;
+            }
+        }
+    }
 }

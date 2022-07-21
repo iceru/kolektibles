@@ -12146,6 +12146,28 @@ p {
   padding: 0;
   margin-left: 12px;
 }
+.collection-detail .status-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #F8FCFE;
+  border-radius: 16px;
+  margin-bottom: 100px;
+}
+.collection-detail .status-action .btn {
+  font-weight: bold;
+}
+.collection-detail .status-action .action-buttons {
+  display: flex;
+  align-items: center;
+}
+.collection-detail .status-action .action-buttons p {
+  margin-right: 40px;
+}
+.collection-detail .status-action .action-buttons .btn-secondary {
+  margin-right: 2rem;
+}
 
 .collectors {
   margin-bottom: 4rem;
