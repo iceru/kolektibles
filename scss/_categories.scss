@@ -1,4 +1,10 @@
 .collection-categories {
+    .breadcrumbs {
+        .container {
+            padding-left: .75rem;
+        }
+    }
+
     .categories {
 
         .item {
@@ -28,6 +34,7 @@
     .detail-category {
         margin-bottom: 2rem;
         position: relative;
+        margin-top: 2rem;
 
         .bg-img {
             right: 0;
@@ -74,6 +81,12 @@
     .filter-content {
         padding-bottom: 45px;
         margin-top: -16px;
+
+        @include breakpoint(untilTablet) {
+            .col-12 {
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
 
@@ -160,6 +173,38 @@
                         }
                     }
 
+                    .cd-user-time {
+                        display: flex;
+                        align-items: center;
+
+                        .cd-user {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 100px;
+                            margin-bottom: 60px;
+
+                            img {
+                                width: 2rem;
+                                height: 2rem;
+                                border-radius: 50%;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+
+                    .cd-actions {
+                        margin-bottom: 42px;
+
+                        .btn {
+                            padding: 18px 80px;
+                            font-weight: bold;
+
+                            &:first-child {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+
                     .cd-share {
                         display: flex;
                         color: #848484;
@@ -210,8 +255,16 @@
         }
 
         .story {
+            padding-top: 24px;
+
             p {
                 font-size: 18px;
+            }
+        }
+
+        @include breakpoint(untilTablet) {
+            .story {
+                margin-bottom: 4rem;
             }
         }
 
@@ -265,6 +318,10 @@
                 .form-control {
                     border-color: #DBDEE2;
                     font-size: 14px;
+
+                    @include breakpoint(untilTablet) {
+                        width: 84%;
+                    }
 
                     ::placeholder {
                         color: #AAB4C8;
