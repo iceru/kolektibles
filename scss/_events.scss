@@ -387,22 +387,6 @@
         }
     }
 
-    .add-img-label {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1rem;
-        background-color: #F5F5F5;
-        padding: 150px 100px;
-        cursor: pointer;
-        margin-bottom: 4rem;
-
-        span {
-            color: $success;
-        }
-    }
-
 
     .form-group {
 
@@ -432,5 +416,43 @@
             margin: 0 1rem;
             font-weight: bold;
         }
+    }
+}
+
+.collectors-invite-modal {
+    h6 {
+        font-weight: 500;
+    }
+
+    .collectors-invite {
+        .ci-item {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ci-user {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 1rem;
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+.search {
+    position: relative;
+    margin-bottom: 24px;
+
+    .search-img {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
