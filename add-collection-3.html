@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="collection-detail">
+    <nav data-includeHTML="components/navigation.html">
+    </nav>
+    <div class="container">
+        <div class="steps">
+            <div class="step done">
+                <div class="number ">
+                    <img src="/images/icons/check-step.png" alt="">
+                </div>
+                <div class="text">
+                    Description & story
+                </div>
+            </div>
+            <div class="step done">
+                <div class="number">
+                    <img src="/images/icons/check-step.png" alt="">
+                </div>
+                <div class="text">
+                    Images
+                </div>
+            </div>
+            <div class="step done">
+                <div class="number">
+                    <img src="/images/icons/check-step.png" alt="">
+                </div>
+                <div class="text">
+                    Preview
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-collection">
+            <img src="/images/icons/Show.svg" alt="">
+            <span>Preview Collection</span> - Start
+        </div>
+
+        <div class="collection-detail-content">
+            <div class="row align-items-start">
+                <div class="col-12 col-lg-6 cd-img">
+                    <img src="/images/collections/bakugo-1.png" alt="">
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 cd-info my-collection">
+                    <div class="cd-title">
+                        <h4>Bakugo Katsuki Boku No Hero Academia All Orange</h4>
+                    </div>
+                    <div class="cd-stats">
+                        <div class="item">
+                            <img src="/images/icons/Heart2.svg" alt="">
+                            1,204 <span>Likes</span>
+                        </div>
+                        <div class="item">
+                            <img src="/images/icons/Chat.svg" alt="">
+                            64 <span>Comments</span>
+                        </div>
+                    </div>
+                    <div class="cd-desc">
+                        La figura es muy bonita! Hubo algunos inconvenientes con el envío pero el vendedor contestó
+                        todas las dudas. Llegó perfectamente empaquetado, sin ningún daño. Lo recomiendo mucho,
+                        definitivamente compraré aquí otra vez.
+                    </div>
+                    <div class="cd-user-time">
+                        <div class="cd-user">
+                            <img src="/images/user/user-3.png" alt="">
+                            Francis Sanjaya
+                        </div>
+                        <div class="cd-time">
+                            Updated: <span>23 hours ago </span>
+                        </div>
+                    </div>
+                    <div class="cd-actions">
+                        <button type="button" class="btn btn-primary">Like</button>
+                        <button type="button" class="btn btn-outline-light">Bid</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="value-tracker">
+            <h4>Value tracker for all similar</h4>
+            <div class="vt-img">
+                <img src="/images/value-null.png" alt="">
+            </div>
+        </div>
+
+        <div class="story-comments">
+            <div class="row">
+                <div class="col-12 col-lg-7 story">
+                    <h5>The Story behind this collection item</h5>
+                    <p>La figura es muy bonita! Hubo algunos inconvenientes con el envío pero el vendedor contestó todas
+                        las dudas. Llegó perfectamente empaquetado, sin ningún daño. Lo recomiendo mucho, definitivam
+                        <br><br>
+                        ente compraré aquí otra vez.La figura es muy bonita! Hubo algunos inconvenientes con el envío
+                        pero el vendedor contestó todas las dudas. Llegó algunos inconvenientes con el envío pero el
+                        vendedor contestó todas las vendedor contestó todas las dudas. Llegó perfectamen
+                        <br><br>
+                        te empaquetado, sin ningún daño. Lo recomiendo mucho, definitivamente , definitivamente compraré
+                        aquí otra vez.La figura es muy bonita! Hubo
+                        <br><br>
+                        algunos inconvenientes con el envío pero el vendedor contestó todas las dudas. Llegó
+                        perfectamente empaquetado, sin ningún daño. Lo recomiendo mucho, definitivamente compraré aquí
+                        otra vez.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="comments-container">
+                        <h5>Comments <span>(14)</span> </h5>
+
+                        <div class="no-comments">
+                            <img src="/images/icons/Chat-grey.png" alt="">
+                            No comments yet
+                        </div>
+
+                        <div class="cm-input">
+                            <input type="text" class="form-control" placeholder="Reply comment">
+                            <button type="button" class="btn btn-primary">
+                                <img src="/images/icons/Send.png" alt="Send">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-collection">
+            <img src="/images/icons/Show.svg" alt="">
+            <span>Preview Collection</span> - End
+        </div>
+
+        <div class="btn-groups d-flex align-items-center justify-content-between mb-5">
+            <button type="button" class="btn btn-outline-light fw-bold">Discard all</button>
+            <div>
+                <button type="button" class="btn btn-outline-light me-3 fw-bold">Back</button>
+                <button type="button" class="btn btn-secondary fw-bold">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-index" data-includeHTML="components/footer.html">
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>

@@ -113,10 +113,6 @@
             .cd-info {
                 color: black;
 
-                @include breakpoint(largeDesktop) {
-                    padding-left: 6rem;
-                }
-
                 .cd-title {
                     margin-bottom: 2rem;
                 }
@@ -272,6 +268,21 @@
             border: 1px solid #DBDEE2;
             padding: 24px;
             border-radius: 10px;
+
+            .no-comments {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 300px;
+                flex-direction: column;
+                color: #868686;
+
+                img {
+                    width: 53px;
+                    height: 53px;
+                    margin-bottom: 21px;
+                }
+            }
 
             .cm-item {
                 display: flex;
