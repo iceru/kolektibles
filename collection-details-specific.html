@@ -90,7 +90,8 @@
                     </div>
                     <div class="cd-actions">
                         <button type="button" class="btn btn-primary">Like</button>
-                        <button type="button" class="btn btn-outline-light">Bid</button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#collectionBid">Bid</button>
                     </div>
                     <div class="cd-share">
                         <img src="/images/icons/share-arrow 1.png" alt="">
@@ -165,6 +166,54 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="collectionBid" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body collection-bid">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="cb-img">
+                                <img src="/images/collections/bakugo-1.png" alt="">
+                            </div>
+                            <h6 class="cb-title">
+                                Bakugo Katsuki Boku No Hero Academia All Orange
+                            </h6>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="last-bid">
+                                <p>Last bid</p>
+                                <h2>$304</h2>
+
+                                <div class="form-group">
+                                    <label for="bid" class="form-label">Input your bid</label>
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" name="bid" id="bid" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="tnc">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="tnc" id="tnc">
+                                        <label class="form-check-label" for="tnc">
+                                            I have read <a href="#">term & conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="btn-groups">
+                                    <button type="button" class="btn btn-outline-light">Cancel</button>
+                                    <button type="button" class="btn btn-secondary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer-index" data-includeHTML="components/footer.html">
     </footer>

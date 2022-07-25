@@ -392,3 +392,80 @@
         }
     }
 }
+
+.collection-bid {
+    text-align: center;
+
+    >.row {
+        align-items: center;
+    }
+
+    .cb-img {
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .cb-title {
+        font-size: 18px;
+    }
+
+    .last-bid {
+        padding-left: 1rem;
+
+
+        h2 {
+            margin-bottom: 18px;
+        }
+
+        p {
+            color: #848484;
+        }
+
+        .form-label {
+            color: #848484;
+            margin-bottom: 1rem;
+        }
+
+        .form-input {
+            position: relative;
+            margin-bottom: 40px;
+
+            .form-control {
+                padding-left: 1rem;
+            }
+
+            &::after {
+                content: '$';
+                position: absolute;
+                font-weight: 500;
+                left: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 32px;
+                color: #666F7C;
+            }
+        }
+
+        .tnc {
+            margin-bottom: 24px;
+            text-align: left;
+
+            a {
+                color: $success;
+            }
+        }
+
+        .btn-groups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+            .btn {
+                width: 100%;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -11063,6 +11063,33 @@ p {
   font-size: 12px;
 }
 
+.modal-content {
+  border-radius: 24px;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  padding: 24px;
+}
+
+.modal-body {
+  position: relative;
+}
+.modal-body .btn-close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
 .title-page .title {
   color: black;
 }
@@ -12356,6 +12383,66 @@ p {
 }
 .collection-detail .status-action .action-buttons .btn-secondary {
   margin-right: 2rem;
+}
+
+.collection-bid {
+  text-align: center;
+}
+.collection-bid > .row {
+  align-items: center;
+}
+.collection-bid .cb-img img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.collection-bid .cb-title {
+  font-size: 18px;
+}
+.collection-bid .last-bid {
+  padding-left: 1rem;
+}
+.collection-bid .last-bid h2, .collection-bid .last-bid .h2 {
+  margin-bottom: 18px;
+}
+.collection-bid .last-bid p {
+  color: #848484;
+}
+.collection-bid .last-bid .form-label {
+  color: #848484;
+  margin-bottom: 1rem;
+}
+.collection-bid .last-bid .form-input {
+  position: relative;
+  margin-bottom: 40px;
+}
+.collection-bid .last-bid .form-input .form-control {
+  padding-left: 1rem;
+}
+.collection-bid .last-bid .form-input::after {
+  content: "$";
+  position: absolute;
+  font-weight: 500;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #666F7C;
+}
+.collection-bid .last-bid .tnc {
+  margin-bottom: 24px;
+  text-align: left;
+}
+.collection-bid .last-bid .tnc a {
+  color: #00AA5B;
+}
+.collection-bid .last-bid .btn-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.collection-bid .last-bid .btn-groups .btn {
+  width: 100%;
+  font-weight: bold;
 }
 
 .collectors {
