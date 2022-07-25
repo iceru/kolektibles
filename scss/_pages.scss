@@ -200,10 +200,49 @@
 }
 
 .add-collection {
+    &.add-image {
+        margin-bottom: 100px;
+    }
+
     @include breakpoint(desktop) {
         .new-event {
             width: 80%;
             margin: auto;
+        }
+    }
+
+    .info {
+        display: flex;
+        color: #636363;
+        margin-bottom: 50px;
+
+        img {
+            margin-right: 26px;
+        }
+    }
+
+    .featured-image {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+        margin-bottom: 71px;
+
+        .fi-item {
+            img {
+                margin-bottom: 24px;
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-groups {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            margin: 0 1rem;
+            font-weight: bold;
         }
     }
 

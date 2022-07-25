@@ -98,6 +98,14 @@
     justify-content: center;
     margin-bottom: 86px;
 
+    @include breakpoint(untilTablet) {
+        display: block;
+
+        .profile-img {
+            margin-bottom: 2rem;
+        }
+    }
+
     .profile-img {
         margin-right: 53px;
 

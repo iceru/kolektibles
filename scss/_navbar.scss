@@ -97,44 +97,6 @@
                 left: -40px;
             }
 
-            &.notification {
-                left: auto;
-                right: -2rem;
-                width: 359px;
-
-                .dropdown-title {
-                    padding: 12px 24px;
-                }
-
-                .dropdown-item {
-                    display: flex;
-
-                    .dropdown-img {
-                        margin-right: 18px;
-
-                        img {
-                            width: 58px;
-                            height: 58px;
-                            border-radius: 50%;
-                            object-fit: cover;
-                        }
-                    }
-
-                    .dropdown-text {
-                        p {
-                            white-space: break-spaces;
-                            font-weight: 500;
-
-                            span {
-                                color: #989898;
-                                font-weight: 400;
-                                font-size: 12px;
-                            }
-                        }
-                    }
-                }
-            }
-
             .dropdown-item {
                 padding: 12px 24px;
                 border-radius: 1rem;
@@ -148,40 +110,6 @@
             }
         }
 
-        .dropdown-switch {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 24px;
-
-            .form-check {
-                min-height: 0;
-
-                .form-check-input {
-                    margin-left: -2.25em;
-                    background-color: #BFC9D9;
-                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-                    box-shadow: none;
-                    border-color: #BFC9D9;
-                    width: 2.5em;
-                    height: 1.25em;
-
-                    &:focus {
-                        border-color: #BFC9D9;
-                    }
-
-                    &:checked {
-                        background-color: $success;
-                        border-color: $success;
-
-                        &:focus {
-                            border-color: $success;
-                        }
-
-                    }
-                }
-            }
-        }
     }
 
     .hamburger {
@@ -203,11 +131,96 @@
     }
 }
 
+.dropdown-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+
+    .form-check {
+        min-height: 0;
+
+        .form-check-input {
+            margin-left: -2.25em;
+            background-color: #BFC9D9;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+            box-shadow: none;
+            border-color: #BFC9D9;
+            width: 2.5em;
+            height: 1.25em;
+
+            &:focus {
+                border-color: #BFC9D9;
+            }
+
+            &:checked {
+                background-color: $success;
+                border-color: $success;
+
+                &:focus {
+                    border-color: $success;
+                }
+
+            }
+        }
+    }
+}
+
+.dropdown-text {
+    p {
+        white-space: break-spaces;
+        font-weight: 500;
+
+        span {
+            color: #989898;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+.dropdown-menu.notification {
+    left: auto;
+    right: -2rem;
+    width: 359px;
+
+    .dropdown-title {
+        padding: 12px 24px;
+    }
+
+    .dropdown-item {
+        display: flex;
+
+        .dropdown-img {
+            margin-right: 18px;
+
+            img {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+}
+
 .offcanvas {
     .offcanvas-body {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .dropdown-switch {
+            padding: 12px 16px;
+        }
+
+        .dropdown-menu.notification {
+            width: 80vw;
+        }
 
         .sidebar-img {
             text-align: center;

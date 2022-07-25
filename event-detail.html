@@ -248,16 +248,56 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade " id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade collectors-invite-modal" id="modelId" tabindex="-1" role="dialog"
+            aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Invite People</h5>
+                        <h5 class="modal-title"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Body
+                        <h5>Invite People</h5>
+
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-collectors-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-collectors" type="button" role="tab"
+                                    aria-controls="pills-collectors" aria-selected="true">By collector’s name</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-email-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email"
+                                    aria-selected="false">By email (non registered collectors)</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-collectors" role="tabpanel"
+                                aria-labelledby="pills-collectors-tab" tabindex="0">
+                                <div class="search">
+                                    <input type="text" class="form-control" placeholder="Search for collectors">
+                                    <div class="search-img">
+                                        <img src="/images/icons/Search.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <h6>Collectors</h6>
+                                <div class="collectors-invite">
+                                    <div class="ci-item">
+                                        <div class="ci-user">
+                                            <img src="/images/user/user-3.png" alt="">
+                                            Frans Sanjaya
+                                        </div>
+
+                                        <div class="ci-btn">
+                                            <button type="button" class="btn btn-blue">+ Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-email" role="tabpanel"
+                                aria-labelledby="pills-email-tab" tabindex="0">...</div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
