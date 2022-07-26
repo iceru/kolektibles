@@ -32,15 +32,8 @@
 
 .footer {
     .container {
-        padding: 2rem 0;
-
-        @include breakpoint(untilTablet) {
-            padding: 2rem 1rem;
-        }
-
-        >.row {
-            padding: 0 1rem;
-        }
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
 
         .top-section {

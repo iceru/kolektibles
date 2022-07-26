@@ -15,7 +15,7 @@
         }
     }
 
-    .actions {
+    .actions-search {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -42,6 +42,16 @@
         .item-user {
             .user {
                 font-weight: bold;
+            }
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        .actions-search {
+            display: block;
+
+            .category {
+                margin-bottom: 1rem;
             }
         }
     }

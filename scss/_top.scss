@@ -173,5 +173,29 @@
                 }
             }
         }
+
+
+
+        @include breakpoint(mobileonly) {
+            .category {
+                display: none;
+            }
+
+            .collections,
+            .collectors {
+                margin-left: 0;
+                white-space: nowrap;
+                overflow: auto;
+                flex-wrap: nowrap;
+
+                .item {
+                    width: 50%;
+
+                    .item-title {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
     }
 }

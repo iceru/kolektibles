@@ -90,10 +90,12 @@ p {
     position: absolute;
     z-index: -1;
 
+    img {
+        width: 100%;
+    }
+
     @include breakpoint(untilTablet) {
-        img {
-            max-width: 100px;
-        }
+        width: 80%;
     }
 }
 
