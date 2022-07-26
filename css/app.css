@@ -10958,6 +10958,12 @@ h2, .h2 {
   line-height: 145%;
 }
 
+@media (max-width: 992px) {
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 46.4px;
+  }
+}
 h4, .h4 {
   font-size: 32px;
   line-height: 175%;
@@ -11226,6 +11232,18 @@ p {
 .vertical-menu .list-menu li.active a {
   font-weight: bold;
   color: black;
+}
+@media (max-width: 992px) {
+  .vertical-menu {
+    display: block;
+  }
+  .vertical-menu .list-menu {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+  }
 }
 .vertical-menu .filter-btn .btn {
   display: flex;
@@ -12562,14 +12580,6 @@ p {
   justify-content: center;
   margin-bottom: 86px;
 }
-@media (max-width: 992px) {
-  .header-collector {
-    display: block;
-  }
-  .header-collector .profile-img {
-    margin-bottom: 2rem;
-  }
-}
 .header-collector .profile-img {
   margin-right: 53px;
 }
@@ -12596,6 +12606,22 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+@media (max-width: 992px) {
+  .header-collector {
+    display: block;
+  }
+  .header-collector .profile-img {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 0;
+  }
+  .header-collector .profile-info .profile-name {
+    justify-content: center;
+  }
+  .header-collector .profile-info .profile-follow {
+    text-align: center;
+  }
 }
 
 .collector-about .prop {
@@ -13119,6 +13145,9 @@ p {
 .upcoming h4, .upcoming .h4 {
   margin-bottom: 2rem;
 }
+.upcoming .filter-mobile {
+  display: none;
+}
 .upcoming .item {
   align-items: center;
   margin-bottom: 2rem;
@@ -13147,6 +13176,26 @@ p {
 .upcoming .item .actions .btn-gray {
   background: rgba(163, 163, 163, 0.15);
   padding: 12px;
+}
+@media (max-width: 992px) {
+  .upcoming h4, .upcoming .h4 {
+    margin-bottom: 1rem;
+  }
+  .upcoming .filter-events-section {
+    display: none;
+  }
+  .upcoming .filter-mobile {
+    display: block;
+  }
+  .upcoming .filter {
+    margin-bottom: 1rem;
+  }
+  .upcoming .filter-content {
+    margin-top: 0;
+  }
+  .upcoming .item .event-img {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -13254,6 +13303,13 @@ p {
 }
 .event-detail-page .ed-content .description .images img {
   margin-right: 11px;
+}
+@media (max-width: 992px) {
+  .event-detail-page .ed-content .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 .event-detail-page .ed-content .info .item {
   margin-bottom: 3rem;

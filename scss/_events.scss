@@ -84,6 +84,10 @@
         margin-bottom: 2rem;
     }
 
+    .filter-mobile {
+        display: none;
+    }
+
     .item {
         align-items: center;
         margin-bottom: 2rem;
@@ -118,6 +122,37 @@
             }
         }
     }
+
+
+    @include breakpoint(untilTablet) {
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        .filter-events-section {
+            display: none;
+        }
+
+        .filter-mobile {
+            display: block;
+        }
+
+        .filter {
+            margin-bottom: 1rem;
+        }
+
+        .filter-content {
+            margin-top: 0;
+        }
+
+        .item {
+            .event-img {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
 }
 
 .event-detail-page {
@@ -255,6 +290,12 @@
         }
 
         .info {
+            @include breakpoint(untilTablet) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
             .item {
                 margin-bottom: 3rem;
 

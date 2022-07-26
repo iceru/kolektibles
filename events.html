@@ -47,7 +47,78 @@
         <div class="upcoming">
             <div class="row">
                 <div class="col-12 col-lg-9">
-                    <h4>Upcoming Events</h4>
+                    <div class="upcoming-title">
+                        <h4>Upcoming Events</h4>
+                        <div class="filter filter-mobile">
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <img src="/images/icons/Filter.svg" alt="">
+                                Filter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse filter-content" id="collapseExample">
+                        <div class="filter-events">
+                            <div class="section">
+                                <div class="filter-title">
+                                    Filter
+                                </div>
+                                <input type="text" class="form-control" placeholder="Category, theme, etc.">
+                            </div>
+                            <div class="section">
+                                <div class="filter-title">
+                                    Categories
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Statue" id="statue">
+                                    <label class="form-check-label" for="statue">
+                                        Statue
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="gundam" id="gundam">
+                                    <label class="form-check-label" for="gundam">
+                                        Gundam
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="filter-title">
+                                    Date
+                                </div>
+                                <input type="text" class="form-control" placeholder="Select date">
+                            </div>
+                            <div class="section">
+                                <div class="filter-title">
+                                    Event Type
+                                </div>
+                                <select class="form-control mb-3" name="" id="">
+                                    <option selected>Public</option>
+                                    <option>Private</option>
+                                </select>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Online Events
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Single date & time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="">
+                                    <label class="form-check-label" for="">
+                                        Several days
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary">Filter</button>
+                        </div>
+                    </div>
                     <div class="row item">
                         <div class="col-12 col-lg-6">
                             <img class="event-img" src="/images/events/event-1.png" alt="">
@@ -140,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 filter-events-section">
                     <div class="filter-events">
                         <div class="section">
                             <div class="filter-title">

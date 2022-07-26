@@ -13,6 +13,13 @@ h2 {
     line-height: 145%;
 }
 
+@include breakpoint(untilTablet) {
+    h2 {
+        font-size: 32px;
+        line-height: 46.4px;
+    }
+}
+
 h4 {
     font-size: 32px;
     line-height: 175%;
@@ -304,6 +311,7 @@ p {
     align-items: center;
     margin-bottom: 3rem;
 
+
     .list-menu {
         margin: 0;
         padding: 0;
@@ -325,6 +333,18 @@ p {
                     color: black;
                 }
             }
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        display: block;
+
+        .list-menu {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow: auto;
+            margin-bottom: .5rem;
+            padding-bottom: 1rem;
         }
     }
 
