@@ -52,19 +52,16 @@
             &.first {
                 background: linear-gradient(125.27deg, #FBD352 12.79%, #F9AF41 28.04%, #FFFA88 49.32%, #FBBF33 67.76%, #DC8A22 80.88%);
                 color: #BE6F10;
-                border: 2px solid rgba(255, 247, 133, 0.5);
             }
 
             &.second {
                 background: linear-gradient(125.27deg, #E0E3E2 12.79%, #9D9D9D 28.04%, #EDEDED 49.32%, #CBCBCB 67.76%, #A6A6A6 80.88%);
                 color: #71706C;
-                border: 2px solid rgba(244, 244, 244, 0.5);
             }
 
             &.third {
                 background: linear-gradient(125.27deg, #FBC956 12.79%, #CB6327 28.04%, #F3C97F 49.32%, #DD863E 67.76%, #BB6328 80.88%);
                 color: #8C3712;
-                border: 2px solid rgba(249, 216, 156, 0.5);
             }
         }
 
@@ -160,6 +157,10 @@
                         object-fit: cover;
                         border-radius: 50%;
                     }
+                }
+
+                .btn {
+                    padding: 8px 24px;
                 }
 
                 .item-title {

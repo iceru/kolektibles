@@ -462,3 +462,43 @@ p {
         color: $success;
     }
 }
+
+
+.search-bar {
+    position: relative;
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.btn-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+
+    .btn:first-child {
+        margin-right: 1rem;
+    }
+
+    &.btn-bold {
+        .btn {
+            font-weight: bold;
+        }
+    }
+}
+
+.form-check.success {
+    .form-check-input:checked {
+        background-color: $success;
+        border-color: $success;
+    }
+}

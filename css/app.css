@@ -11329,6 +11329,37 @@ p {
   color: #00AA5B;
 }
 
+.search-bar {
+  position: relative;
+}
+.search-bar .form-control {
+  border-radius: 10px;
+}
+.search-bar .search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.btn-groups .btn:first-child {
+  margin-right: 1rem;
+}
+.btn-groups.btn-bold .btn {
+  font-weight: bold;
+}
+
+.form-check.success .form-check-input:checked {
+  background-color: #00AA5B;
+  border-color: #00AA5B;
+}
+
 .navbar {
   padding: 0;
   margin-bottom: 2rem;
@@ -12129,12 +12160,12 @@ p {
   margin-bottom: 44px;
 }
 
-.collection-sub-categories-detail .filter-content {
+.filter-content {
   padding-bottom: 45px;
   margin-top: -16px;
 }
 @media (max-width: 992px) {
-  .collection-sub-categories-detail .filter-content .col-12 {
+  .filter-content .col-12 {
     margin-bottom: 1rem;
   }
 }
@@ -12435,14 +12466,8 @@ p {
 .collection-bid .last-bid .tnc a {
   color: #00AA5B;
 }
-.collection-bid .last-bid .btn-groups {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
 .collection-bid .last-bid .btn-groups .btn {
   width: 100%;
-  font-weight: bold;
 }
 
 .collectors {
@@ -12640,10 +12665,17 @@ p {
   line-height: 145%;
   margin-bottom: 1.5rem;
 }
+.search-results.none > .container {
+  min-height: 50vh;
+}
 .search-results .actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
+}
+.search-results .actions .filter .btn {
+  padding: 14px 22px;
 }
 .search-results .actions .category {
   display: flex;
@@ -12652,6 +12684,9 @@ p {
   display: block;
   margin-right: 3rem;
   font-weight: 500;
+}
+.search-results .collection .item-user .user {
+  font-weight: bold;
 }
 
 .faq .faq-header {
@@ -12817,15 +12852,6 @@ p {
   margin-bottom: 24px;
   width: 100%;
 }
-.add-collection .btn-groups {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.add-collection .btn-groups .btn {
-  margin: 0 1rem;
-  font-weight: bold;
-}
 .add-collection h4, .add-collection .h4 {
   margin-bottom: 2rem;
   color: black;
@@ -12909,6 +12935,105 @@ p {
   margin-right: 12px;
   height: 24px;
   width: 24px;
+}
+
+.switch-ownership-page.confirmation .switch-ownership .so-img {
+  position: relative;
+  display: block;
+}
+.switch-ownership-page.confirmation .switch-ownership .so-img .so-item .user {
+  left: auto;
+  right: -30px;
+}
+.switch-ownership-page.confirmation .switch-ownership .so-img .bg-img {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.switch-ownership-page.confirmation .switch-ownership p span {
+  font-weight: bold;
+}
+.switch-ownership-page .switch-ownership {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .switch-ownership-page .switch-ownership {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+}
+.switch-ownership-page .switch-ownership h5.so-title, .switch-ownership-page .switch-ownership .so-title.h5 {
+  color: #A6A6A6;
+  font-weight: 500;
+  margin-bottom: 52px;
+}
+.switch-ownership-page .switch-ownership .arrow {
+  margin: 0 1.5rem;
+}
+.switch-ownership-page .switch-ownership .so-img {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item {
+  position: relative;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item .user {
+  position: absolute;
+  left: -30px;
+  top: 50px;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item .user img {
+  width: 64px;
+  height: 64px;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item .item-img {
+  margin-bottom: 1rem;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item .item-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 1rem;
+}
+.switch-ownership-page .switch-ownership .so-img .so-item .item-name {
+  color: #A6A6A6;
+  font-size: 12px;
+  width: 160px;
+  font-weight: bold;
+}
+.switch-ownership-page .switch-ownership .so-img .user-accept img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+.switch-ownership-page .switch-ownership .so-img .user-accept .user-name {
+  color: #A6A6A6;
+  font-weight: bold;
+  font-size: 14px;
+}
+.switch-ownership-page .switch-ownership a {
+  color: #00AA5B;
+}
+.switch-ownership-page .switch-ownership .so-content h5, .switch-ownership-page .switch-ownership .so-content .h5,
+.switch-ownership-page .switch-ownership .so-content h4,
+.switch-ownership-page .switch-ownership .so-content .h4 {
+  margin-bottom: 12px;
+}
+.switch-ownership-page .switch-ownership .so-content p {
+  margin-bottom: 2rem;
+}
+.switch-ownership-page .switch-ownership .form-check {
+  margin-bottom: 2rem;
 }
 
 .events-page .cta-events {
@@ -13312,17 +13437,14 @@ p {
 .top-col .section .rank.first {
   background: linear-gradient(125.27deg, #FBD352 12.79%, #F9AF41 28.04%, #FFFA88 49.32%, #FBBF33 67.76%, #DC8A22 80.88%);
   color: #BE6F10;
-  border: 2px solid rgba(255, 247, 133, 0.5);
 }
 .top-col .section .rank.second {
   background: linear-gradient(125.27deg, #E0E3E2 12.79%, #9D9D9D 28.04%, #EDEDED 49.32%, #CBCBCB 67.76%, #A6A6A6 80.88%);
   color: #71706C;
-  border: 2px solid rgba(244, 244, 244, 0.5);
 }
 .top-col .section .rank.third {
   background: linear-gradient(125.27deg, #FBC956 12.79%, #CB6327 28.04%, #F3C97F 49.32%, #DD863E 67.76%, #BB6328 80.88%);
   color: #8C3712;
-  border: 2px solid rgba(249, 216, 156, 0.5);
 }
 .top-col .section .collections {
   display: flex;
@@ -13404,6 +13526,9 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+.top-col .section .collectors .item .btn {
+  padding: 8px 24px;
 }
 .top-col .section .collectors .item .item-title {
   margin-bottom: 0.5rem;
@@ -13512,14 +13637,6 @@ p {
   color: #5C5C5C;
   margin-bottom: 0.5rem;
 }
-.contact-page .form-message .btn-groups {
-  display: flex;
-  align-items: center;
-}
-.contact-page .form-message .btn-groups .btn {
-  margin-right: 1.5rem;
-  font-weight: 700;
-}
 
 .si-row {
   margin-bottom: 100px;
@@ -13544,12 +13661,6 @@ p {
 .si-content h4, .si-content .h4 {
   text-align: center;
   margin-bottom: 2rem;
-}
-.si-content .btn-groups {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 28px;
 }
 .si-content .btn-groups .btn {
   padding: 16px 60px;

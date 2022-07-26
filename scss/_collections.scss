@@ -77,20 +77,16 @@
     }
 }
 
-.collection-sub-categories-detail {
-    .filter-content {
-        padding-bottom: 45px;
-        margin-top: -16px;
+.filter-content {
+    padding-bottom: 45px;
+    margin-top: -16px;
 
-        @include breakpoint(untilTablet) {
-            .col-12 {
-                margin-bottom: 1rem;
-            }
+    @include breakpoint(untilTablet) {
+        .col-12 {
+            margin-bottom: 1rem;
         }
     }
 }
-
-
 
 .collection-detail {
     .header-page {
@@ -458,13 +454,8 @@
         }
 
         .btn-groups {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-
             .btn {
                 width: 100%;
-                font-weight: bold;
             }
         }
     }
