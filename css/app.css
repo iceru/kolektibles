@@ -12940,6 +12940,7 @@ p {
 .switch-ownership-page.confirmation .switch-ownership .so-img {
   position: relative;
   display: block;
+  margin-bottom: 50px;
 }
 .switch-ownership-page.confirmation .switch-ownership .so-img .so-item .user {
   left: auto;
