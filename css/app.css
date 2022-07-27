@@ -11384,9 +11384,23 @@ p {
   font-weight: bold;
 }
 
+.form-check.success a {
+  color: #00AA5B;
+}
 .form-check.success .form-check-input:checked {
   background-color: #00AA5B;
   border-color: #00AA5B;
+}
+
+.nav-pills .nav-link {
+  color: #576584;
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  font-weight: bold;
+  color: #3C3C3C;
 }
 
 .navbar {
@@ -13547,6 +13561,24 @@ p {
 
 .collectors-invite-modal h6, .collectors-invite-modal .h6 {
   font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.collectors-invite-modal h5, .collectors-invite-modal .h5 {
+  margin-bottom: 2rem;
+}
+.collectors-invite-modal .modal-footer {
+  justify-content: flex-start;
+}
+.collectors-invite-modal .modal-footer .btn {
+  font-weight: bold;
+}
+.collectors-invite-modal .collectors-invite {
+  max-height: 150px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #B5BED0;
+  margin-bottom: 2rem;
+  overflow: auto;
 }
 .collectors-invite-modal .collectors-invite .ci-item {
   margin-bottom: 24px;
@@ -13554,19 +13586,46 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+.collectors-invite-modal .collectors-invite .ci-item:last-child {
+  margin-bottom: 0;
+}
 .collectors-invite-modal .collectors-invite .ci-item .ci-user {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 .collectors-invite-modal .collectors-invite .ci-item .ci-user img {
   margin-right: 1rem;
   width: 36px;
   height: 36px;
 }
+.collectors-invite-modal .collectors-invite .ci-item .ci-btn {
+  display: flex;
+  align-items: center;
+}
+.collectors-invite-modal .collectors-invite .ci-item .ci-btn .btn {
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+.collectors-invite-modal .collectors-invite .ci-item .ci-btn .added {
+  margin-right: 1rem;
+  display: flex;
+  color: #93A1BE;
+}
+.collectors-invite-modal .collectors-invite .ci-item .ci-btn .added .img {
+  margin-right: 0.5rem;
+}
 
 .search {
   position: relative;
   margin-bottom: 24px;
+}
+.search.search-email .search-img {
+  right: auto;
+  left: 1rem;
+}
+.search.search-email .form-control {
+  padding-left: 3rem;
 }
 .search .search-img {
   position: absolute;

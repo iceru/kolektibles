@@ -527,8 +527,26 @@ p {
 }
 
 .form-check.success {
+    a {
+        color: $success;
+    }
+
     .form-check-input:checked {
         background-color: $success;
         border-color: $success;
+    }
+}
+
+.nav-pills {
+    .nav-link {
+        color: #576584;
+        padding-left: 0;
+        padding-right: 1.5rem;
+
+        &.active {
+            background-color: transparent;
+            font-weight: bold;
+            color: #3C3C3C;
+        }
     }
 }

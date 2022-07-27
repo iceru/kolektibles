@@ -545,23 +545,68 @@
 .collectors-invite-modal {
     h6 {
         font-weight: 500;
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    h5 {
+        margin-bottom: 2rem;
+    }
+
+    .modal-footer {
+        justify-content: flex-start;
+
+        .btn {
+            font-weight: bold;
+        }
     }
 
     .collectors-invite {
+        max-height: 150px;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #B5BED0;
+        margin-bottom: 2rem;
+        overflow: auto;
+
         .ci-item {
             margin-bottom: 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             .ci-user {
                 display: flex;
                 align-items: center;
+                font-weight: bold;
 
                 img {
                     margin-right: 1rem;
                     width: 36px;
                     height: 36px;
+                }
+            }
+
+            .ci-btn {
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    border-radius: 12px;
+                    padding: .5rem;
+                }
+
+                .added {
+                    margin-right: 1rem;
+                    display: flex;
+                    color: #93A1BE;
+
+                    .img {
+                        margin-right: .5rem;
+                    }
                 }
             }
         }
@@ -571,6 +616,17 @@
 .search {
     position: relative;
     margin-bottom: 24px;
+
+    &.search-email {
+        .search-img {
+            right: auto;
+            left: 1rem;
+        }
+
+        .form-control {
+            padding-left: 3rem;
+        }
+    }
 
     .search-img {
         position: absolute;
