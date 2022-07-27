@@ -95,6 +95,22 @@
         }
     }
 
+    @include breakpoint(untilTablet) {
+        .faq-header {
+            background-color: #ECF2FF;
+            color: #2D2D2D;
+
+            h5 {
+                color: $success;
+            }
+        }
+
+        .search-bar {
+            width: 85%;
+        }
+    }
+
+
     .accordion {
         margin-bottom: 100px;
 

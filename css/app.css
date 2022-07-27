@@ -12774,6 +12774,18 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 992px) {
+  .faq .faq-header {
+    background-color: #ECF2FF;
+    color: #2D2D2D;
+  }
+  .faq .faq-header h5, .faq .faq-header .h5 {
+    color: #00AA5B;
+  }
+  .faq .search-bar {
+    width: 85%;
+  }
+}
 .faq .accordion {
   margin-bottom: 100px;
 }
@@ -13863,6 +13875,11 @@ p {
   border-radius: 1rem;
 }
 
+@media (max-width: 992px) {
+  .si-img {
+    display: none;
+  }
+}
 .si-content {
   margin-top: 2rem;
 }

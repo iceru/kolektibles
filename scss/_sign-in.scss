@@ -18,6 +18,12 @@
     }
 }
 
+@include breakpoint(untilTablet) {
+    .si-img {
+        display: none;
+    }
+}
+
 .si-content {
     margin-top: 2rem;
 
