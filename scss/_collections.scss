@@ -16,7 +16,7 @@
             }
         }
 
-        @include breakpoint(untilTablet) {
+        @include breakpoint(mobileonly) {
             .counts {
                 display: flex;
             }
@@ -49,9 +49,17 @@
             h2 {
                 margin-bottom: 2rem;
             }
+
+            .img {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
-        @include breakpoint(untilTablet) {
+        @include breakpoint(mobileonly) {
             .container {
                 display: block;
 

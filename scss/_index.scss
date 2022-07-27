@@ -237,7 +237,7 @@
         }
     }
 
-    @include breakpoint(untilTablet) {
+    @include breakpoint(mobileonly) {
 
         .counts {
             display: none;

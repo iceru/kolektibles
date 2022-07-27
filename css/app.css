@@ -11939,7 +11939,7 @@ p {
 .categories .item .cat-info p {
   display: block;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .categories .counts {
     display: none;
   }
@@ -12148,7 +12148,7 @@ p {
   display: block;
   text-align: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .collection-categories .categories .counts {
     display: flex;
   }
@@ -12176,7 +12176,13 @@ p {
 .collection-categories .detail-category .container h2, .collection-categories .detail-category .container .h2 {
   margin-bottom: 2rem;
 }
-@media (max-width: 992px) {
+.collection-categories .detail-category .container .img {
+  width: 40%;
+}
+.collection-categories .detail-category .container .img img {
+  width: 100%;
+}
+@media (max-width: 576px) {
   .collection-categories .detail-category .container {
     display: block;
   }
