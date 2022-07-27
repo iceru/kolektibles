@@ -162,10 +162,64 @@
                 <button type="button" class="btn btn-outline-light">Archive</button>
             </div>
             <div class="switch">
-                <button type="button" class="btn btn-outline-light">Switch ownership</button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#selectCollector">Switch ownership</button>
             </div>
         </div>
     </div>
+
+    <!-- Modal Select Collector -->
+    <div class="modal fade" id="selectCollector" tabindex="-1" role="dialog" aria-labelledby="selectCollectorTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg collectors-invite-modal select-collector" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5>Select Collector</h5>
+                    <div class="search">
+                        <input type="text" class="form-control" placeholder="Search for collector">
+                        <div class="search-img">
+                            <img src="/images/icons/Search.svg" alt="">
+                        </div>
+                    </div>
+                    <h6>Collectors</h6>
+                    <div class="collectors-invite">
+                        <div class="ci-item">
+                            <div class="ci-user">
+                                <img src="/images/user/user-3.png" alt="">
+                                Frans Sanjaya
+                            </div>
+
+                            <div class="ci-btn">
+                                <button type="button" class="btn btn-blue">Select</button>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-user">
+                                <img src="/images/user/user-2.png" alt="">
+                                Winson Wijaya
+                            </div>
+
+                            <div class="ci-btn">
+                                <button type="button" class="btn btn-blue">Select</button>
+                            </div>
+                        </div>
+                        <div class="ci-item">
+                            <div class="ci-user">
+                                <img src="/images/user/user-4.png" alt="">
+                                Winson Wijaya
+                            </div>
+
+                            <div class="ci-btn">
+                                <button type="button" class="btn btn-blue">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer-index" data-includeHTML="components/footer.html">
     </footer>
