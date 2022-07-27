@@ -13086,8 +13086,22 @@ p {
 .switch-ownership-page .switch-ownership .so-content p {
   margin-bottom: 2rem;
 }
+.switch-ownership-page .switch-ownership .btn-secondary {
+  color: #01143A;
+}
 .switch-ownership-page .switch-ownership .form-check {
   margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .switch-ownership-page .switch-ownership .arrow {
+    margin: 0 1rem;
+  }
+  .switch-ownership-page .switch-ownership .arrow img {
+    width: 20px;
+  }
+  .switch-ownership-page .switch-ownership .so-img .so-item .user {
+    left: -20px;
+  }
 }
 
 .events-page .cta-events {
@@ -13731,6 +13745,18 @@ p {
 .about-page .about-header .about-img img {
   width: 100%;
 }
+@media (max-width: 992px) {
+  .about-page .about-header p {
+    margin-bottom: 98px;
+    margin-top: 0;
+  }
+  .about-page .about-header .col-lg-6 {
+    margin-bottom: 2rem;
+  }
+  .about-page .benefits .item {
+    margin-bottom: 3rem;
+  }
+}
 .about-page .benefits {
   margin-bottom: 92px;
 }
@@ -13773,6 +13799,11 @@ p {
 }
 .contact-page .contact-header h5, .contact-page .contact-header .h5 {
   font-weight: 500;
+}
+@media (max-width: 992px) {
+  .contact-page .contact-content .content {
+    margin-bottom: 4rem;
+  }
 }
 .contact-page .content h2, .contact-page .content .h2 {
   margin-bottom: 2rem;

@@ -24,6 +24,25 @@
         }
     }
 
+    @include breakpoint(untilTablet) {
+        .about-header {
+            p {
+                margin-bottom: 98px;
+                margin-top: 0;
+            }
+
+            .col-lg-6 {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .benefits {
+            .item {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
     .benefits {
         margin-bottom: 92px;
 
@@ -77,6 +96,15 @@
 
         h5 {
             font-weight: 500;
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+
+        .contact-content {
+            .content {
+                margin-bottom: 4rem;
+            }
         }
     }
 

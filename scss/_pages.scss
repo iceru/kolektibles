@@ -500,8 +500,30 @@
             }
         }
 
+        .btn-secondary {
+            color: $primary;
+        }
+
         .form-check {
             margin-bottom: 2rem;
+        }
+
+        @include breakpoint(untilTablet) {
+            .arrow {
+                margin: 0 1rem;
+
+                img {
+                    width: 20px
+                }
+            }
+
+            .so-img {
+                .so-item {
+                    .user {
+                        left: -20px;
+                    }
+                }
+            }
         }
     }
 }
