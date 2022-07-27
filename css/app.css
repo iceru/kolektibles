@@ -11346,6 +11346,14 @@ p {
   cursor: pointer;
   margin-bottom: 4rem;
 }
+@media (max-width: 992px) {
+  .add-img-label {
+    padding: 4rem;
+  }
+  .add-img-label > div {
+    text-align: center;
+  }
+}
 .add-img-label span {
   color: #00AA5B;
 }
@@ -13285,6 +13293,11 @@ p {
   margin-bottom: 4rem;
   border-bottom: 1px solid #D0D0D0;
 }
+@media (max-width: 992px) {
+  .event-detail-page .ed-content {
+    margin-bottom: 1.5rem;
+  }
+}
 .event-detail-page .ed-content .description {
   margin-bottom: 80px;
 }
@@ -13303,6 +13316,14 @@ p {
 }
 .event-detail-page .ed-content .description .images img {
   margin-right: 11px;
+}
+@media (max-width: 992px) {
+  .event-detail-page .ed-content .description .images {
+    flex-wrap: wrap;
+  }
+  .event-detail-page .ed-content .description .images img {
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 992px) {
   .event-detail-page .ed-content .info {
@@ -13334,6 +13355,14 @@ p {
   background-color: #F8FCFE;
   border-radius: 16px;
   margin-bottom: 66px;
+}
+@media (max-width: 992px) {
+  .event-detail-page .invite-list {
+    padding: 2rem;
+  }
+  .event-detail-page .invite-list .il-button .btn {
+    padding: 14px;
+  }
 }
 .event-detail-page .invite-list .il-text {
   display: flex;
@@ -13374,6 +13403,27 @@ p {
      object-fit: contain;
   border-radius: 6px;
 }
+@media (max-width: 992px) {
+  .event-detail-page .ed-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .event-detail-page .ed-footer .back {
+    order: 2;
+  }
+  .event-detail-page .ed-footer .next {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+  .event-detail-page .ed-footer .next .text {
+    order: 2;
+    text-align: left;
+  }
+  .event-detail-page .ed-footer .next img {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
 
 .people-join .pj-users {
   max-height: 300px;
@@ -13407,10 +13457,29 @@ p {
 .people-join .pj-item .btn.btn-outline-blue {
   margin-right: 12px;
 }
+@media (max-width: 992px) {
+  .people-join .pj-item .pj-user {
+    width: 45%;
+    margin-right: 0.5rem;
+  }
+  .people-join .pj-item .pj-user .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .people-join .pj-item .btn {
+    padding: 6px;
+  }
+  .people-join .pj-item .btn.btn-outline-blue {
+    margin-right: 6px;
+  }
+}
 
-.add-event-page .new-event {
-  width: 70%;
-  margin: auto;
+@media (min-width: 1200px) {
+  .add-event-page .new-event {
+    width: 70%;
+    margin: auto;
+  }
 }
 .add-event-page .new-event > h4, .add-event-page .new-event > .h4 {
   text-align: center;
@@ -13428,6 +13497,18 @@ p {
 }
 .add-event-page .form-group .images img:not(:last-child) {
   margin-right: 1.5rem;
+}
+@media (max-width: 992px) {
+  .add-event-page .form-group .images {
+    flex-wrap: wrap;
+  }
+  .add-event-page .form-group .images img {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  .add-event-page .form-group .images img:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 .add-event-page .btn-groups {
   display: flex;
@@ -13887,6 +13968,11 @@ p {
 }
 .collection-value .cv-year .year {
   font-size: 18px;
+}
+@media (max-width: 992px) {
+  .collection-value .cv-year {
+    text-align: right;
+  }
 }
 
 .saved-collections-page .collection .item-user .user {

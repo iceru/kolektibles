@@ -266,6 +266,10 @@
         margin-bottom: 4rem;
         border-bottom: 1px solid #D0D0D0;
 
+        @include breakpoint(untilTablet) {
+            margin-bottom: 1.5rem;
+        }
+
         .description {
             margin-bottom: 80px;
 
@@ -285,6 +289,14 @@
 
                 img {
                     margin-right: 11px;
+                }
+
+                @include breakpoint(untilTablet) {
+                    flex-wrap: wrap;
+
+                    img {
+                        margin-bottom: 1rem;
+                    }
                 }
             }
         }
@@ -325,6 +337,16 @@
         background-color: #F8FCFE;
         border-radius: 16px;
         margin-bottom: 66px;
+
+        @include breakpoint(untilTablet) {
+            padding: 2rem;
+
+            .il-button {
+                .btn {
+                    padding: 14px;
+                }
+            }
+        }
 
         .il-text {
             display: flex;
@@ -371,6 +393,30 @@
                 border-radius: 6px;
             }
         }
+
+        @include breakpoint(untilTablet) {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .back {
+                order: 2;
+            }
+
+            .next {
+                order: 1;
+                margin-bottom: 3rem;
+
+                .text {
+                    order: 2;
+                    text-align: left;
+                }
+
+                img {
+                    margin-left: 0;
+                    margin-right: 1rem;
+                }
+            }
+        }
     }
 }
 
@@ -414,20 +460,43 @@
                 margin-right: 12px;
             }
         }
+
+        @include breakpoint(untilTablet) {
+            .pj-user {
+                width: 45%;
+                margin-right: .5rem;
+
+                .text {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .btn {
+                padding: 6px;
+
+                &.btn-outline-blue {
+                    margin-right: 6px;
+                }
+
+            }
+        }
     }
 }
 
 .add-event-page {
-    .new-event {
-        width: 70%;
-        margin: auto;
-
-        >h4 {
-            text-align: center;
-            margin-bottom: 50px;
+    @include breakpoint(desktop) {
+        .new-event {
+            width: 70%;
+            margin: auto;
         }
     }
 
+    .new-event>h4 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 
     .form-group {
 
@@ -444,6 +513,19 @@
 
                 &:not(:last-child) {
                     margin-right: 1.5rem;
+                }
+            }
+
+            @include breakpoint(untilTablet) {
+                flex-wrap: wrap;
+
+                img {
+                    width: 45%;
+                    margin-bottom: 1rem;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
                 }
             }
         }

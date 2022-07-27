@@ -480,6 +480,14 @@ p {
     cursor: pointer;
     margin-bottom: 4rem;
 
+    @include breakpoint(untilTablet) {
+        padding: 4rem;
+
+        >div {
+            text-align: center;
+        }
+    }
+
     span {
         color: $success;
     }
