@@ -63,7 +63,7 @@ p {
     align-items: center;
     margin-bottom: 28px;
 
-    @include breakpoint(untilTablet) {
+    @include breakpoint(mobileonly) {
         display: block;
 
         .breadcrumbs {

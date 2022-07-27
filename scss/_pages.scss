@@ -46,7 +46,7 @@
         }
     }
 
-    @include breakpoint(untilTablet) {
+    @include breakpoint(mobileonly) {
         .actions-search {
             display: block;
 

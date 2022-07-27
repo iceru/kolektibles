@@ -10938,6 +10938,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 768px) {
+  .container-md,
+.container-sm,
+.container {
+    max-width: 768px;
+  }
+}
 h1, .h1,
 h2,
 .h2,
@@ -11006,7 +11013,7 @@ p {
   align-items: center;
   margin-bottom: 28px;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .header-page {
     display: block;
   }
@@ -11744,21 +11751,6 @@ p {
   position: relative;
   color: #01143A;
 }
-@media (min-width: 1200px) {
-  .cta .container {
-    padding: 69px 100px;
-    padding-bottom: 250px;
-    margin-bottom: 271px;
-  }
-}
-@media (max-width: 992px) {
-  .cta .container {
-    border-radius: 0;
-    padding: 76px 1rem;
-    padding-bottom: 220px;
-    margin-bottom: 74px;
-  }
-}
 .cta .container h1, .cta .container .h1 {
   font-size: 60px;
   padding-right: 2rem;
@@ -11769,14 +11761,6 @@ p {
   .cta .container h1, .cta .container .h1 {
     font-size: 64px;
     line-height: 94.25px;
-  }
-}
-@media (max-width: 992px) {
-  .cta .container h1, .cta .container .h1 {
-    font-size: 48px;
-    line-height: 145%;
-    letter-spacing: -0.002em;
-    padding-right: 0;
   }
 }
 .cta .container p {
@@ -11806,7 +11790,49 @@ p {
 .cta .container .image-mobile {
   display: none;
 }
+@media (min-width: 1200px) {
+  .cta .container {
+    padding: 69px 100px;
+    padding-bottom: 250px;
+    margin-bottom: 271px;
+  }
+}
 @media (max-width: 992px) {
+  .cta .container {
+    border-radius: 0;
+    margin: 0;
+    max-width: 100%;
+    padding: 4rem 2rem;
+    padding-bottom: 200px;
+    margin-bottom: 120px;
+  }
+  .cta .container h1, .cta .container .h1 {
+    font-size: 48px;
+    line-height: 145%;
+    letter-spacing: -0.002em;
+    padding-right: 0;
+    width: 50%;
+  }
+  .cta .container p {
+    width: 70%;
+  }
+  .cta .container .image-2 {
+    bottom: -120px;
+  }
+  .cta .container .image-2 img {
+    width: 112%;
+  }
+  .cta .container .image-1 img {
+    width: 62vw;
+  }
+}
+@media (max-width: 576px) {
+  .cta .container {
+    border-radius: 0;
+    padding: 76px 1rem;
+    padding-bottom: 220px;
+    margin-bottom: 74px;
+  }
   .cta .container .image-1,
 .cta .container .image-line,
 .cta .container .image-2 {
@@ -11868,12 +11894,16 @@ p {
   display: none;
 }
 @media (max-width: 992px) {
+  .search .container .popular {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
   .search .container {
     padding: 2rem;
     margin-bottom: 2rem;
   }
-  .search .container .popular,
-.search .container .tops {
+  .search .container .tops {
     display: none;
   }
   .search .container .search-bar .form-control {
@@ -12753,7 +12783,7 @@ p {
 .search-results .collection .item-user .user {
   font-weight: bold;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .search-results .actions-search {
     display: block;
   }
@@ -13797,6 +13827,7 @@ p {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 18px;
+  white-space: normal;
 }
 .top-col .section .collections .item .item-info .item-stats {
   display: flex;
@@ -13856,9 +13887,26 @@ p {
 .top-col .section .collectors .item .item-title {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  white-space: normal;
 }
 .top-col .section .collectors .item .item-count {
   margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .top-col .section .category .cat-img img {
+    max-width: 150px;
+  }
+  .top-col .section .collections,
+.top-col .section .collectors {
+    white-space: nowrap;
+    overflow: auto;
+    flex-wrap: nowrap;
+    margin-right: -1.5rem;
+  }
+  .top-col .section .collections .item,
+.top-col .section .collectors .item {
+    width: 33%;
+  }
 }
 @media (max-width: 576px) {
   .top-col .section .category {
@@ -13867,17 +13915,10 @@ p {
   .top-col .section .collections,
 .top-col .section .collectors {
     margin-left: 0;
-    white-space: nowrap;
-    overflow: auto;
-    flex-wrap: nowrap;
   }
   .top-col .section .collections .item,
 .top-col .section .collectors .item {
     width: 50%;
-  }
-  .top-col .section .collections .item .item-title,
-.top-col .section .collectors .item .item-title {
-    white-space: normal;
   }
 }
 

@@ -1,0 +1,8 @@
+@include breakpoint(tablet) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 768px;
+    }
+}

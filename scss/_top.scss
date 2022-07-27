@@ -95,6 +95,7 @@
                         font-weight: 700;
                         font-size: 14px;
                         margin-bottom: 18px;
+                        white-space: normal;
                     }
 
                     .item-stats {
@@ -166,6 +167,7 @@
                 .item-title {
                     margin-bottom: .5rem;
                     font-weight: bold;
+                    white-space: normal;
                 }
 
                 .item-count {
@@ -175,6 +177,28 @@
         }
 
 
+        @include breakpoint(untilTablet) {
+            .category {
+
+                .cat-img {
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
+
+            .collections,
+            .collectors {
+                white-space: nowrap;
+                overflow: auto;
+                flex-wrap: nowrap;
+                margin-right: -1.5rem;
+
+                .item {
+                    width: 33%;
+                }
+            }
+        }
 
         @include breakpoint(mobileonly) {
             .category {
@@ -184,16 +208,9 @@
             .collections,
             .collectors {
                 margin-left: 0;
-                white-space: nowrap;
-                overflow: auto;
-                flex-wrap: nowrap;
 
                 .item {
                     width: 50%;
-
-                    .item-title {
-                        white-space: normal;
-                    }
                 }
             }
         }
