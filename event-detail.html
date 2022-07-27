@@ -131,9 +131,10 @@
                             <img src="/images/events/event-detail-1.png" alt="">
                             <img src="/images/events/event-detail-2.png" alt="">
                         </div>
-                        <button type="button" class="btn btn-secondary">Join event</button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#joinEvent">Join event</button>
                     </div>
-                    <div class="col-12 col-lg-1"></div>
+                    <div class="col-12 col-lg-1 order-2"></div>
                     <div class="col-12 col-lg-2 info order-1 order-lg-3">
                         <div class="item">
                             <div class="info-title">
@@ -247,7 +248,57 @@
             </div>
         </div>
 
-        <!-- Modal -->
+
+        <!-- Modal Join Event -->
+        <div class="modal fade" id="joinEvent" tabindex="-1" role="dialog" aria-labelledby="joinEventTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md modal-join-event" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="mje-title">
+                            Private Event
+                        </h5>
+                        <div class="mje-img">
+                            <div class="user">
+                                <img src="/images/user/user-2.png" alt="">
+                                <div class="user-name">
+                                    Anthony Salim
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img src="/images/arrow.png" alt="">
+                            </div>
+                            <div class="event-item">
+                                <img src="/images/events/event-1.png" alt="">
+                                <div class="event-name">
+                                    HELLOCTOBERFEST 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mje-content">
+                            <h5>Are you sure to join this private event?</h5>
+                            <p>This is a private event, you need to submit yourself and wait for the approval to join
+                                in.
+                                We'll send the approval status through your notification.</p>
+                        </div>
+                        <div class="form-check success">
+                            <input class="form-check-input" type="checkbox" value="" id="terms">
+                            <label class="form-check-label" for="terms">
+                                I have read <a href="#">terms</a>
+                            </label>
+                        </div>
+                        <div class="button-groups">
+                            <button type="button" class="btn btn-outline-light">No, Cancel</button>
+                            <button type="button" class="btn btn-secondary">Yes, send!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Collectors Invite -->
         <div class="modal fade collectors-invite-modal" id="modelId" tabindex="-1" role="dialog"
             aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-invite-people" role="document">

@@ -13616,6 +13616,77 @@ p {
   margin-right: 0.5rem;
 }
 
+.modal-join-event .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .modal-join-event .modal-body {
+    width: 90%;
+    margin: auto;
+  }
+}
+.modal-join-event .modal-body .mje-title {
+  color: #00AA5B;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.modal-join-event .modal-body .mje-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.modal-join-event .modal-body .mje-img .arrow {
+  margin: 0 1rem;
+}
+.modal-join-event .modal-body .mje-img .arrow img {
+  width: 90px;
+}
+.modal-join-event .modal-body .mje-img .user {
+  text-align: center;
+}
+.modal-join-event .modal-body .mje-img .user img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+.modal-join-event .modal-body .mje-img .user .user-name {
+  font-size: 14px;
+  color: #A6A6A6;
+  font-weight: 700;
+}
+.modal-join-event .modal-body .mje-img .event-item {
+  text-align: center;
+}
+.modal-join-event .modal-body .mje-img .event-item img {
+  max-height: 140px;
+  width: auto;
+  margin-bottom: 12px;
+}
+.modal-join-event .modal-body .mje-img .event-item .event-name {
+  color: #A6A6A6;
+  font-size: 12px;
+  font-weight: 700;
+}
+.modal-join-event .modal-body .mje-content {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.modal-join-event .modal-body .mje-content h5, .modal-join-event .modal-body .mje-content .h5 {
+  margin-bottom: 12px;
+}
+.modal-join-event .modal-body .button-groups {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.modal-join-event .modal-body .button-groups .btn:first-child {
+  margin-right: 1rem;
+}
+
 .search {
   position: relative;
   margin-bottom: 24px;
