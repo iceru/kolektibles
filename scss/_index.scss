@@ -359,6 +359,13 @@
         }
     }
 
+    .feature-img,
+    .value-img {
+        img {
+            width: 100%;
+        }
+    }
+
     .last-feature {
         p {
             width: 40%;

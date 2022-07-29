@@ -1,7 +1,81 @@
-.dark {
+[data-theme="dark"] {
+    .form-control {
+        background-color: #1A2336;
+        border-color: #626262;
+    }
+
+    .modal-content {
+        background-color: #000C25;
+    }
+
+    .navbar {
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background-color: $dark  !important;
+
+        .dropdown-menu.show {
+            background-color: #131313;
+            color: white;
+
+            .dropdown-item {
+                color: white;
+            }
+
+            .dropdown-divider {
+                border-color: #494949;
+            }
+        }
+
+        .menu-list {
+            ul {
+                li {
+                    color: white;
+
+                    a:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .actions {
+            .profile {
+                background-color: #01143A;
+                border-color: #4B4B4B;
+
+                .burger {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            .dropdown>a>img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
     .categories {
         .item {
             background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
+        }
+    }
+
+    .counts {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .search .container {
+        background-color: #152139 !important;
+
+        .form-select {
+            color: white;
+        }
+
+        .form-control {
+            background-color: #242F47;
+            border-color: #242F47;
+            color: white;
         }
     }
 
@@ -38,9 +112,99 @@
         }
     }
 
+    .collection-detail-content {
+        .cd-info {
+
+            .cd-title,
+            .cd-desc {
+                color: white;
+            }
+
+            .cd-stats {
+
+                .item,
+                .item span {
+                    color: white !important;
+                }
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+
+    .collections {
+        .collection {
+            background-color: #00091C;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+            .item-info {
+                border-color: #00091C;
+
+                .po {
+                    border: 1px solid $secondary;
+                }
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+
+                .item-title {
+                    .text {
+                        color: white;
+                    }
+                }
+
+                .stats {
+                    .item {
+                        color: white;
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .paginations {
         .current-page {
             color: white;
+        }
+
+        .pagination .page-item {
+            .page-link {
+                color: white;
+                background-color: transparent;
+            }
+
+            &.active,
+            &:hover {
+                .page-link {
+                    border-color: white;
+                }
+            }
+        }
+    }
+
+    .btn,
+    .search-icon {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .invite-list {
+        background-color: #121F39;
+    }
+
+    .ed-footer .back {
+        color: white;
+
+        img {
+            filter: brightness(0) invert(1);
         }
     }
 

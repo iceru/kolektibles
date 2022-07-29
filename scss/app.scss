@@ -26,7 +26,7 @@ html {
     font-family: 'Poppins', sans-serif;
     color: #3C3C3C;
 
-    &.dark {
+    &[data-theme="dark"] {
         color: white;
         background-color: $dark;
     }

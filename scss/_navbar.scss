@@ -2,33 +2,6 @@
     padding: 0;
     margin-bottom: 2rem;
 
-    &.bg-dark {
-        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-
-        .menu-list {
-            ul {
-                li {
-                    color: white;
-                }
-            }
-        }
-
-        .actions {
-            .profile {
-                background-color: #01143A;
-                border-color: #4B4B4B;
-
-                .burger {
-                    filter: brightness(0) invert(1);
-                }
-            }
-
-            .dropdown>a>img {
-                filter: brightness(0) invert(1);
-            }
-        }
-    }
-
     .menu-list {
         ul {
             list-style-type: none;
