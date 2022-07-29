@@ -290,7 +290,51 @@
                         </div>
                         <div class="button-groups">
                             <button type="button" class="btn btn-outline-light">No, Cancel</button>
-                            <button type="button" class="btn btn-secondary">Yes, send!</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#joinEventRejected">Yes, send!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Join Event Approved -->
+        <div class="modal fade" id="joinEventApproved" tabindex="-1" role="dialog" aria-labelledby="joinEventTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md modal-join-event-status" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="mjs-content">
+                            <img src="/images/events/join-event-approved.png" alt="Approved">
+                            <div class="bg-img">
+                                <img src="/images/confetti.png" alt="">
+                            </div>
+                            <h5>Congratulation</h5>
+                            <p>Congratulations your submission to join the <strong>"HELLOCTOBERFEST 2021"</strong> event
+                                has been
+                                approved.
+                                Welcome to the club!</p>
+                            <button type="button" class="btn btn-secondary">OK, see it now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Join Event Rejected -->
+        <div class="modal fade" id="joinEventRejected" tabindex="-1" role="dialog" aria-labelledby="joinEventTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md modal-join-event-status" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="mjs-content">
+                            <img src="/images/events/join-event-rejected.png" alt="Rejected">
+                            <h5>Rejected</h5>
+                            <p>Sadly your submission to join the <strong>"HELLOCTOBERFEST 2021"</strong> event was
+                                rejected. Please search for other events! </p>
+                            <button type="button" class="btn btn-secondary">OK, see it now</button>
                         </div>
                     </div>
                 </div>

@@ -88,6 +88,14 @@
         display: none;
     }
 
+    @include breakpoint(tablet) {
+        .upcoming-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     .item {
         align-items: center;
         margin-bottom: 2rem;
@@ -394,7 +402,7 @@
             }
         }
 
-        @include breakpoint(untilTablet) {
+        @include breakpoint(mobileonly) {
             flex-direction: column;
             align-items: flex-start;
 
@@ -507,21 +515,21 @@
         .images {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             img {
                 width: 20%;
+                margin-bottom: 1rem;
 
                 &:not(:last-child) {
                     margin-right: 1.5rem;
                 }
             }
 
-            @include breakpoint(untilTablet) {
-                flex-wrap: wrap;
+            @include breakpoint(mobileonly) {
 
                 img {
                     width: 45%;
-                    margin-bottom: 1rem;
 
                     &:not(:last-child) {
                         margin-right: 1rem;
@@ -702,6 +710,42 @@
             .btn:first-child {
                 margin-right: 1rem;
             }
+        }
+    }
+}
+
+.modal-join-event-status {
+    .mjs-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        padding: 3rem 0;
+
+        .bg-img {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        >img {
+            margin-bottom: 42px;
+        }
+
+        h5 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            font-weight: bold;
         }
     }
 }

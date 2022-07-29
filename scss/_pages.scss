@@ -96,9 +96,17 @@
     }
 
     @include breakpoint(untilTablet) {
+        .search-bar {
+            width: 80%;
+        }
+
+    }
+
+    @include breakpoint(mobileonly) {
         .faq-header {
             background-color: #ECF2FF;
             color: #2D2D2D;
+
 
             h5 {
                 color: $success;
@@ -276,11 +284,29 @@
         gap: 24px;
         margin-bottom: 71px;
 
+        @include breakpoint(untilTablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .fi-item {
+            position: relative;
+
             img {
                 margin-bottom: 24px;
                 width: 100%;
             }
+
+            .img-placeholder {
+                position: relative;
+
+                .show {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
         }
     }
 
@@ -313,7 +339,7 @@
 
 .steps {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 100px;
 
@@ -339,13 +365,17 @@
                 &:after {
                     content: '';
                     height: 2px;
-                    width: 20vw;
+                    width: 21vw;
                     left: 34px;
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
                     background-color: #C5C5C5;
                     z-index: 0;
+
+                    @include breakpoint(largeDesktop) {
+                        width: 25vw;
+                    }
                 }
             }
         }

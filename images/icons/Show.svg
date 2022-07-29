@@ -1,8 +1,4 @@
-<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Iconly/Curved/Show">
-<g id="Show">
-<path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M15.1638 12.5519C15.1638 14.2979 13.7478 15.7139 12.0018 15.7139C10.2558 15.7139 8.83984 14.2979 8.83984 12.5519C8.83984 10.8049 10.2558 9.38989 12.0018 9.38989C13.7478 9.38989 15.1638 10.8049 15.1638 12.5519Z" stroke="#01143A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 12.552C2.75 15.832 6.892 19.854 12.002 19.854C17.111 19.854 21.254 15.835 21.254 12.552C21.254 9.269 17.111 5.25 12.002 5.25C6.892 5.25 2.75 9.272 2.75 12.552Z" stroke="#01143A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</g>
+<svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36.6502 29.3778C36.6502 33.5973 33.2282 37.0193 29.0087 37.0193C24.7892 37.0193 21.3672 33.5973 21.3672 29.3778C21.3672 25.1559 24.7892 21.7363 29.0087 21.7363C33.2282 21.7363 36.6502 25.1559 36.6502 29.3778Z" stroke="#A2A2A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.64844 29.3777C6.64844 37.3044 16.6583 47.0242 29.0074 47.0242C41.3542 47.0242 51.3664 37.3116 51.3664 29.3777C51.3664 21.4438 41.3542 11.7312 29.0074 11.7312C16.6583 11.7312 6.64844 21.451 6.64844 29.3777Z" stroke="#A2A2A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

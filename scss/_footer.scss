@@ -132,7 +132,7 @@
                 }
             }
 
-            @include breakpoint(untilTablet) {
+            @include breakpoint(mobileonly) {
                 flex-direction: column;
 
                 .copyright {

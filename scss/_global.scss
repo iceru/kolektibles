@@ -156,6 +156,7 @@ p {
         position: absolute;
         right: 24px;
         top: 24px;
+        z-index: 4;
     }
 }
 
@@ -469,6 +470,8 @@ p {
     }
 }
 
+.add-img {}
+
 .add-img-label {
     display: flex;
     flex-direction: column;
@@ -479,6 +482,25 @@ p {
     padding: 150px 100px;
     cursor: pointer;
     margin-bottom: 4rem;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 85%;
+        height: 100%;
+        border: 1px dashed #999999;
+        border-radius: 1rem;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
 
     @include breakpoint(untilTablet) {
         padding: 4rem;
@@ -514,6 +536,14 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 28px;
+
+    &.ac-3 {
+        @include breakpoint(mobileonly) {
+            .btn {
+                padding: 12px 16px;
+            }
+        }
+    }
 
     .btn:first-child {
         margin-right: 1rem;

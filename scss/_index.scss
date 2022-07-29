@@ -87,7 +87,7 @@
 
             .image-1 {
                 img {
-                    width: 62vw;
+                    width: 72vw;
                 }
             }
         }
@@ -105,8 +105,13 @@
                 display: none;
             }
 
+            h1 {
+                width: 100%;
+            }
+
             p {
                 padding-right: 0;
+                width: 100%;
             }
 
             .image-mobile {
@@ -123,6 +128,10 @@
             }
         }
     }
+}
+
+.offcanvas-sidebar {
+    width: 100%;
 }
 
 
@@ -381,14 +390,25 @@
             line-height: 145%;
         }
 
+        .feature-img,
         .value-img {
             img {
-                width: 100%;
+                width: 80%;
             }
         }
 
         h5 {
             margin-bottom: 48px;
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+
+        .value-img,
+        .feature-img {
+            img {
+                width: 100%;
+            }
         }
     }
 }
