@@ -14,6 +14,14 @@
         darkThemeSelected
           ? document.body.setAttribute("data-theme", "dark")
           : document.body.removeAttribute("data-theme");
+
+          if(localStorage.getItem("darkSwitch") === "dark") {
+            $('.btn-primary').removeClass('btn-primary').addClass('btn-secondary');
+          }
+          else {
+            $('btn-secondary').removeClass('btn-secondary').addClass('btn-primary');
+          }
+
       }
       function resetTheme() {
         if (darkSwitch.checked) {

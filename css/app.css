@@ -14429,8 +14429,14 @@ p {
   filter: brightness(0) invert(1);
 }
 [data-theme=dark] .collection-detail-content .cd-info .cd-title,
-[data-theme=dark] .collection-detail-content .cd-info .cd-desc {
-  color: white;
+[data-theme=dark] .collection-detail-content .cd-info .cd-desc,
+[data-theme=dark] .collection-detail-content .cd-info .cd-user,
+[data-theme=dark] .collection-detail-content .cd-info .cd-time,
+[data-theme=dark] .collection-detail-content .cd-info .cd-share {
+  color: white !important;
+}
+[data-theme=dark] .collection-detail-content .cd-info .cd-share img {
+  filter: brightness(0) invert(1);
 }
 [data-theme=dark] .collection-detail-content .cd-info .cd-stats .item,
 [data-theme=dark] .collection-detail-content .cd-info .cd-stats .item span {
@@ -14438,6 +14444,18 @@ p {
 }
 [data-theme=dark] .collection-detail-content .cd-info .cd-stats img {
   filter: brightness(0) invert(1);
+}
+[data-theme=dark] .story,
+[data-theme=dark] .comments-container {
+  color: white;
+}
+[data-theme=dark] .comments-container .cm-item .cm-content {
+  background-color: #1A2336 !important;
+}
+[data-theme=dark] .comments-container .cm-item .cm-content .cm-name,
+[data-theme=dark] .comments-container .cm-item .cm-content .cm-time,
+[data-theme=dark] .comments-container .cm-item .cm-content .cm-text {
+  color: white !important;
 }
 [data-theme=dark] .collections .collection {
   background-color: #00091C;
@@ -14471,9 +14489,42 @@ p {
 [data-theme=dark] .paginations .pagination .page-item.active .page-link, [data-theme=dark] .paginations .pagination .page-item:hover .page-link {
   border-color: white;
 }
+[data-theme=dark] .breadcrumbs .item {
+  color: #B2B2B2;
+}
+[data-theme=dark] .breadcrumbs .item:last-child {
+  color: white;
+}
+[data-theme=dark] .vertical-menu .list-menu li.active a {
+  color: white;
+}
+[data-theme=dark] .vertical-menu .list-menu li a {
+  color: #DADADA;
+}
+[data-theme=dark] .collector-about .prop,
+[data-theme=dark] .collector-about .data {
+  color: white;
+}
+[data-theme=dark] .collector-about .presence .data {
+  color: #00AA5B;
+}
+[data-theme=dark] .profil-cat .item {
+  color: #DADADA;
+}
 [data-theme=dark] .btn img,
 [data-theme=dark] .search-icon img {
   filter: brightness(0) invert(1);
+}
+[data-theme=dark] .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+[data-theme=dark] .btn-outline-light img {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark] .btn-outline-light:hover {
+  border-color: white;
+  color: white;
 }
 [data-theme=dark] .invite-list {
   background-color: #121F39;

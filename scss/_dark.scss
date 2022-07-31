@@ -116,8 +116,17 @@
         .cd-info {
 
             .cd-title,
-            .cd-desc {
-                color: white;
+            .cd-desc,
+            .cd-user,
+            .cd-time,
+            .cd-share {
+                color: white !important;
+            }
+
+            .cd-share {
+                img {
+                    filter: brightness(0) invert(1);
+                }
             }
 
             .cd-stats {
@@ -129,6 +138,25 @@
 
                 img {
                     filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+
+    .story,
+    .comments-container {
+        color: white;
+    }
+
+    .comments-container {
+        .cm-item {
+            .cm-content {
+                background-color: #1A2336 !important;
+
+                .cm-name,
+                .cm-time,
+                .cm-text {
+                    color: white !important;
                 }
             }
         }
@@ -189,10 +217,68 @@
         }
     }
 
+    .breadcrumbs {
+        .item {
+            color: #B2B2B2;
+
+            &:last-child {
+                color: white;
+            }
+        }
+    }
+
+    .vertical-menu {
+        .list-menu {
+            li {
+                &.active {
+                    a {
+                        color: white;
+                    }
+                }
+
+                a {
+                    color: #DADADA;
+                }
+            }
+        }
+    }
+
+    .collector-about {
+
+        .prop,
+        .data {
+            color: white;
+        }
+
+        .presence {
+            .data {
+                color: $success;
+            }
+        }
+    }
+
+    .profil-cat .item {
+        color: #DADADA;
+    }
+
     .btn,
     .search-icon {
         img {
             filter: brightness(0) invert(1);
+        }
+    }
+
+    .btn-outline-light {
+        border-color: white;
+        color: white;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+            border-color: white;
+            color: white;
         }
     }
 
