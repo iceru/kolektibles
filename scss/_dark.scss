@@ -18,6 +18,10 @@
 
             .dropdown-item {
                 color: white;
+
+                &:hover {
+                    color: white;
+                }
             }
 
             .dropdown-divider {

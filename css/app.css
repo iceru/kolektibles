@@ -14232,8 +14232,70 @@ p {
   margin-bottom: 2rem;
 }
 
+.bids {
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+  padding: 24px;
+}
+.bids > h6, .bids > .h6 {
+  margin-bottom: 1rem;
+}
+.bids > p {
+  padding-bottom: 36px;
+  border-bottom: 1px dashed #E9E9E9;
+}
+.bids .table .tb-collector {
+  display: flex;
+}
+.bids .table .tb-collector img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.bids .table .tb-collector .name {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.bids .table .tb-collector .place {
+  color: #989898;
+  font-size: 12px;
+}
+.bids .table .date {
+  color: #797979;
+  font-size: 14px;
+}
+.bids .table .price {
+  color: #00AA5B;
+}
+.bids .table .price svg path {
+  fill: #00AA5B;
+}
+.bids .table .btn {
+  padding: 12px;
+  margin-bottom: 0.5rem;
+}
+.bids .table .accepted {
+  display: flex;
+  align-content: center;
+  color: #576584;
+}
+.bids .table .accepted img {
+  margin-right: 8px;
+}
+
 .collection-value {
   margin-bottom: 100px;
+}
+.collection-value .items > .row {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E9E9E9;
+  opacity: 0.7;
+}
+.collection-value .items > .row.active {
+  opacity: 1;
 }
 .collection-value > .row {
   margin-bottom: 12px;
@@ -14374,6 +14436,9 @@ p {
   color: white;
 }
 [data-theme=dark] .navbar .dropdown-menu.show .dropdown-item {
+  color: white;
+}
+[data-theme=dark] .navbar .dropdown-menu.show .dropdown-item:hover {
   color: white;
 }
 [data-theme=dark] .navbar .dropdown-menu.show .dropdown-divider {

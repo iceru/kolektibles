@@ -9,8 +9,88 @@
     }
 }
 
+.bids {
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    padding: 24px;
+
+    >h6 {
+        margin-bottom: 1rem;
+    }
+
+    >p {
+        padding-bottom: 36px;
+        border-bottom: 1px dashed #E9E9E9;
+    }
+
+    .table {
+        .tb-collector {
+            display: flex;
+
+            img {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                margin-right: 18px;
+            }
+
+            .name {
+                margin-bottom: 4px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .place {
+                color: #989898;
+                font-size: 12px;
+            }
+        }
+
+        .date {
+            color: #797979;
+            font-size: 14px;
+        }
+
+        .price {
+            color: $success;
+
+            svg path {
+                fill: $success;
+            }
+        }
+
+        .btn {
+            padding: 12px;
+            margin-bottom: .5rem;
+        }
+
+        .accepted {
+            display: flex;
+            align-content: center;
+            color: #576584;
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
 .collection-value {
     margin-bottom: 100px;
+
+    .items {
+        >.row {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #E9E9E9;
+            opacity: .7;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
 
     >.row {
         margin-bottom: 12px;
