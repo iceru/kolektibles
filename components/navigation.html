@@ -99,7 +99,7 @@
                         <li class="dropdown-switch">
                             <label for="">Light</label>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="darkSwitch">
+                                <input class="form-check-input darkSwitch" type="checkbox" role="switch">
                             </div>
                             <label for="">Dark</label>
                         </li>
@@ -213,7 +213,8 @@
                         <li class="dropdown-switch">
                             <label for="darkSwitch">Light</label>
                             <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="darkSwitch2">
+                                <input class="form-check-input darkSwitch" type="checkbox" role="switch"
+                                    id="darkSwitch">
                             </div>
                             <label for="darkSwitch">Dark</label>
                         </li>
@@ -223,40 +224,4 @@
         </div>
     </div>
 </div>
-
-
-<!-- <script>
-    $(document).ready(function () {
-        $('body').addClass('light');
-    });
-
-    // theme switch example for demo
-    document.getElementById('switch').addEventListener('click', () => {
-        $([".light [class*='-light']", ".dark [class*='-dark']"]).each((i, ele) => {
-            debugger;
-            if ($(this).hasClass('bg-light') || $(ele).hasClass('bg-dark')) {
-                $(ele).toggleClass('bg-light bg-dark')
-            }
-            if ($(ele).hasClass('text-light') || $(ele).hasClass('text-dark')) {
-                $(ele).toggleClass('text-light text-dark')
-            }
-            if ($(ele).hasClass('navbar-light') || $(ele).hasClass('navbar-dark')) {
-                $(ele).toggleClass('navbar-light navbar-dark')
-            }
-            if ($(ele).hasClass('btn-outline-light') || $(ele).hasClass('btn-outline-dark')) {
-                $(ele).toggleClass('btn-outline-light btn-outline-dark')
-            }
-            if ($(ele).hasClass('btn-light') || $(ele).hasClass('btn-dark')) {
-                $(ele).toggleClass('btn-light btn-dark')
-            }
-        })
-
-        $(".light [class*='-light']").toggleClass
-
-
-        $('.cta .container .btn').toggleClass('btn-primary btn-secondary');
-        // toggle body class selector
-        $('body').toggleClass('light dark')
-    }) -->
-</script>
 <script src="../assets/dark-mode/dark-mode-switch.js"></script>
