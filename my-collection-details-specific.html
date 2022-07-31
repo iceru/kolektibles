@@ -93,7 +93,7 @@
         <div class="value-tracker">
             <h4>Value tracker for all similar</h4>
             <div class="vt-img">
-                <img src="/images/value-tracker.png" alt="">
+                <img src="/images/chart-assets-light.png" alt="">
             </div>
         </div>
 
@@ -191,7 +191,8 @@
                             </div>
 
                             <div class="ci-btn">
-                                <button type="button" class="btn btn-blue">Select</button>
+                                <button type="button" class="btn btn-blue" data-bs-toggle="modal"
+                                    data-bs-target="#switchOwnership">Select</button>
                             </div>
                         </div>
                         <div class="ci-item">
@@ -220,6 +221,65 @@
         </div>
     </div>
 
+    <!-- Modal Switch Ownership -->
+    <div class="modal fade" id="switchOwnership" tabindex="-1" role="dialog" aria-labelledby="switchOwnership"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg switch-ownership-page" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="switch-ownership">
+                        <h5 class="so-title">Switch Ownership</h5>
+                        <div class="so-img">
+                            <div class="so-item">
+                                <div class="user">
+                                    <img src="/images/user/user-3.png" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <img src="/images/collections/bakugo-1.png" alt="">
+                                </div>
+                                <div class="item-name">
+                                    Bakugo Katsuki Boku No Hero Academia
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img src="/images/arrow.png" alt="">
+                            </div>
+                            <div class="user-accept">
+                                <img src="/images/user/user-4.png" alt="">
+                                <div class="user-name">
+                                    Anthony Salim
+                                </div>
+                            </div>
+                        </div>
+                        <div class="so-content">
+                            <h5>Will you accept this collection</h5>
+                            <p><a href="#">Gilbert Tanuwijaya </a> gives you the ownership rights to his collection,
+                                this collection
+                                will
+                                be yours and no longer his, make sure you have read the terms and if you are sure you
+                                can press
+                                "Yes".
+                            </p>
+                        </div>
+                        <div class="form-check success">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
+                                    checked>
+                                I have read <a href="#">terms</a>
+                            </label>
+                        </div>
+                        <div class="btn-groups btn-bold">
+                            <button data-bs-dismiss="modal" aria-label="Close" type="button"
+                                class="btn btn-outline-light">No, reject</button>
+                            <a href="/switch-ownership-acceptance.html" type="button" class="btn btn-secondary">Yes,
+                                accept</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer-index" data-includeHTML="components/footer.html">
     </footer>

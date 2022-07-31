@@ -358,6 +358,7 @@
                 .form-control {
                     border-color: #DBDEE2;
                     font-size: 14px;
+                    width: 86%;
 
                     @include breakpoint(untilTablet) {
                         width: 84%;

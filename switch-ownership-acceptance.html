@@ -69,11 +69,54 @@
             </div>
             <div class="btn-groups btn-bold">
                 <button type="button" class="btn btn-outline-light">No, reject</button>
-                <a href="/switch-ownership-acceptance-confirm.html" type="button" class="btn btn-secondary">Yes,
-                    accept</a>
+                <button data-bs-toggle="modal" data-bs-target="#switchOwnershipConfirm" type="button"
+                    class="btn btn-secondary">Yes,
+                    accept</button>
             </div>
         </div>
     </div>
+
+    <!-- Modal Switch Ownership -->
+    <div class="modal fade" id="switchOwnershipConfirm" tabindex="-1" role="dialog"
+        aria-labelledby="switchOwnershipConfirm" aria-hidden="true">
+        <div class="modal-dialog modal-lg switch-ownership-page confirmtaion" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="switch-ownership">
+                        <h5 class="so-title">Switch Ownership Confirmation</h5>
+                        <div class="so-img">
+                            <div class="so-item">
+                                <div class="user">
+                                    <img src="/images/user/user-4.png" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <img src="/images/collections/bakugo-1.png" alt="">
+                                </div>
+                                <div class="item-name">
+                                    Bakugo Katsuki Boku No Hero Academia
+                                </div>
+                            </div>
+                            <div class="bg-img">
+                                <img src="/images/confetti.png" alt="">
+                            </div>
+                        </div>
+                        <div class="so-content">
+                            <h4>Congratulation</h4>
+                            <p><span>"Bakugo Katsuki Boku No Hero Academia"</span> is now officially owned by Antoni.
+                                You no longer
+                                have ownership rights to this collection item. Congratulations, happy collecting! </p>
+                        </div>
+                        <div class="btn-groups btn-bold">
+                            <a href="/switch-ownership-acceptance-confirm.html" type="button"
+                                class="btn btn-secondary">OK, see it now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer-index" data-includeHTML="components/footer.html">
     </footer>

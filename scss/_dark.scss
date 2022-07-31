@@ -1,7 +1,10 @@
 [data-theme="dark"] {
-    .form-control {
+
+    .form-control,
+    .form-select {
         background-color: #1A2336;
         border-color: #626262;
+        color: white;
     }
 
     .modal-content {
@@ -113,6 +116,12 @@
                     filter: brightness(0) invert(1);
                 }
             }
+        }
+    }
+
+    &.collection-detail {
+        .status-action {
+            background-color: #121F39;
         }
     }
 
@@ -266,9 +275,27 @@
     }
 
     .btn,
-    .search-icon {
+    .search-icon,
+    .search-img {
         img {
             filter: brightness(0) invert(1);
+        }
+    }
+
+    .preview-collection {
+        background-color: #004927;
+        color: white;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .cm-input {
+        .btn {
+            img {
+                filter: brightness(0);
+            }
         }
     }
 
@@ -295,6 +322,86 @@
 
         img {
             filter: brightness(0) invert(1);
+        }
+    }
+
+    &.events-page {
+        .filter-events {
+
+            .filter-title,
+            .form-check,
+            .form-input,
+            .form-select {
+                color: white;
+            }
+        }
+    }
+
+    .edit-profile {
+        .change-image {
+            .btn-gray {
+                background-color: #3C4D70;
+            }
+        }
+    }
+
+    .profile-cat {
+        color: white;
+    }
+
+    &.add-collection {
+
+        h4,
+        .form-label {
+            color: white;
+        }
+
+    }
+
+    .add-img-label {
+        background-color: #1A2336;
+    }
+
+    &.add-collection {
+        .info {
+            color: white;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .featured-image {
+            .fi-item {
+                .img-placeholder {
+                    background-color: #1A2336;
+                }
+            }
+        }
+    }
+
+    .steps {
+        .step {
+            &.done {
+                .number {
+                    background-color: $secondary;
+                    border-color: $secondary;
+
+                    img {
+                        filter: brightness(0);
+                    }
+                }
+
+                .text {
+                    color: white;
+                }
+            }
+
+            .number {
+                background-color: $dark;
+                color: #B5B5B6;
+                border-color: #B5B5B6;
+            }
         }
     }
 

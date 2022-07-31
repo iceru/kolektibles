@@ -291,9 +291,11 @@
         .fi-item {
             position: relative;
 
-            img {
-                margin-bottom: 24px;
-                width: 100%;
+            .img-placeholder {
+                padding-top: 75%;
+                border-radius: 1rem;
+                background-color: #F5F5F5;
+                margin-bottom: 1rem;
             }
 
             .img-placeholder {
@@ -373,8 +375,8 @@
                     background-color: #C5C5C5;
                     z-index: 0;
 
-                    @include breakpoint(largeDesktop) {
-                        width: 25vw;
+                    @include breakpoint(desktop) {
+                        width: 27vw;
                     }
                 }
             }
@@ -439,6 +441,7 @@
                     position: absolute;
                     top: -10px;
                     left: 50%;
+                    width: 300px;
                     transform: translateX(-50%);
                 }
             }
@@ -448,6 +451,12 @@
                     font-weight: bold;
                 }
             }
+        }
+    }
+
+    &.modal-dialog {
+        .switch-ownership {
+            margin-bottom: 0;
         }
     }
 
