@@ -31,6 +31,9 @@
 }
 
 .footer {
+    z-index: 2;
+    position: relative;
+
     .container {
         padding-top: 2rem;
         padding-bottom: 2rem;

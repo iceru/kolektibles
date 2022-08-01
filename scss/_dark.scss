@@ -483,6 +483,43 @@
         }
     }
 
+    .top-col {
+        .section {
+            .category {
+                background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
+
+                .cat-text .desc {
+                    color: #A2B1D1;
+                }
+            }
+
+            .collections,
+            .collectors {
+                .item {
+                    background-color: #0D1A31;
+
+                    .item-img {
+                        img {
+                            border: 3px solid #424242;
+                        }
+                    }
+
+                    .item-info {
+                        color: white;
+
+                        .rank {
+                            border-color: #0D1A31;
+                        }
+
+                        .item-stats .stat img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .si-content {
         .btn-groups {
             .btn {
