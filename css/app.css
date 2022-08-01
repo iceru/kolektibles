@@ -14718,6 +14718,9 @@ p {
 [data-theme=dark].faq .accordion .accordion-item .accordion-body {
   color: #C3CAD7;
 }
+[data-theme=dark] .apps {
+  background-color: #131313;
+}
 [data-theme=dark] .top-col .section .category {
   background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
 }
@@ -14760,6 +14763,9 @@ p {
 [data-theme=dark] .contact-content .form-message .form-group .form-label,
 [data-theme=dark] .contact-content .socials li a {
   color: white;
+}
+[data-theme=dark] .footer {
+  background-color: #131313;
 }
 [data-theme=dark] .footer .container .top-section .description {
   color: #A6A6A6;
