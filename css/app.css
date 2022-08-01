@@ -14764,7 +14764,7 @@ p {
 [data-theme=dark] .contact-content .socials li a {
   color: white;
 }
-[data-theme=dark] .footer {
+[data-theme=dark].index .footer {
   background-color: #131313;
 }
 [data-theme=dark] .footer .container .top-section .description {
