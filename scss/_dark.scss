@@ -451,6 +451,74 @@
         }
     }
 
+    &.faq {
+        .faq-header {
+            background-color: #152139;
+        }
+
+        .search-bar-faq {
+            input {
+                background-color: #2B3C60;
+            }
+        }
+
+        .accordion {
+
+            .accordion-item {
+                background-color: $dark;
+                color: white;
+
+                .accordion-header {
+                    .accordion-button {
+                        background-color: $dark  !important;
+                        color: white;
+                        border-color: #394C72;
+                    }
+                }
+
+                .accordion-body {
+                    color: #C3CAD7;
+                }
+            }
+        }
+    }
+
+    .si-content {
+        .btn-groups {
+            .btn {
+                img {
+                    filter: none;
+                }
+            }
+        }
+
+
+        .create p,
+        .form-check {
+            color: white;
+        }
+    }
+
+    .benefits {
+        .title {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .desc {
+            color: white;
+        }
+    }
+
+    .contact-content {
+
+        .form-message .form-group .form-label,
+        .socials li a {
+            color: white;
+        }
+    }
+
     .footer {
         .container {
             .top-section {
@@ -460,6 +528,7 @@
 
                 .question {
                     box-shadow: none;
+                    border: 1px solid $secondary;
                 }
 
                 .footer-menu {

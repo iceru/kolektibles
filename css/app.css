@@ -12827,20 +12827,20 @@ p {
   font-weight: 500;
   margin-bottom: 28px;
 }
-.faq .search-bar {
+.faq .search-bar-faq {
   width: 60%;
   margin: auto;
   position: relative;
   margin-top: -2rem;
   margin-bottom: 4rem;
 }
-.faq .search-bar .form-control {
+.faq .search-bar-faq .form-control {
   box-shadow: 0px 4px 20px rgba(95, 158, 141, 0.15);
   border-radius: 10px;
   border: none;
   padding: 1.5rem 2rem;
 }
-.faq .search-bar .search-icon {
+.faq .search-bar-faq .search-icon {
   position: absolute;
   right: 2rem;
   top: 50%;
@@ -14694,11 +14694,47 @@ p {
   color: #B5B5B6;
   border-color: #B5B5B6;
 }
+[data-theme=dark].faq .faq-header {
+  background-color: #152139;
+}
+[data-theme=dark].faq .search-bar-faq input {
+  background-color: #2B3C60;
+}
+[data-theme=dark].faq .accordion .accordion-item {
+  background-color: #000C25;
+  color: white;
+}
+[data-theme=dark].faq .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #000C25 !important;
+  color: white;
+  border-color: #394C72;
+}
+[data-theme=dark].faq .accordion .accordion-item .accordion-body {
+  color: #C3CAD7;
+}
+[data-theme=dark] .si-content .btn-groups .btn img {
+  filter: none;
+}
+[data-theme=dark] .si-content .create p,
+[data-theme=dark] .si-content .form-check {
+  color: white;
+}
+[data-theme=dark] .benefits .title img {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark] .benefits .desc {
+  color: white;
+}
+[data-theme=dark] .contact-content .form-message .form-group .form-label,
+[data-theme=dark] .contact-content .socials li a {
+  color: white;
+}
 [data-theme=dark] .footer .container .top-section .description {
   color: #A6A6A6;
 }
 [data-theme=dark] .footer .container .top-section .question {
   box-shadow: none;
+  border: 1px solid #37FFC8;
 }
 [data-theme=dark] .footer .container .top-section .footer-menu li {
   color: #A6A6A6;
