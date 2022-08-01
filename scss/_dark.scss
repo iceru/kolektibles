@@ -560,8 +560,13 @@
         }
     }
 
+    &.index {
+        .footer {
+            background-color: #131313;
+        }
+    }
+
     .footer {
-        background-color: #131313;
 
         .container {
             .top-section {
