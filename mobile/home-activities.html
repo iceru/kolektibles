@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="mobile">
+    <nav data-includeHTML="../components/mobile-nav.html">
+    </nav>
+    <div class="tabs">
+        <div class="tab active">
+            Feeds
+        </div>
+        <div class="tab">
+            <a href="/mobile/home-events.html">Events</a>
+        </div>
+    </div>
+    <div class="activities">
+        <div class="activity-item">
+            <div class="ai-user">
+                <div class="user">
+                    <div class="img">
+                        <img src="/images/user/user-3.png" alt="">
+                    </div>
+                    <div class="name">
+                        Anthony Salim
+                    </div>
+                    <div class="time">
+                        23 hours ago
+                    </div>
+                </div>
+                <div class="more">
+                    <img src="/images/icons/more.png" alt="">
+                </div>
+            </div>
+            <div class="ai-img">
+                <img src="/images/collections/bakugo-1.png" alt="">
+            </div>
+            <div class="ai-content">
+                <div class="ai-actions">
+                    <div class="left-side">
+                        <div class="likes">
+                            <img src="/images/icons/Heart2.svg" alt="">
+                            <span>1,204</span> Likes
+                        </div>
+                        <div class="icon">
+                            <img src="/images/icons/Chat.svg" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="/images/icons/Bookmark.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <button type="button" class="btn btn-secondary">
+                            Detail <img src="/images/mobile/icon-arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="ai-title">
+                    Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                </div>
+                <div class="ai-comments">
+                    <div class="user"><a href="#">Nathaniel Sutono</a> wah wah keren banget ini</div>
+                </div>
+                <div class="ai-discussions">
+                    See all 9 discussions
+                </div>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="ai-user">
+                <div class="user">
+                    <div class="img">
+                        <img src="/images/user/user-2.png" alt="">
+                    </div>
+                    <div class="name">
+                        Anthony Salim
+                    </div>
+                    <div class="time">
+                        23 hours ago
+                    </div>
+                </div>
+                <div class="more">
+                    <img src="/images/icons/more.png" alt="">
+                </div>
+            </div>
+            <div class="ai-img">
+                <img src="/images/collections/nendo-10.png" alt="">
+            </div>
+            <div class="ai-content">
+                <div class="ai-actions">
+                    <div class="left-side">
+                        <div class="likes">
+                            <img src="/images/icons/Heart2.svg" alt="">
+                            <span>1,204</span> Likes
+                        </div>
+                        <div class="icon">
+                            <img src="/images/icons/Chat.svg" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="/images/icons/Bookmark.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <button type="button" class="btn btn-secondary">
+                            Detail <img src="/images/mobile/icon-arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="ai-title">
+                    Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                </div>
+                <div class="ai-comments">
+                    <div class="user"><a href="#">Nathaniel Sutono</a> wah wah keren banget ini</div>
+                </div>
+                <div class="ai-discussions">
+                    See all 9 discussions
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-includeHTML="../components/bottom-nav.html">
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>
