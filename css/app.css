@@ -14508,6 +14508,10 @@ p {
 .mobile {
   font-size: 14px;
 }
+.mobile h6, .mobile .h6 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
 .mobile .likes {
   display: flex;
   align-items: center;
@@ -14741,10 +14745,6 @@ p {
   margin-right: 4px;
 }
 
-.collection-detail h6, .collection-detail .h6 {
-  margin-bottom: 1rem;
-  font-size: 18px;
-}
 .collection-detail .cd-content {
   padding: 1rem;
 }
@@ -14960,6 +14960,7 @@ p {
 .collector .co-user {
   margin-bottom: 2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 .collector .co-user .user-img {
   margin-bottom: 1rem;
@@ -14994,6 +14995,46 @@ p {
 }
 .collector .co-user .socials .icon {
   margin: 0 12px;
+}
+
+.my-assets {
+  margin-top: 24px;
+  padding: 0 1rem;
+}
+.my-assets .ma-img {
+  margin-bottom: 2rem;
+}
+.my-assets .ma-img img {
+  width: 100%;
+}
+.my-assets .collection-value .cv-title {
+  margin-bottom: 10px;
+}
+.my-assets .collection-value .cv-price p {
+  font-size: 12px;
+  color: #797979;
+}
+.my-assets .collection-value .cv-price h6, .my-assets .collection-value .cv-price .h6 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.login {
+  padding: 2rem 1rem;
+}
+.login .img-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login .img-logo img {
+  height: 24px;
+}
+.login .si-content h4, .login .si-content .h4 {
+  font-size: 28px;
+  line-height: 145%;
+}
+.login .si-content .btn-groups .btn {
+  border-radius: 2rem;
 }
 
 [data-theme=dark] .form-control,
