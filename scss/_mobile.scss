@@ -31,7 +31,43 @@
         }
     }
 
-    .collection-detail {}
+
+    .search {
+        padding: 12px 16px;
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 12px;
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+        }
+
+        .form-control {
+            padding: 18px;
+            padding-left: 3rem;
+            background-color: #F6F9FF;
+            border-color: transparent;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+    }
+
+    .categories {
+        margin-bottom: 2rem;
+
+        .item {
+            padding: 15px 20px;
+            padding-bottom: 32px;
+            margin-bottom: 10px;
+
+            .cat-img {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
 
 }
 
@@ -46,6 +82,12 @@
             height: 24px;
             width: auto;
         }
+    }
+
+    .page {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
     }
 }
 
@@ -450,28 +492,6 @@
 }
 
 .explore {
-    .search {
-        padding: 12px 16px;
-        position: relative;
-        margin-bottom: 0;
-        padding-bottom: 12px;
-
-        .search-icon {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 2rem;
-        }
-
-        .form-control {
-            padding: 18px;
-            padding-left: 3rem;
-            background-color: #F6F9FF;
-            border-color: transparent;
-            border-radius: 12px;
-            font-size: 12px;
-        }
-    }
 
     .images-explore {
         display: grid;
@@ -480,6 +500,75 @@
 
         img {
             width: 100%;
+        }
+    }
+}
+
+.collectors {
+    padding: 1rem;
+
+    .collector-item {
+        margin-bottom: 24px;
+
+        .top-section {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .user {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 1rem;
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                }
+
+                .name {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    margin-bottom: 8px;
+                }
+
+                .collections {
+                    color: #898989;
+                    font-size: 12px;
+                }
+            }
+
+            .follow {
+                .btn {
+                    padding: 6px 1rem;
+                    border-radius: 2rem;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            .img {
+                &:first-child {
+                    img {
+                        border-radius: 6px 0px 0px 6px;
+                    }
+                }
+
+                &:last-child {
+                    img {
+                        border-radius: 0 6px 6px 0;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
