@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="mobile">
+    <div class="mobile-nav">
+        <div class="hamburger">
+            <img src="/images/mobile/icon-burger.png" alt="">
+        </div>
+        <div class="page">
+            Collectors
+        </div>
+        <div class="notif">
+            <img src="/images/icons/Notification.svg" alt="">
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" class="form-control" placeholder="Search any collector">
+        <div class="search-icon">
+            <img src="/images/icons/Search.svg" alt="">
+        </div>
+    </div>
+    <div class="collectors">
+        <div class="collector-item">
+            <div class="top-section">
+                <div class="user">
+                    <img src="/images/user/user-2.png" alt="">
+                    <div>
+                        <div class="name">
+                            Anthony Halim
+                        </div>
+                        <div class="collections">
+                            235 Collections
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <button type="button" class="btn btn-outline-success">Following</button>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="img">
+                    <img src="/images/mobile/explore (1).png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/mobile/explore (2).png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/mobile/explore (3).png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/mobile/explore (4).png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="collector-item">
+            <div class="top-section">
+                <div class="user">
+                    <img src="/images/user/user-4.png" alt="">
+                    <div>
+                        <div class="name">
+                            Jennifer Abigail
+                        </div>
+                        <div class="collections">
+                            235 Collections
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <button type="button" class="btn btn-outline-success">Following</button>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="img">
+                    <img src="/images/collections/nendo-4.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/collections/nendo-2.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/collections/nendo-3.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/images/collections/nendo-6 .png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-includeHTML="../components/bottom-nav.html">
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>
