@@ -237,3 +237,249 @@
         }
     }
 }
+
+.collection-detail {
+    h6 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    .cd-content {
+        padding: 1rem;
+    }
+
+    .cd-img {
+        margin: 0 -1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cd-actions {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icons {
+            display: flex;
+            justify-content: flex-end;
+
+            .icon {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    .cd-title {
+        font-weight: bold;
+        padding: 12px 0;
+    }
+
+    .cd-users {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .user {
+            display: flex;
+            align-items: center;
+
+            .img {
+                margin-right: 12px;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                font-weight: bold;
+                color: #474747;
+            }
+        }
+
+        .time {
+            font-size: 12px;
+            color: #848484;
+        }
+    }
+
+    .collection-owned {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+
+        .co-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .story {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+
+        p {
+            color: black;
+        }
+    }
+
+    .cd-discussions {
+        padding: 0 1rem;
+        padding-bottom: 2rem;
+
+        .title {
+            font-weight: bold;
+            color: #474747;
+            margin-bottom: 1rem;
+        }
+
+        .user {
+            font-size: 12px;
+            margin-bottom: 1.5rem;
+
+            a {
+                color: #474747;
+                font-weight: bold;
+            }
+        }
+
+        .add-comment {
+            color: $success;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+
+    .cd-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 12px 19px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+        padding-bottom: 2rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        gap: 1rem;
+
+        .btn {
+            padding: 11px;
+            font-weight: bold;
+        }
+    }
+}
+
+.event-detail {
+    .ed-content {
+        padding: 1rem;
+    }
+
+    .ed-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .ed-img {
+        margin: 0 -1rem;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .ed-info {
+        margin-bottom: .5rem;
+
+        .item {
+            margin-bottom: 1.5rem;
+
+            .info-title {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                color: #848484;
+
+                img {
+                    margin-right: 14px;
+                }
+            }
+
+            .info-desc {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .ed-text {
+        margin-bottom: 2rem;
+
+        .subtitle {
+            color: #A4A4A4;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .images {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+    }
+
+    .ed-join {
+        padding-bottom: 2rem;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+}
+
+.explore {
+    .search {
+        padding: 12px 16px;
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 12px;
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+        }
+
+        .form-control {
+            padding: 18px;
+            padding-left: 3rem;
+            background-color: #F6F9FF;
+            border-color: transparent;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+    }
+
+    .images-explore {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
