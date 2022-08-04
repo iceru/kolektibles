@@ -14562,6 +14562,15 @@ p {
 .mobile .categories .item .cat-img {
   margin-bottom: 1.5rem;
 }
+.mobile .images-explore {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  padding: 2px;
+}
+.mobile .images-explore img {
+  width: 100%;
+}
 
 .mobile-nav {
   display: flex;
@@ -14898,15 +14907,6 @@ p {
   width: 100%;
 }
 
-.explore .images-explore {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
-}
-.explore .images-explore img {
-  width: 100%;
-}
-
 .collectors {
   padding: 1rem;
 }
@@ -14955,6 +14955,45 @@ p {
 }
 .collectors .collector-item .gallery .img img {
   width: 100%;
+}
+
+.collector .co-user {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.collector .co-user .user-img {
+  margin-bottom: 1rem;
+}
+.collector .co-user .user-img img {
+  width: 86px;
+  height: 86px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.collector .co-user .user-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.collector .co-user .profile-cat {
+  color: #898989;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.collector .co-user .user-follow {
+  margin-bottom: 2rem;
+}
+.collector .co-user .user-follow .btn {
+  padding: 9px 13px;
+  border-radius: 2rem;
+}
+.collector .co-user .socials {
+  display: flex;
+  justify-content: center;
+}
+.collector .co-user .socials .icon {
+  margin: 0 12px;
 }
 
 [data-theme=dark] .form-control,
