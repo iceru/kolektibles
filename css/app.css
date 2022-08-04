@@ -14609,6 +14609,9 @@ p {
 .detail-nav .fill {
   width: 39px;
 }
+.detail-nav.nav-faq {
+  background-color: #ECF2FF;
+}
 
 .tabs {
   display: grid;
@@ -15035,6 +15038,68 @@ p {
 }
 .login .si-content .btn-groups .btn {
   border-radius: 2rem;
+}
+
+.follows {
+  padding: 1.5rem 1rem;
+}
+.follows .follow-item {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.follows .follow-item .fo-user {
+  display: flex;
+  align-items: center;
+}
+.follows .follow-item .fo-user img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.follows .follow-item .fo-user .name {
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: black;
+}
+.follows .follow-item .fo-user .username {
+  color: #898989;
+  font-size: 12px;
+}
+.follows .follow-item .fo-btn .btn {
+  border-radius: 2rem;
+  padding: 5px 18px;
+  font-size: 12px;
+}
+
+.faq .faq-header {
+  border-radius: 0;
+  padding-top: 40px;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.faq .faq-header .title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 21px;
+}
+.faq .faq-header .search {
+  margin-bottom: -2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 95vw;
+  bottom: -8px;
+}
+.faq .faq-header .search .form-control {
+  background-color: white;
+  border: 1px solid #E9E9E9;
+}
+.faq .accordion {
+  padding-top: 2rem;
 }
 
 [data-theme=dark] .form-control,
