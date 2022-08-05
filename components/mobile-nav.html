@@ -1,11 +1,61 @@
 <div class="mobile-nav">
     <div class="hamburger">
-        <img src="/images/mobile/icon-burger.png" alt="">
+        <a data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+            <img src="/images/mobile/icon-burger.png" alt="">
+        </a>
+
     </div>
     <div class="logo">
         <img src="/images/logo-light.png" alt="Kolektibles">
     </div>
     <div class="notif">
         <img src="/images/icons/Notification.svg" alt="">
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-body sidebar-mobile">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="top-section">
+            <div class="user collections">
+                <img src="/images/user/user-3.png" alt="">
+                <div>
+                    <div class="name">
+                        Gilbert Tanuwijaya
+                    </div>
+                    <div class="collections">
+                        235 Collections
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">My Personal Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Followers</a>
+                    </li>
+                    <li>
+                        <a href="#">Following</a>
+                    </li>
+                    <li>
+                        <a href="#">Help & Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="switch dropdown-switch">
+                <label for="">Light</label>
+                <div class="form-check form-switch">
+                    <input class="form-check-input darkSwitch" type="checkbox" role="switch">
+                </div>
+                <label for="">Dark</label>
+            </div>
+            <div class="logout">
+                <a href="#">Logout</a>
+            </div>
+        </div>
     </div>
 </div>

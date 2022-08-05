@@ -14575,6 +14575,28 @@ p {
 .mobile .images-explore img {
   width: 100%;
 }
+.mobile .user.collections {
+  display: flex;
+  align-items: center;
+}
+.mobile .user.collections img {
+  margin-right: 1rem;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.mobile .user.collections .name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.mobile .user.collections .collections {
+  color: #898989;
+  font-size: 12px;
+}
+.mobile .offcanvas .offcanvas-body {
+  align-items: flex-start;
+}
 
 .mobile-nav {
   display: flex;
