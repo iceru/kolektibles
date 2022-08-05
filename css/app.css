@@ -14575,6 +14575,19 @@ p {
 .mobile .images-explore img {
   width: 100%;
 }
+.mobile .offcanvas-notif .detail-nav {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.mobile .edit-profile .container-fluid, .mobile .edit-profile .container-sm, .mobile .edit-profile .container-md, .mobile .edit-profile .container-lg, .mobile .edit-profile .container-xl, .mobile .edit-profile .container-xxl {
+  padding: 1rem;
+}
+.mobile .edit-profile .btn-secondary {
+  margin-top: 2rem;
+}
+.mobile .edit-profile .presence {
+  margin-top: 3rem;
+}
 
 .mobile-nav {
   display: flex;
@@ -14597,9 +14610,13 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
+  width: 100%;
 }
 .detail-nav .back {
   padding: 10px 14px;
+}
+.detail-nav .back .btn {
+  padding: 0;
 }
 .detail-nav .title {
   font-weight: bold;
@@ -15100,6 +15117,35 @@ p {
 }
 .faq .accordion {
   padding-top: 2rem;
+}
+
+.notification .notif-section {
+  margin-bottom: 2rem;
+}
+.notification .notif-section .notif-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.notification .notif-section .notif-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.notification .notif-section .notif-item .notif-img {
+  margin-right: 18px;
+}
+.notification .notif-section .notif-item .notif-img img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.notification .notif-section .notif-item .notif-text {
+  color: black;
+  font-weight: 500;
+}
+.notification .notif-section .notif-item .notif-text span {
+  font-weight: 400;
+  color: #898989;
 }
 
 [data-theme=dark] .form-control,
