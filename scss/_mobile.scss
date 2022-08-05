@@ -86,6 +86,32 @@
         }
     }
 
+    .user.collections {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 1rem;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .collections {
+            color: #898989;
+            font-size: 12px;
+        }
+    }
+
+    .offcanvas .offcanvas-body {
+        align-items: flex-start;
+    }
 }
 
 .mobile-nav {
