@@ -14575,28 +14575,6 @@ p {
 .mobile .images-explore img {
   width: 100%;
 }
-.mobile .user.collections {
-  display: flex;
-  align-items: center;
-}
-.mobile .user.collections img {
-  margin-right: 1rem;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-}
-.mobile .user.collections .name {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-.mobile .user.collections .collections {
-  color: #898989;
-  font-size: 12px;
-}
-.mobile .offcanvas .offcanvas-body {
-  align-items: flex-start;
-}
 
 .mobile-nav {
   display: flex;
@@ -14619,9 +14597,13 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
+  width: 100%;
 }
 .detail-nav .back {
   padding: 10px 14px;
+}
+.detail-nav .back .btn {
+  padding: 0;
 }
 .detail-nav .title {
   font-weight: bold;
@@ -15122,6 +15104,35 @@ p {
 }
 .faq .accordion {
   padding-top: 2rem;
+}
+
+.notification .notif-section {
+  margin-bottom: 2rem;
+}
+.notification .notif-section .notif-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.notification .notif-section .notif-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.notification .notif-section .notif-item .notif-img {
+  margin-right: 18px;
+}
+.notification .notif-section .notif-item .notif-img img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.notification .notif-section .notif-item .notif-text {
+  color: black;
+  font-weight: 500;
+}
+.notification .notif-section .notif-item .notif-text span {
+  font-weight: 400;
+  color: #898989;
 }
 
 [data-theme=dark] .form-control,
