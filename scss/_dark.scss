@@ -7,6 +7,12 @@
         color: white;
     }
 
+    .offcanvas-body {
+        .btn-close {
+            filter: brightness(0) invert(1);
+        }
+    }
+
     .modal-content {
         background-color: #000C25;
     }
@@ -35,6 +41,14 @@
                 border-color: #4B4B4B;
 
                 .burger {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        .sidebar-search {
+            .icon-search {
+                img {
                     filter: brightness(0) invert(1);
                 }
             }
