@@ -15267,6 +15267,14 @@ p {
   background-color: #152139;
   color: white;
 }
+[data-theme=dark] .features .subtitle,
+[data-theme=dark] .features p {
+  color: white;
+}
+[data-theme=dark] .features .subtitle img,
+[data-theme=dark] .features p img {
+  filter: brightness(0) invert(1);
+}
 [data-theme=dark] .title-page .title {
   color: white;
 }

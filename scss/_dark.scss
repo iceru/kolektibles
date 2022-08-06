@@ -150,6 +150,19 @@
         .container {
             background-color: #152139;
             color: white;
+
+        }
+    }
+
+    .features {
+
+        .subtitle,
+        p {
+            color: white;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
         }
     }
 
