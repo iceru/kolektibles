@@ -14525,6 +14525,9 @@ p {
   margin-bottom: 1rem;
   font-size: 18px;
 }
+.mobile .body-wrapper {
+  padding-bottom: 88px;
+}
 .mobile .likes {
   display: flex;
   align-items: center;
@@ -15168,6 +15171,98 @@ p {
 .notification .notif-section .notif-item .notif-text span {
   font-weight: 400;
   color: #898989;
+}
+
+.sidebar-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+.sidebar-mobile .top-section .user {
+  padding: 0 1rem;
+  margin: 0 -1rem;
+  padding-bottom: 24px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #d9d9d9;
+  width: 99vw;
+}
+.sidebar-mobile .top-section .menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-mobile .top-section .menu ul li {
+  margin-bottom: 1.5rem;
+}
+.sidebar-mobile .top-section .menu ul li a {
+  color: #4D4D4D;
+  font-weight: 600;
+}
+.sidebar-mobile .bottom-section .switch {
+  padding: 0 1rem;
+  margin: 0 -1rem;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 99vw;
+}
+.sidebar-mobile .bottom-section .switch .dropdown-switch {
+  padding: 0;
+  justify-content: start;
+}
+.sidebar-mobile .bottom-section .switch .dropdown-switch .form-check {
+  margin: 0 0.5rem;
+  margin-top: 0;
+  margin-left: 4px;
+}
+.sidebar-mobile .bottom-section .logout {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 25px 26px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px -4px 24px rgba(0, 0, 0, 0.05);
+}
+.bottom-nav .icon a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 52px;
+}
+.bottom-nav .icon.active svg path {
+  stroke: #00BF8B;
+}
+.bottom-nav .icon.active .text {
+  color: #00BF8B;
+}
+.bottom-nav .icon.add .icon-svg {
+  width: 32px;
+  height: 32px;
+  background-color: #37FFC8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-nav .icon.add .icon-svg svg {
+  margin-top: -2px;
+}
+.bottom-nav .icon .text {
+  font-size: 10px;
+}
+.bottom-nav .icon .icon-svg {
+  height: 24px;
+  margin-bottom: 8px;
+  width: auto;
 }
 
 [data-theme=dark] .form-control,

@@ -6,6 +6,10 @@
         font-size: 18px;
     }
 
+    .body-wrapper {
+        padding-bottom: 88px;
+    }
+
     .likes {
         display: flex;
         align-items: center;
@@ -823,6 +827,128 @@
                     color: #898989;
                 }
             }
+        }
+    }
+}
+
+.sidebar-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4rem;
+
+    .top-section {
+        .user {
+            padding: 0 1rem;
+            margin: 0 -1rem;
+            padding-bottom: 24px;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #d9d9d9;
+            width: 99vw;
+        }
+
+        .menu {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-bottom: 1.5rem;
+
+                    a {
+                        color: #4D4D4D;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-section {
+        .switch {
+            padding: 0 1rem;
+            margin: 0 -1rem;
+            padding-bottom: 24px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #d9d9d9;
+            width: 99vw;
+
+            .dropdown-switch {
+                padding: 0;
+                justify-content: start;
+
+                .form-check {
+                    margin: 0 .5rem;
+                    margin-top: 0;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .logout {
+            color: $danger;
+            font-weight: 600;
+        }
+    }
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 25px 26px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px -4px 24px rgba(0, 0, 0, 0.05);
+
+    .icon {
+
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 52px;
+        }
+
+        &.active {
+            svg {
+                path {
+                    stroke: #00BF8B;
+                }
+            }
+
+            .text {
+                color: #00BF8B;
+            }
+        }
+
+        &.add {
+            .icon-svg {
+                width: 32px;
+                height: 32px;
+                background-color: $secondary;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    margin-top: -2px;
+                }
+            }
+        }
+
+        .text {
+            font-size: 10px;
+        }
+
+        .icon-svg {
+            height: 24px;
+            margin-bottom: 8px;
+            width: auto;
         }
     }
 }
