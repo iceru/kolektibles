@@ -76,6 +76,12 @@
                 margin-bottom: 1.5rem;
             }
         }
+
+        .cat-info {
+            h6 {
+                font-size: 14px;
+            }
+        }
     }
 
 
@@ -115,6 +121,13 @@
 
     .offcanvas .offcanvas-body {
         align-items: flex-start;
+    }
+
+    .offcanvas-notif {
+        .detail-nav {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
 

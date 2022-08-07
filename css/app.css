@@ -14582,6 +14582,9 @@ p {
 .mobile .categories .item .cat-img {
   margin-bottom: 1.5rem;
 }
+.mobile .categories .cat-info h6, .mobile .categories .cat-info .h6 {
+  font-size: 14px;
+}
 .mobile .images-explore {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14612,6 +14615,10 @@ p {
 }
 .mobile .offcanvas .offcanvas-body {
   align-items: flex-start;
+}
+.mobile .offcanvas-notif .detail-nav {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .mobile-nav {
