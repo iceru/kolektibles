@@ -89,6 +89,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 2.5rem;
 
         .section {
             display: flex;
@@ -128,6 +129,64 @@
                 border: 1px solid #eaeaea;
                 border-radius: 20px;
                 padding: 6px;
+            }
+        }
+    }
+
+    .dashboard-stats {
+        .stat {
+            padding: 2rem;
+            background-color: white;
+            border-radius: 24px;
+            margin-bottom: 2.25rem;
+
+            &.flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .right-side {
+                    margin: -2rem;
+                    margin-left: 0;
+                }
+
+                .number {
+                    margin-bottom: 0;
+                }
+            }
+
+            .stat-name {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 11px;
+            }
+
+            .number {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .primary {
+                    font-size: 3rem;
+                }
+
+                .dynamic {
+                    display: flex;
+                    align-items: center;
+                    color: $success;
+                    font-size: 20px;
+
+                    img {
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            .chart {
+                img {
+                    width: 100%;
+                }
             }
         }
     }

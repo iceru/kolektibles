@@ -14524,6 +14524,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
 .content-dashboard .header-dashboard .section {
   display: flex;
@@ -14558,6 +14559,50 @@ p {
   border: 1px solid #eaeaea;
   border-radius: 20px;
   padding: 6px;
+}
+.content-dashboard .dashboard-stats .stat {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 24px;
+  margin-bottom: 2.25rem;
+}
+.content-dashboard .dashboard-stats .stat.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-dashboard .dashboard-stats .stat.flex .right-side {
+  margin: -2rem;
+  margin-left: 0;
+}
+.content-dashboard .dashboard-stats .stat.flex .number {
+  margin-bottom: 0;
+}
+.content-dashboard .dashboard-stats .stat .stat-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+.content-dashboard .dashboard-stats .stat .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.content-dashboard .dashboard-stats .stat .number .primary {
+  font-size: 3rem;
+}
+.content-dashboard .dashboard-stats .stat .number .dynamic {
+  display: flex;
+  align-items: center;
+  color: #00AA5B;
+  font-size: 20px;
+}
+.content-dashboard .dashboard-stats .stat .number .dynamic img {
+  margin-right: 12px;
+}
+.content-dashboard .dashboard-stats .stat .chart img {
+  width: 100%;
 }
 
 .mobile {
