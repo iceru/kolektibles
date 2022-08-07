@@ -27,7 +27,111 @@
     <nav class="sidebar-nav" data-includeHTML="components/sidebar.html">
     </nav>
     <div class="content-dashboard">
-        Test
+        <div class="header-dashboard">
+            <div class="section">
+                <h5>Dashboard</h5>
+                <select class="form-select" name="" id="">
+                    <option>All time</option>
+                    <option>7 Days</option>
+                    <option>14 Days</option>
+                </select>
+                <div class="export">
+                    <img src="/images/icons/export.svg" alt="">
+                    Export Data
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="back-home">
+                    <a href="/index.html">Back to home</a>
+                </div>
+                <div class="item">
+                    <div class="dropdown">
+                        <a href="#" role="button" id="currency" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/images/icons/coins.svg" alt="">
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="currency">
+                            <li><a class="dropdown-item" href="#">USD - $ (United States dollar)</a></li>
+                            <li><a class="dropdown-item" href="#">IDR - Rp (Indonesia rupiah)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dropdown">
+                        <a href="#" role="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/images/icons/web.svg" alt="">
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="language">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dropdown ">
+                        <a href="#" role="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="profile">
+                                <img src="/images/icons/icon-burger.svg" class="burger" alt="">
+                                <img src="/images/profile-thumbs.png" alt="">
+                            </div>
+                        </a>
+
+                        <ul class="dropdown-menu profile-dd" aria-labelledby="profile">
+                            <li><a class="dropdown-item" href="/profile-collections.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile-my-assets.html">My Assets</a></li>
+                            <li><a class="dropdown-item" href="/profile-saved-collections.html">Saved Items</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="/sign-in.html">Logout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-switch">
+                                <label for="">Light</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input darkSwitch" type="checkbox" role="switch">
+                                </div>
+                                <label for="">Dark</label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-stats">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stat">
+                                    <div class="stat-name">
+                                        Collection items
+                                    </div>
+                                    <div class="collection-number">
+                                        <div class="primary">
+                                            24568
+                                        </div>
+                                        <div class="dynamic">
+                                            <img src="/images/icons/Stroke 3.svg" alt=""> 124
+                                        </div>
+                                    </div>
+                                    <div class="chart">
+                                        <img src="/images/dashboard/chart-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

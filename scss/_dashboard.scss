@@ -1,9 +1,5 @@
 .dashboard {
     display: flex;
-
-    .content-dashboard {
-        width: 100%;
-    }
 }
 
 .sidebar-nav {
@@ -79,6 +75,59 @@
                         display: block;
                     }
                 }
+            }
+        }
+    }
+}
+
+.content-dashboard {
+    width: 100%;
+    padding: 2rem;
+    background-color: #F8FCFE;
+
+    .header-dashboard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .section {
+            display: flex;
+            align-items: center;
+
+            .form-select {
+                background-color: transparent;
+                color: #666666;
+                border-color: #8B8B8B;
+                width: 110px;
+                border-radius: 10px;
+                padding: 8px 16px;
+            }
+
+            >*:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            .export {
+                display: flex;
+                align-items: center;
+                color: #8195BB;
+                white-space: nowrap;
+
+                img {
+                    margin-right: 1rem;
+                }
+            }
+
+            .back-home {
+                margin-right: 44px;
+            }
+
+            .profile {
+                margin-left: 44px;
+                background-color: white;
+                border: 1px solid #eaeaea;
+                border-radius: 20px;
+                padding: 6px;
             }
         }
     }

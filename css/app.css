@@ -14452,9 +14452,6 @@ p {
 .dashboard {
   display: flex;
 }
-.dashboard .content-dashboard {
-  width: 100%;
-}
 
 .sidebar-nav {
   max-width: 250px;
@@ -14516,6 +14513,51 @@ p {
 .sidebar-nav .sidebar .menu ul li a {
   padding: 1.5rem;
   display: block;
+}
+
+.content-dashboard {
+  width: 100%;
+  padding: 2rem;
+  background-color: #F8FCFE;
+}
+.content-dashboard .header-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-dashboard .header-dashboard .section {
+  display: flex;
+  align-items: center;
+}
+.content-dashboard .header-dashboard .section .form-select {
+  background-color: transparent;
+  color: #666666;
+  border-color: #8B8B8B;
+  width: 110px;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+.content-dashboard .header-dashboard .section > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.content-dashboard .header-dashboard .section .export {
+  display: flex;
+  align-items: center;
+  color: #8195BB;
+  white-space: nowrap;
+}
+.content-dashboard .header-dashboard .section .export img {
+  margin-right: 1rem;
+}
+.content-dashboard .header-dashboard .section .back-home {
+  margin-right: 44px;
+}
+.content-dashboard .header-dashboard .section .profile {
+  margin-left: 44px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  padding: 6px;
 }
 
 .mobile {
