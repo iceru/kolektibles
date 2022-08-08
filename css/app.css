@@ -14604,6 +14604,59 @@ p {
 .content-dashboard .dashboard-stats .stat .chart img {
   width: 100%;
 }
+.content-dashboard .events-stats {
+  margin-bottom: 1rem;
+}
+.content-dashboard .events-stats .es-card {
+  margin-bottom: 1.5rem;
+}
+.content-dashboard .events-stats .es-card img {
+  width: 100%;
+}
+.content-dashboard .events-stats .es-item {
+  margin-bottom: 8px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1rem;
+}
+.content-dashboard .events-stats .es-item .number {
+  font-size: 20px;
+  font-weight: bold;
+}
+.content-dashboard .logs {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.content-dashboard .logs .title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.content-dashboard .logs .log-item {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.content-dashboard .logs .log-item.comment:after {
+  background-color: #7B61FF;
+}
+.content-dashboard .logs .log-item span {
+  font-weight: bold;
+}
+.content-dashboard .logs .log-item:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+  background-color: #00FFB9;
+}
 
 .mobile {
   font-size: 14px;

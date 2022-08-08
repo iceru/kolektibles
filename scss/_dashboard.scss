@@ -190,4 +190,70 @@
             }
         }
     }
+
+    .events-stats {
+        margin-bottom: 1rem;
+
+        .es-card {
+            margin-bottom: 1.5rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .es-item {
+            margin-bottom: 8px;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 1rem;
+
+            .number {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .logs {
+        background-color: white;
+        border-radius: 1rem;
+        padding: 2rem;
+
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .log-item {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+
+            &.comment {
+                &:after {
+                    background-color: #7B61FF;
+                }
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            &:after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                border-radius: 50%;
+                background-color: #00FFB9;
+            }
+        }
+    }
 }
