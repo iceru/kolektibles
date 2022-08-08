@@ -52,7 +52,9 @@
                     </div>
                 </div>
                 <div class="more">
-                    <img src="/images/icons/more.png" alt="">
+                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#bottomsheet">
+                        <img src="/images/icons/more.png" alt="">
+                    </button>
                 </div>
             </div>
             <div class="ai-img">
@@ -81,7 +83,7 @@
                 <div class="ai-title">
                     Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
                 </div>
-                <div class="ai-comments">
+                <div class="discussions">
                     <div class="user"><a href="#">Nathaniel Sutono</a> wah wah keren banget ini</div>
                 </div>
                 <div class="ai-discussions">
@@ -239,6 +241,50 @@
             </a>
         </div>
     </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg">
+        Launch
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade bottomsheet" id="bottomsheet" tabindex="-1" role="dialog" aria-labelledby="bottomsheetId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="bs-item">
+                        <a href="#">
+                            <img src="/images/icons/share.svg" alt="">
+                            Share
+                        </a>
+                    </div>
+                    <div class="bs-item">
+                        <a href="#">
+                            <img src="/images/icons/Send.svg" alt="">
+                            Copy link
+                        </a>
+                    </div>
+                    <div class="bs-item">
+                        <a href="#">
+                            <img src="/images/icons/Heart2.svg" alt="">
+                            Add to wishlists</a>
+                    </div>
+                    <div class="bs-item">
+                        <a href="#">
+                            <img src="/images/icons/users.svg" alt="">
+                            Unfollow</a>
+                    </div>
+                    <div class="bs-item">
+                        <a href="#">
+                            <img src="/images/icons/Danger Triangle.svg" alt="">
+                            Report image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script>

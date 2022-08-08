@@ -14778,6 +14778,54 @@ p {
   transform: translateX(-50%);
 }
 
+.bottomsheet .modal-dialog {
+  bottom: 0;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  transform: translate(0, 100px) !important;
+}
+.bottomsheet .modal-dialog .modal-content {
+  border-radius: 24px 24px 0 0;
+}
+.bottomsheet .modal-dialog .modal-content .modal-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2rem;
+  position: relative;
+}
+.bottomsheet .modal-dialog .modal-content .modal-body:after {
+  content: "";
+  width: 20%;
+  height: 3px;
+  border-radius: 1rem;
+  background-color: #797979;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bottomsheet .modal-dialog .modal-content .bs-item {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+}
+.bottomsheet .modal-dialog .modal-content .bs-item a {
+  display: flex;
+  align-items: center;
+}
+.bottomsheet .modal-dialog .modal-content .bs-item a img {
+  margin-right: 0.5rem;
+  filter: brightness(0) invert(0.3);
+}
+.bottomsheet .modal-dialog .modal-content .bs-item:not(:last-child) {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ececec;
+}
+.bottomsheet.show .modal-dialog {
+  transform: none !important;
+}
+
 .activities {
   font-size: 14px;
 }
@@ -14789,6 +14837,10 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
+}
+.activities .activity-item .ai-user .more .btn:active, .activities .activity-item .ai-user .more .btn:focus, .activities .activity-item .ai-user .more .btn:hover, .activities .activity-item .ai-user .more .btn:focus-visible {
+  box-shadow: none;
+  border: none;
 }
 .activities .activity-item .ai-user .user {
   display: flex;
@@ -14834,6 +14886,7 @@ p {
   border-radius: 2rem;
   font-weight: 600;
   color: black;
+  font-size: 12px;
 }
 .activities .activity-item .ai-content .ai-title {
   font-weight: bold;
