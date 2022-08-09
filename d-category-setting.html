@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nestedSortable/2.0.0/jquery.mjs.nestedSortable.js"></script>
+
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="dashboard">
+
+    <nav class="sidebar-nav" data-includeHTML="components/sidebar.html">
+    </nav>
+    <div class="content-dashboard">
+        <div class="header-dashboard">
+            <div class="section">
+                <h5>Category setting </h5>
+            </div>
+
+            <div class="section">
+                <div class="back-home">
+                    <a href="/index.html">Back to home</a>
+                </div>
+                <div class="item">
+                    <div class="dropdown">
+                        <a href="#" role="button" id="currency" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/images/icons/coins.svg" alt="">
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="currency">
+                            <li><a class="dropdown-item" href="#">USD - $ (United States dollar)</a></li>
+                            <li><a class="dropdown-item" href="#">IDR - Rp (Indonesia rupiah)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dropdown">
+                        <a href="#" role="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/images/icons/web.svg" alt="">
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="language">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dropdown ">
+                        <a href="#" role="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="profile">
+                                <img src="/images/icons/icon-burger.svg" class="burger" alt="">
+                                <img src="/images/profile-thumbs.png" alt="">
+                            </div>
+                        </a>
+
+                        <ul class="dropdown-menu profile-dd" aria-labelledby="profile">
+                            <li><a class="dropdown-item" href="/profile-collections.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile-my-assets.html">My Assets</a></li>
+                            <li><a class="dropdown-item" href="/profile-saved-collections.html">Saved Items</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="/sign-in.html">Logout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-switch">
+                                <label for="">Light</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input darkSwitch" type="checkbox" role="switch">
+                                </div>
+                                <label for="">Dark</label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="../assets/dark-mode/dark-mode-switch.js"></script>
+        </div>
+        <div class="category-setting">
+            <div class="add-category mb-4">
+                <button type="button" class="btn btn-secondary fw-bold">+ Add new category</button>
+            </div>
+            <ul class="sortable">
+                <li>
+                    <div class="category-sort">
+                        <div class="section">
+                            <div class="cs-drag">
+                                <img src="/images/dashboard/Drag.svg" alt="Drag">
+                            </div>
+                            <div class="cs-img">
+                                <img src="/images/categories/action.png" alt="">
+                            </div>
+                            <div class="cs-name">
+                                Action Figure
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="cs-button">
+                                <button type="button" class="btn btn-outline-light">
+                                    <img src="/images/icons/Add.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="cs-more">
+                                <img src="/images/icons/more.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="category-sort">
+                                <div class="section">
+                                    <div class="cs-drag">
+                                        <img src="/images/dashboard/Drag.svg" alt="Drag">
+                                    </div>
+                                    <div class="cs-img">
+                                        <img src="/images/dashboard/square-enix.png" alt="">
+                                    </div>
+                                    <div class="cs-name">
+                                        Articulated: Square-Enix
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="cs-button">
+                                        <button type="button" class="btn btn-outline-light">
+                                            <img src="/images/icons/Add.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="cs-more">
+                                        <img src="/images/icons/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-sort">
+                                <div class="section">
+                                    <div class="cs-drag">
+                                        <img src="/images/dashboard/Drag.svg" alt="Drag">
+                                    </div>
+                                    <div class="cs-img">
+                                        <img src="/images/categories/nendo.png" alt="">
+                                    </div>
+                                    <div class="cs-name">
+                                        Nendoroid
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="cs-button">
+                                        <button type="button" class="btn btn-outline-light">
+                                            <img src="/images/icons/Add.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="cs-more">
+                                        <img src="/images/icons/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <div class="category-sort">
+                                        <div class="section">
+                                            <div class="cs-drag">
+                                                <img src="/images/dashboard/Drag.svg" alt="Drag">
+                                            </div>
+                                            <div class="cs-img">
+                                                <img src="/images/dashboard/nendo-chibi.png" alt="">
+                                            </div>
+                                            <div class="cs-name">
+                                                Nendoriod Chibi
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div class="cs-button">
+                                                <button type="button" class="btn btn-outline-light">
+                                                    <img src="/images/icons/Add.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="cs-more">
+                                                <img src="/images/icons/more.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="category-sort">
+                        <div class="section">
+                            <div class="cs-drag">
+                                <img src="/images/dashboard/Drag.svg" alt="Drag">
+                            </div>
+                            <div class="cs-img">
+                                <img src="/images/categories/gundam.png" alt="">
+                            </div>
+                            <div class="cs-name">
+                                Gundam
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="cs-button">
+                                <button type="button" class="btn btn-outline-light">
+                                    <img src="/images/icons/Add.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="cs-more">
+                                <img src="/images/icons/more.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="category-sort">
+                                <div class="section">
+                                    <div class="cs-drag">
+                                        <img src="/images/dashboard/Drag.svg" alt="Drag">
+                                    </div>
+                                    <div class="cs-img">
+                                        <img src="/images/dashboard/gundam2.png" alt="">
+                                    </div>
+                                    <div class="cs-name">
+                                        Gundam High Grade
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="cs-button">
+                                        <button type="button" class="btn btn-outline-light">
+                                            <img src="/images/icons/Add.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="cs-more">
+                                        <img src="/images/icons/more.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+
+        var ns = $('ul.sortable').nestedSortable({
+            forcePlaceholderSize: true,
+            handle: 'div',
+            helper: 'clone',
+            items: 'li',
+            opacity: .6,
+            placeholder: 'placeholder',
+            revert: 250,
+            tabSize: 25,
+            tolerance: 'pointer',
+            toleranceElement: '> div',
+            maxLevels: 4,
+            isTree: true,
+            listType: 'ul',
+            expandOnHover: 700,
+            startCollapsed: false
+        });
+
+        $('.expandEditor').attr('title', 'Click to show/hide item editor');
+        $('.disclose').attr('title', 'Click to show/hide children');
+        $('.deleteMenu').attr('title', 'Click to delete item.');
+
+        $('.disclose').on('click', function () {
+            $(this).closest('li').toggleClass('mjs-nestedSortable-collapsed').toggleClass('mjs-nestedSortable-expanded');
+            $(this).toggleClass('ui-icon-plusthick').toggleClass('ui-icon-minusthick');
+        });
+
+        $('.expandEditor, .itemTitle').click(function () {
+            var id = $(this).attr('data-id');
+            $('#menuEdit' + id).toggle();
+            $(this).toggleClass('ui-icon-triangle-1-n').toggleClass('ui-icon-triangle-1-s');
+        });
+
+        $('.deleteMenu').click(function () {
+            var id = $(this).attr('data-id');
+            $('#menuItem_' + id).remove();
+        });
+
+        $('#serialize').click(function () {
+            serialized = $('ul.sortable').nestedSortable('serialize');
+            $('#serializeOutput').text(serialized + '\n\n');
+        })
+
+        $('#toHierarchy').click(function (e) {
+            hiered = $('ul.sortable').nestedSortable('toHierarchy', { startDepthCount: 0 });
+            hiered = dump(hiered);
+            (typeof ($('#toHierarchyOutput')[0].textContent) != 'undefined') ?
+                $('#toHierarchyOutput')[0].textContent = hiered : $('#toHierarchyOutput')[0].innerText = hiered;
+        })
+
+        $('#toArray').click(function (e) {
+            arraied = $('ul.sortable').nestedSortable('toArray', { startDepthCount: 0 });
+            arraied = dump(arraied);
+            (typeof ($('#toArrayOutput')[0].textContent) != 'undefined') ?
+                $('#toArrayOutput')[0].textContent = arraied : $('#toArrayOutput')[0].innerText = arraied;
+        });
+
+        function dump(arr, level) {
+            var dumped_text = "";
+            if (!level) level = 0;
+
+            //The padding given at the beginning of the line.
+            var level_padding = "";
+            for (var j = 0; j < level + 1; j++) level_padding += "    ";
+
+            if (typeof (arr) == 'object') { //Array/Hashes/Objects
+                for (var item in arr) {
+                    var value = arr[item];
+
+                    if (typeof (value) == 'object') { //If it is an array,
+                        dumped_text += level_padding + "'" + item + "' ...\n";
+                        dumped_text += dump(value, level + 1);
+                    } else {
+                        dumped_text += level_padding + "'" + item + "' => \"" + value + "\"\n";
+                    }
+                }
+            } else { //Strings/Chars/Numbers etc.
+                dumped_text = "===>" + arr + "<===(" + typeof (arr) + ")";
+            }
+            return dumped_text;
+        }
+
+
+    });
+</script>
+
+</html>

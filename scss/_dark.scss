@@ -635,6 +635,27 @@
     &.dashboard {
         background-color: #000C25;
 
+        .dropdown-menu.show {
+            background-color: #131313;
+            padding: 0;
+            border-radius: 1rem;
+
+            li a,
+            label,
+            .dropdown-title {
+                color: white !important;
+
+                &:hover {
+                    background-color: #01143A;
+                    color: white;
+                }
+            }
+
+            li a {
+                padding: 1rem;
+            }
+        }
+
         .header-dashboard {
             .form-select {
                 color: #8195BB;
@@ -668,6 +689,15 @@
             .event-item {
                 background-color: #121F39 !important;
                 color: white;
+            }
+
+            .category-setting {
+                .sortable {
+                    .category-sort {
+                        background-color: #121F39;
+                        color: white;
+                    }
+                }
             }
 
             .ei-info {
