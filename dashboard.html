@@ -179,7 +179,19 @@
                     <div class="col-12 col-lg-4">
                         <div class="events-stats">
                             <div class="es-card">
-                                <img src="/images/events/event-1.png" alt="">
+                                <div class="card-stack">
+                                    <ul class="card-list">
+                                        <li class="card">
+                                            <img src="/images/events/event-2.png" alt="">
+                                        </li>
+                                        <li class="card">
+                                            <img src="/images/events/event-3.png" alt="">
+                                        </li>
+                                        <li class="card">
+                                            <img src="/images/events/event-1.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="es-item">
                                 <div class="name">
@@ -234,6 +246,21 @@
         $("*[data-includeHTML]").each(function () {
             $(this).load($(this).attr("data-includeHTML"));
         });
+
+        var $card = $('.card');
+        var lastCard = $(".card-list .card").length - 1;
+
+        $('.card-list').click(function () {
+            var prependList = function () {
+                if ($('.card').hasClass('activeNow')) {
+                    var $slicedCard = $('.card').slice(lastCard).removeClass('transformThis activeNow');
+                    $('.card-list').prepend($slicedCard);
+                }
+            }
+            $('li').last().removeClass('transformPrev').addClass('transformThis').prev().addClass('activeNow');
+            setTimeout(function () { prependList(); }, 150);
+        });
+
     });
 </script>
 
