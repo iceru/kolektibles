@@ -375,7 +375,7 @@
                     background-color: #C5C5C5;
                     z-index: 0;
 
-                    @include breakpoint(desktop) {
+                    @include breakpoint(largeDesktop) {
                         width: 27vw;
                     }
                 }

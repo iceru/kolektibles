@@ -4,10 +4,12 @@
     if (darkSwitch) {
       initTheme();
       $('.darkSwitch').change(function () { 
-          if($( window ).width() < 992) {
-            darkSwitch[0].checked = darkSwitch[1].checked;
-          } else {
-            darkSwitch[1].checked = darkSwitch[0].checked;
+          if(darkSwitch[1]) {
+            if($( window ).width() < 992) {
+              darkSwitch[0].checked = darkSwitch[1].checked;
+            } else {
+              darkSwitch[1].checked = darkSwitch[0].checked;
+            }
           }
 
           resetTheme();
@@ -18,7 +20,9 @@
           localStorage.getItem("darkSwitch") !== null &&
           localStorage.getItem("darkSwitch") === "dark";
         darkSwitch[0].checked = darkThemeSelected;
-        darkSwitch[1].checked = darkThemeSelected;
+        if(darkSwitch[1]) {
+          darkSwitch[1].checked = darkThemeSelected;
+        }
         darkThemeSelected
           ? document.body.setAttribute("data-theme", "dark")
           : document.body.removeAttribute("data-theme");
@@ -49,14 +53,26 @@
 
       }
       function resetTheme() {
-        if (darkSwitch[0].checked && darkSwitch[1].checked) {
-          document.body.setAttribute("data-theme", "dark");
-          localStorage.setItem("darkSwitch", "dark");
-          $('.darkSwitch').attr('checked', true);
+        if(darkSwitch[1]) {
+          if (darkSwitch[0].checked && darkSwitch[1].checked) {
+            document.body.setAttribute("data-theme", "dark");
+            localStorage.setItem("darkSwitch", "dark");
+            $('.darkSwitch').attr('checked', true);
+          } else {
+            document.body.removeAttribute("data-theme");
+            localStorage.removeItem("darkSwitch");
+            $('.darkSwitch').attr('checked', false);
+          }
         } else {
-          document.body.removeAttribute("data-theme");
-          localStorage.removeItem("darkSwitch");
-          $('.darkSwitch').attr('checked', false);
+          if (darkSwitch[0].checked) {
+            document.body.setAttribute("data-theme", "dark");
+            localStorage.setItem("darkSwitch", "dark");
+            $('.darkSwitch').attr('checked', true);
+          } else {
+            document.body.removeAttribute("data-theme");
+            localStorage.removeItem("darkSwitch");
+            $('.darkSwitch').attr('checked', false);
+          }
         }
       }
     }

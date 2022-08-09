@@ -123,6 +123,12 @@
     .categories {
         .item {
             background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
+
+            .cat-info {
+                p {
+                    color: #A2B1D1;
+                }
+            }
         }
     }
 
@@ -137,6 +143,16 @@
 
         .form-select {
             color: white;
+
+            option {
+                background-color: $dark;
+            }
+        }
+
+        .search-bar {
+            img {
+                filter: brightness(0);
+            }
         }
 
         .form-control {
@@ -403,9 +419,14 @@
 
             .filter-title,
             .form-check,
-            .form-input,
+            .form-control,
             .form-select {
                 color: white;
+                border-color: #626262 !important;
+            }
+
+            .section {
+                border-color: #5E5E5E;
             }
         }
     }
@@ -590,6 +611,99 @@
     &.index {
         .footer {
             background-color: #131313;
+        }
+    }
+
+    &.add-event-page {
+        .form-group {
+            .images {
+                .img-container {
+                    background-color: #1A2336;
+
+                    img {
+                        filter: brightness(0.5) invert(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-nav {
+        background-color: #121F39;
+    }
+
+    &.dashboard {
+        background-color: #000C25;
+
+        .header-dashboard {
+            .form-select {
+                color: #8195BB;
+                border-color: #8195BB;
+                background-color: #121F39;
+            }
+
+            .item {
+                .dropdown {
+                    >a>img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+
+                .profile {
+                    background-color: #01143A;
+
+                    .burger {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+
+        .content-dashboard {
+            background-color: #000C25;
+
+            .stat,
+            .es-item,
+            .logs,
+            .event-item {
+                background-color: #121F39 !important;
+                color: white;
+            }
+
+            .ei-info {
+
+                .title,
+                .text-icon {
+                    color: white !important;
+                }
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            .design-item {
+                background-color: #172748 !important;
+            }
+
+            .contact-dashboard {
+                .table {
+                    color: white;
+
+                    tbody tr {
+                        background-color: #121F39;
+                    }
+                }
+            }
+
+            .create-home-setting {
+                background-color: transparent;
+                border: 1px solid #2E3C5A;
+
+                .img-container {
+                    background-color: #1A2336;
+                }
+            }
         }
     }
 
