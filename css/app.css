@@ -14563,6 +14563,7 @@ p {
 .offcanvas .sidebar .actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
   padding: 1rem 0;
   border-top: 1px solid lightgray;
@@ -14628,17 +14629,22 @@ p {
   border-radius: 20px;
   padding: 6px;
 }
-@media (max-width: 576px) {
-  .content-dashboard .header-dashboard .section .export {
-    display: none;
-  }
-}
 @media (max-width: 992px) {
   .content-dashboard .header-dashboard .section.right {
     display: none;
   }
   .content-dashboard .header-dashboard .section .hamburger {
     display: block;
+  }
+  .content-dashboard .header-dashboard .section.left {
+    flex-wrap: wrap;
+  }
+  .content-dashboard .header-dashboard .section.left > * {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+  .content-dashboard .header-dashboard .section.left > *:nth-child(3) {
+    margin-right: 0;
   }
 }
 .content-dashboard .dashboard-stats .stat {
@@ -14862,6 +14868,22 @@ p {
   margin-left: 2rem;
   font-weight: bold;
 }
+@media (max-width: 576px) {
+  .content-dashboard .event-detail .ed-content {
+    padding: 0;
+  }
+  .content-dashboard .event-detail .status-action {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  .content-dashboard .event-detail .status-action .section:first-child {
+    margin-bottom: 1rem;
+  }
+  .content-dashboard .event-detail .status-action .section:last-child {
+    flex-wrap: wrap;
+  }
+}
 .content-dashboard .contact-dashboard .table {
   font-size: 14px;
 }
@@ -14924,6 +14946,24 @@ p {
 .content-dashboard .home-setting .hs-design .design-items .design-item .form-check {
   margin-bottom: 12px;
 }
+@media (max-width: 576px) {
+  .content-dashboard .home-setting .hs-header {
+    flex-direction: column;
+  }
+  .content-dashboard .home-setting .hs-header .checkboxes {
+    margin-bottom: 1rem;
+  }
+  .content-dashboard .home-setting .hs-design .title-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content-dashboard .home-setting .hs-design .title-section .title {
+    margin-bottom: 1rem;
+  }
+  .content-dashboard .home-setting .hs-design .design-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .content-dashboard .create-home-setting {
   background-color: white;
   border-radius: 1rem;
@@ -14959,6 +14999,14 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 576px) {
+  .content-dashboard .create-home-setting .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-dashboard .create-home-setting .images .img-container img {
+    height: 100px;
+  }
+}
 .content-dashboard .create-home-setting .btn-groups {
   margin-top: 4rem;
 }
@@ -14969,7 +15017,12 @@ p {
   width: 100%;
   position: relative;
   margin: 20px auto;
-  height: 230px;
+  height: 18vw;
+}
+@media (max-width: 576px) {
+  .content-dashboard .card-stack {
+    height: 62vw;
+  }
 }
 .content-dashboard .card-stack .buttons {
   display: none;
@@ -15121,6 +15174,14 @@ p {
 }
 .content-dashboard .category-setting .sortable .category-sort .section .cs-more img {
   transform: rotate(90deg);
+}
+@media (max-width: 992px) {
+  .content-dashboard .category-setting .sortable ul {
+    padding-left: 2rem;
+  }
+  .content-dashboard .category-setting .sortable .category-sort {
+    flex-wrap: wrap;
+  }
 }
 
 .mobile {
@@ -15936,6 +15997,22 @@ p {
   border-color: #626262;
   color: white;
 }
+[data-theme=dark] .offcanvas-body {
+  background-color: #121F39;
+}
+[data-theme=dark] .offcanvas-body .actions {
+  color: white;
+}
+[data-theme=dark] .offcanvas-body .actions .profile {
+  border: 1px solid white;
+  background-color: #152139;
+  border-radius: 2rem;
+  padding: 4px;
+}
+[data-theme=dark] .offcanvas-body .actions a > img,
+[data-theme=dark] .offcanvas-body .actions .burger {
+  filter: brightness(0) invert(1);
+}
 [data-theme=dark] .offcanvas-body .btn-close {
   filter: brightness(0) invert(1);
 }
@@ -16303,6 +16380,9 @@ p {
 [data-theme=dark].dashboard {
   background-color: #000C25;
 }
+[data-theme=dark].dashboard .hamburger img {
+  filter: brightness(0) invert(1);
+}
 [data-theme=dark].dashboard .dropdown-menu.show {
   background-color: #131313;
   padding: 0;
@@ -16342,7 +16422,8 @@ p {
 [data-theme=dark].dashboard .content-dashboard .stat,
 [data-theme=dark].dashboard .content-dashboard .es-item,
 [data-theme=dark].dashboard .content-dashboard .logs,
-[data-theme=dark].dashboard .content-dashboard .event-item {
+[data-theme=dark].dashboard .content-dashboard .event-item,
+[data-theme=dark].dashboard .content-dashboard .status-action {
   background-color: #121F39 !important;
   color: white;
 }

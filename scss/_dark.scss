@@ -8,6 +8,24 @@
     }
 
     .offcanvas-body {
+        background-color: #121F39;
+
+        .actions {
+            color: white;
+
+            .profile {
+                border: 1px solid white;
+                background-color: #152139;
+                border-radius: 2rem;
+                padding: 4px;
+            }
+
+            a>img,
+            .burger {
+                filter: brightness(0) invert(1);
+            }
+        }
+
         .btn-close {
             filter: brightness(0) invert(1);
         }
@@ -635,6 +653,12 @@
     &.dashboard {
         background-color: #000C25;
 
+        .hamburger {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
         .dropdown-menu.show {
             background-color: #131313;
             padding: 0;
@@ -686,7 +710,8 @@
             .stat,
             .es-item,
             .logs,
-            .event-item {
+            .event-item,
+            .status-action {
                 background-color: #121F39 !important;
                 color: white;
             }

@@ -28,11 +28,14 @@
     </nav>
     <div class="content-dashboard">
         <div class="header-dashboard">
-            <div class="section">
+            <div class="section left">
+                <a data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar" class="hamburger">
+                    <img src="/images/icons/burger-menu.svg" alt="">
+                </a>
                 <h5>Events</h5>
             </div>
 
-            <div class="section">
+            <div class="section right">
                 <div class="back-home">
                     <a href="/index.html">Back to home</a>
                 </div>
@@ -95,11 +98,12 @@
             </div>
             <script src="../assets/dark-mode/dark-mode-switch.js"></script>
         </div>
+        <div data-includeHTML="components/sidebar-offcanvas.html"> </div>
 
         <div class="events-dashboard">
             <div class="event-item">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                         <div class="ei-img">
                             <img src="/images/events/event-1.png" alt="">
                         </div>
@@ -142,7 +146,7 @@
             </div>
             <div class="event-item">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                         <div class="ei-img">
                             <img src="/images/events/event-2.png" alt="">
                         </div>
@@ -185,7 +189,7 @@
             </div>
             <div class="event-item">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                         <div class="ei-img">
                             <img src="/images/events/event-3.png" alt="">
                         </div>

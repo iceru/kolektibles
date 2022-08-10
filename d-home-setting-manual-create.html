@@ -28,11 +28,14 @@
     </nav>
     <div class="content-dashboard">
         <div class="header-dashboard">
-            <div class="section">
+            <div class="section left">
+                <a data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar" class="hamburger">
+                    <img src="/images/icons/burger-menu.svg" alt="">
+                </a>
                 <h5><span>Home setting / </span> Create new home setting</h5>
             </div>
 
-            <div class="section">
+            <div class="section right">
                 <div class="back-home">
                     <a href="/index.html">Back to home</a>
                 </div>
@@ -96,6 +99,8 @@
             <script src="../assets/dark-mode/dark-mode-switch.js"></script>
         </div>
 
+        <div data-includeHTML="components/sidebar-offcanvas.html"></div>
+
         <div class="create-home-setting">
             <form action="">
                 <div class="row">
@@ -112,13 +117,13 @@
                                 value="The one place for list down, organize & share story about your collection">
                         </div>
                     </div>
-                    <div class="col-6 mb-4">
+                    <div class="col-12 col-md-6 mb-4">
                         <div class="form-group">
                             <label for="" class="form-label">CTA text</label>
                             <input type="text" class="form-control" name="" id="">
                         </div>
                     </div>
-                    <div class="col-6 mb-4">
+                    <div class="col-12 col-md-6 mb-4">
                         <div class="form-group">
                             <label for="" class="form-label">CTA link (URL)</label>
                             <input type="text" class="form-control" name="" id="">

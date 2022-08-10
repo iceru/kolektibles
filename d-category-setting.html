@@ -20,7 +20,10 @@
         crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nestedSortable/2.0.0/jquery.mjs.nestedSortable.js"></script>
-
+    <script src=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Kolektibles</title>
 </head>
@@ -31,11 +34,14 @@
     </nav>
     <div class="content-dashboard">
         <div class="header-dashboard">
-            <div class="section">
+            <div class="section left">
+                <a data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar" class="hamburger">
+                    <img src="/images/icons/burger-menu.svg" alt="">
+                </a>
                 <h5>Category setting </h5>
             </div>
 
-            <div class="section">
+            <div class="section right">
                 <div class="back-home">
                     <a href="/index.html">Back to home</a>
                 </div>
@@ -98,6 +104,7 @@
             </div>
             <script src="../assets/dark-mode/dark-mode-switch.js"></script>
         </div>
+        <div class="sidebar-nav" data-includeHTML="components/sidebar-offcanvas.html"></div>
         <div class="category-setting">
             <div class="add-category mb-4">
                 <button type="button" class="btn btn-secondary fw-bold">+ Add new category</button>
