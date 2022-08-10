@@ -14480,51 +14480,57 @@ p {
   max-height: 100vh;
   background-color: white;
 }
-.sidebar-nav .sidebar {
+@media (max-width: 992px) {
+  .sidebar-nav {
+    display: none;
+  }
+}
+
+.sidebar {
   padding: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar-nav .sidebar .logo {
+.sidebar .logo {
   margin-bottom: 3rem;
 }
-.sidebar-nav .sidebar .guideline {
+.sidebar .guideline {
   border-radius: 1rem;
   background-color: #B1E3FC;
   color: #130F26;
   padding: 1.5rem 0 0 1.5rem;
 }
-.sidebar-nav .sidebar .guideline .text {
+.sidebar .guideline .text {
   margin-bottom: 14px;
   font-weight: 500;
 }
-.sidebar-nav .sidebar .guideline .btn-purple {
+.sidebar .guideline .btn-purple {
   background-color: #482FC8;
   color: #37FFC8;
   border-radius: 36px;
   padding: 10px 24px;
 }
-.sidebar-nav .sidebar .guideline .img img {
+.sidebar .guideline .img img {
   width: 100%;
   margin-top: -30px;
   z-index: -1;
   border-bottom-right-radius: 1rem;
 }
-.sidebar-nav .sidebar .menu {
+.sidebar .menu {
   margin-right: -2rem;
 }
-.sidebar-nav .sidebar .menu ul {
+.sidebar .menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.sidebar-nav .sidebar .menu ul li.active, .sidebar-nav .sidebar .menu ul li:hover {
+.sidebar .menu ul li.active, .sidebar .menu ul li:hover {
   font-weight: bold;
   position: relative;
 }
-.sidebar-nav .sidebar .menu ul li.active:after, .sidebar-nav .sidebar .menu ul li:hover:after {
+.sidebar .menu ul li.active:after, .sidebar .menu ul li:hover:after {
   content: "";
   width: 4px;
   position: absolute;
@@ -14535,15 +14541,42 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-.sidebar-nav .sidebar .menu ul li a {
+.sidebar .menu ul li a {
   padding: 1.5rem;
   display: block;
+}
+
+.offcanvas .sidebar {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.offcanvas .sidebar .logo {
+  margin-bottom: 1rem;
+}
+.offcanvas .sidebar .menu {
+  margin-bottom: 2rem;
+}
+.offcanvas .sidebar .menu ul li a {
+  padding-left: 0;
+}
+.offcanvas .sidebar .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid lightgray;
 }
 
 .content-dashboard {
   width: 100%;
   padding: 2rem;
   background-color: #F8FCFE;
+}
+@media (max-width: 576px) {
+  .content-dashboard {
+    padding: 2rem 1.5rem;
+  }
 }
 .content-dashboard .header-dashboard {
   display: flex;
@@ -14554,6 +14587,13 @@ p {
 .content-dashboard .header-dashboard .section {
   display: flex;
   align-items: center;
+}
+.content-dashboard .header-dashboard .section .hamburger {
+  display: none;
+}
+.content-dashboard .header-dashboard .section .hamburger img {
+  height: 20px;
+  width: auto;
 }
 .content-dashboard .header-dashboard .section h5 span, .content-dashboard .header-dashboard .section .h5 span {
   font-weight: 400;
@@ -14587,6 +14627,19 @@ p {
   border: 1px solid #eaeaea;
   border-radius: 20px;
   padding: 6px;
+}
+@media (max-width: 576px) {
+  .content-dashboard .header-dashboard .section .export {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .content-dashboard .header-dashboard .section.right {
+    display: none;
+  }
+  .content-dashboard .header-dashboard .section .hamburger {
+    display: block;
+  }
 }
 .content-dashboard .dashboard-stats .stat {
   padding: 2rem;
@@ -14628,6 +14681,33 @@ p {
 }
 .content-dashboard .dashboard-stats .stat .number .dynamic img {
   margin-right: 12px;
+}
+@media (max-width: 576px) {
+  .content-dashboard .dashboard-stats .stat.flex {
+    flex-direction: column;
+  }
+  .content-dashboard .dashboard-stats .stat.flex .left-side {
+    margin-bottom: 1rem;
+  }
+  .content-dashboard .dashboard-stats .stat.flex .right-side {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -4rem;
+  }
+  .content-dashboard .dashboard-stats .stat.flex .chart {
+    width: 80%;
+  }
+  .content-dashboard .dashboard-stats .stat .stat-name {
+    font-size: 18px;
+  }
+  .content-dashboard .dashboard-stats .stat .number .primary {
+    font-size: 2.5rem;
+  }
+  .content-dashboard .dashboard-stats .stat .number .dynamic {
+    font-size: 16px;
+  }
 }
 .content-dashboard .dashboard-stats .stat .chart img {
   width: 100%;
