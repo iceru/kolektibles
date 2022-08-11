@@ -102,12 +102,30 @@
                     </div>
                 </div>
             </div>
-            <script src="../assets/dark-mode/dark-mode-switch.js"></script>
+
         </div>
-        <div class="sidebar-nav" data-includeHTML="components/sidebar-offcanvas.html"></div>
+        <div data-includeHTML="components/sidebar-offcanvas.html"></div>
         <div class="category-setting">
             <div class="add-category mb-4">
-                <button type="button" class="btn btn-secondary fw-bold">+ Add new category</button>
+                <button type="button" class="btn btn-secondary fw-bold" id="addNew">+ Add new category</button>
+
+                <div class="new-category">
+                    <div class="title">New category</div>
+                    <div class="nc-img">
+                        <div class="text">Image</div>
+                        <div class="img-placeholder">
+                            <img src="/images/icons/Image.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="nc-name">
+                        <label for="name" class="form-label">Category name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="">
+                    </div>
+                    <div class="nc-buttons">
+                        <button type="button" class="btn btn-outline-light" id="cancelNew">Cancel</button>
+                        <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
             </div>
             <ul class="sortable">
                 <li>
@@ -278,6 +296,19 @@
             $(this).load($(this).attr("data-includeHTML"));
         });
 
+        $('.new-category').hide();
+
+        $('#addNew').click(function (e) {
+            e.preventDefault();
+            $('.new-category').slideDown();
+            $(this).fadeOut()
+        });
+
+        $('#cancelNew').click(function (e) {
+            e.preventDefault();
+            $('#addNew').fadeIn();
+            $('.new-category').slideUp();
+        });
         var ns = $('ul.sortable').nestedSortable({
             forcePlaceholderSize: true,
             handle: 'div',
@@ -295,71 +326,6 @@
             expandOnHover: 700,
             startCollapsed: false
         });
-
-        $('.expandEditor').attr('title', 'Click to show/hide item editor');
-        $('.disclose').attr('title', 'Click to show/hide children');
-        $('.deleteMenu').attr('title', 'Click to delete item.');
-
-        $('.disclose').on('click', function () {
-            $(this).closest('li').toggleClass('mjs-nestedSortable-collapsed').toggleClass('mjs-nestedSortable-expanded');
-            $(this).toggleClass('ui-icon-plusthick').toggleClass('ui-icon-minusthick');
-        });
-
-        $('.expandEditor, .itemTitle').click(function () {
-            var id = $(this).attr('data-id');
-            $('#menuEdit' + id).toggle();
-            $(this).toggleClass('ui-icon-triangle-1-n').toggleClass('ui-icon-triangle-1-s');
-        });
-
-        $('.deleteMenu').click(function () {
-            var id = $(this).attr('data-id');
-            $('#menuItem_' + id).remove();
-        });
-
-        $('#serialize').click(function () {
-            serialized = $('ul.sortable').nestedSortable('serialize');
-            $('#serializeOutput').text(serialized + '\n\n');
-        })
-
-        $('#toHierarchy').click(function (e) {
-            hiered = $('ul.sortable').nestedSortable('toHierarchy', { startDepthCount: 0 });
-            hiered = dump(hiered);
-            (typeof ($('#toHierarchyOutput')[0].textContent) != 'undefined') ?
-                $('#toHierarchyOutput')[0].textContent = hiered : $('#toHierarchyOutput')[0].innerText = hiered;
-        })
-
-        $('#toArray').click(function (e) {
-            arraied = $('ul.sortable').nestedSortable('toArray', { startDepthCount: 0 });
-            arraied = dump(arraied);
-            (typeof ($('#toArrayOutput')[0].textContent) != 'undefined') ?
-                $('#toArrayOutput')[0].textContent = arraied : $('#toArrayOutput')[0].innerText = arraied;
-        });
-
-        function dump(arr, level) {
-            var dumped_text = "";
-            if (!level) level = 0;
-
-            //The padding given at the beginning of the line.
-            var level_padding = "";
-            for (var j = 0; j < level + 1; j++) level_padding += "    ";
-
-            if (typeof (arr) == 'object') { //Array/Hashes/Objects
-                for (var item in arr) {
-                    var value = arr[item];
-
-                    if (typeof (value) == 'object') { //If it is an array,
-                        dumped_text += level_padding + "'" + item + "' ...\n";
-                        dumped_text += dump(value, level + 1);
-                    } else {
-                        dumped_text += level_padding + "'" + item + "' => \"" + value + "\"\n";
-                    }
-                }
-            } else { //Strings/Chars/Numbers etc.
-                dumped_text = "===>" + arr + "<===(" + typeof (arr) + ")";
-            }
-            return dumped_text;
-        }
-
 
     });
 </script>

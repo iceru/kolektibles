@@ -28,11 +28,14 @@
     </nav>
     <div class="content-dashboard">
         <div class="header-dashboard">
-            <div class="section">
+            <div class="section left">
+                <a data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar" class="hamburger">
+                    <img src="/images/icons/burger-menu.svg" alt="">
+                </a>
                 <h5>Contact</h5>
             </div>
 
-            <div class="section">
+            <div class="section right">
                 <div class="back-home">
                     <a href="/index.html">Back to home</a>
                 </div>
@@ -93,11 +96,10 @@
                     </div>
                 </div>
             </div>
-            <script src="../assets/dark-mode/dark-mode-switch.js"></script>
-
         </div>
+        <div data-includeHTML="components/sidebar-offcanvas.html"> </div>
 
-        <div class="contact-dashboard">
+        <div class="contact-dashboard table-responsive">
             <table class="table">
                 <thead>
                     <tr>

@@ -661,7 +661,6 @@
 
         .dropdown-menu.show {
             background-color: #131313;
-            padding: 0;
             border-radius: 1rem;
 
             li a,
@@ -673,10 +672,6 @@
                     background-color: #01143A;
                     color: white;
                 }
-            }
-
-            li a {
-                padding: 1rem;
             }
         }
 
@@ -711,7 +706,8 @@
             .es-item,
             .logs,
             .event-item,
-            .status-action {
+            .status-action,
+            .new-category {
                 background-color: #121F39 !important;
                 color: white;
             }
@@ -739,6 +735,19 @@
 
             .design-item {
                 background-color: #172748 !important;
+            }
+
+            .new-category {
+                border: 1px solid #4F689A;
+
+                .img-placeholder {
+                    background-color: #395489 !important;
+                }
+
+                .form-control {
+                    background: #223863;
+                    border: 1px solid #688EBF;
+                }
             }
 
             .contact-dashboard {
