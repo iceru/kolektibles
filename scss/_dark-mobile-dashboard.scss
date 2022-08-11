@@ -1,0 +1,276 @@
+[data-theme="dark"] {
+    &.dashboard {
+        background-color: #000C25;
+
+        .hamburger {
+            img {
+                @include invert();
+            }
+        }
+
+        .dropdown-menu.show {
+            background-color: #131313;
+            border-radius: 1rem;
+
+            li a,
+            label,
+            .dropdown-title {
+                color: white !important;
+
+                &:hover {
+                    background-color: #01143A;
+                    color: white;
+                }
+            }
+        }
+
+        .header-dashboard {
+            .form-select {
+                color: #8195BB;
+                border-color: #8195BB;
+                background-color: #121F39;
+            }
+
+            .item {
+                .dropdown {
+                    >a>img {
+                        @include invert();
+                    }
+                }
+
+                .profile {
+                    background-color: #01143A;
+
+                    .burger {
+                        @include invert();
+                    }
+                }
+            }
+        }
+
+        .content-dashboard {
+            background-color: #000C25;
+
+            .stat,
+            .es-item,
+            .logs,
+            .event-item,
+            .status-action,
+            .new-category {
+                background-color: #121F39 !important;
+                color: white;
+            }
+
+            .category-setting {
+                .sortable {
+                    .category-sort {
+                        background-color: #121F39;
+                        color: white;
+                    }
+                }
+            }
+
+            .ei-info {
+
+                .title,
+                .text-icon {
+                    color: white !important;
+                }
+
+                img {
+                    @include invert();
+                }
+            }
+
+            .design-item {
+                background-color: #172748 !important;
+            }
+
+            .new-category {
+                border: 1px solid #4F689A;
+
+                .img-placeholder {
+                    background-color: #395489 !important;
+                }
+
+                .form-control {
+                    background: #223863;
+                    border: 1px solid #688EBF;
+                }
+            }
+
+            .contact-dashboard {
+                .table {
+                    color: white;
+
+                    tbody tr {
+                        background-color: #121F39;
+                    }
+                }
+            }
+
+            .create-home-setting {
+                background-color: transparent;
+                border: 1px solid #2E3C5A;
+
+                .img-container {
+                    background-color: #1A2336;
+                }
+            }
+        }
+    }
+
+    &.mobile {
+        .mobile-nav {
+            .page {
+                color: white;
+            }
+
+            .hamburger,
+            .notif {
+                img {
+                    @include invert();
+                }
+            }
+        }
+
+        .detail-nav {
+            .back img {
+                @include invert();
+            }
+        }
+
+        .search {
+            .form-control {
+                background-color: #242F47;
+                color: #7F8EAD;
+            }
+        }
+
+        .user.collections .collections {
+            color: #9D9D9D;
+        }
+
+        .sidebar-mobile .top-section .menu ul li a {
+            color: white;
+        }
+
+        .tabs {
+
+            .tab,
+            .active {
+                color: white;
+            }
+        }
+
+        .activities {
+            .activity-item {
+                .ai-actions {
+
+                    .likes,
+                    .likes span {
+                        color: white;
+                    }
+
+                    .btn img {
+                        filter: invert(0);
+                    }
+
+                    img {
+                        @include invert();
+                    }
+                }
+            }
+        }
+
+        .user,
+        .user a,
+        .user .name,
+        .story p,
+        .cd-discussions .title,
+        .notif-text,
+        .cv-price p,
+        .fo-user .name {
+            color: white !important;
+        }
+
+        .notif-text span,
+        .fo-name .username {
+            color: #BABABA !important;
+        }
+
+        .profile-cat {
+            color: #D1D1D1 !important;
+        }
+
+        .joined,
+        .joined span,
+        .ei-desc,
+        span.date,
+        .cd-actions,
+        .likes,
+        .likes span {
+            color: white !important;
+
+            img {
+                @include invert();
+            }
+        }
+
+        .send {
+            img {
+                filter: brightness(0.6) invert(1);
+            }
+        }
+
+        .ai-discussions {
+            color: #C2C8D6 !important;
+        }
+
+        .cd-nav {
+            background-color: #000C25;
+        }
+
+        .nav-faq {
+            background-color: #152139;
+        }
+
+        .faq {
+            .faq-header {
+                background-color: #152139;
+                color: white;
+            }
+
+            .accordion {
+                .accordion-button {
+                    background-color: #000C25 !important;
+                    color: white;
+                }
+
+                .accordion-body {
+                    background-color: #152139;
+                    color: white;
+                }
+            }
+        }
+
+        .bottom-nav {
+            background-color: #01143A;
+            color: white;
+
+            .icon:not(.active) {
+                .icon-svg {
+                    svg path {
+                        stroke: white;
+                    }
+                }
+            }
+
+            .icon.add {
+                .icon-svg svg path {
+                    stroke: #01143A;
+                }
+            }
+        }
+    }
+}

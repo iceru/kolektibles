@@ -43,6 +43,10 @@ $dark: #000C25;
     }
 }
 
+@mixin invert {
+    filter: brightness(0) invert(1);
+}
+
 .btn {
     &.btn-primary {
         color: $secondary;
@@ -101,7 +105,7 @@ $dark: #000C25;
         &:hover,
         &:focus {
             img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
 
             background-color: $dark;

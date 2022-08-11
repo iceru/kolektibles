@@ -22,12 +22,12 @@
 
             a>img,
             .burger {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
 
         .btn-close {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
     }
 
@@ -50,7 +50,7 @@
         .sidebar-actions {
             .dropdown {
                 >a>img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
 
@@ -59,7 +59,7 @@
                 border-color: #4B4B4B;
 
                 .burger {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
         }
@@ -67,7 +67,7 @@
         .sidebar-search {
             .icon-search {
                 img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
         }
@@ -106,7 +106,7 @@
 
         .hamburger {
             img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
 
@@ -128,12 +128,12 @@
                 border-color: #4B4B4B;
 
                 .burger {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
 
             .dropdown>a>img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
     }
@@ -152,7 +152,7 @@
 
     .counts {
         img {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
     }
 
@@ -195,7 +195,7 @@
             color: white;
 
             img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
     }
@@ -220,7 +220,7 @@
         .clr-stats {
             .item {
                 img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
         }
@@ -245,7 +245,7 @@
 
             .cd-share {
                 img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
 
@@ -257,7 +257,7 @@
                 }
 
                 img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
             }
         }
@@ -295,7 +295,7 @@
                 }
 
                 img {
-                    filter: brightness(0) invert(1);
+                    @include invert();
                 }
 
                 .item-title {
@@ -385,7 +385,7 @@
     .search-icon,
     .search-img {
         img {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
     }
 
@@ -394,7 +394,7 @@
         color: white;
 
         img {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
     }
 
@@ -411,7 +411,7 @@
         color: white;
 
         img {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
 
         &:hover {
@@ -428,7 +428,7 @@
         color: white;
 
         img {
-            filter: brightness(0) invert(1);
+            @include invert();
         }
     }
 
@@ -479,7 +479,7 @@
             color: white;
 
             img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
 
@@ -582,7 +582,7 @@
                         }
 
                         .item-stats .stat img {
-                            filter: brightness(0) invert(1);
+                            @include invert();
                         }
                     }
                 }
@@ -600,6 +600,12 @@
         }
 
 
+
+        .or span {
+            background-color: #000C25;
+        }
+
+
         .create p,
         .form-check {
             color: white;
@@ -609,7 +615,7 @@
     .benefits {
         .title {
             img {
-                filter: brightness(0) invert(1);
+                @include invert();
             }
         }
 
@@ -650,126 +656,6 @@
         background-color: #121F39;
     }
 
-    &.dashboard {
-        background-color: #000C25;
-
-        .hamburger {
-            img {
-                filter: brightness(0) invert(1);
-            }
-        }
-
-        .dropdown-menu.show {
-            background-color: #131313;
-            border-radius: 1rem;
-
-            li a,
-            label,
-            .dropdown-title {
-                color: white !important;
-
-                &:hover {
-                    background-color: #01143A;
-                    color: white;
-                }
-            }
-        }
-
-        .header-dashboard {
-            .form-select {
-                color: #8195BB;
-                border-color: #8195BB;
-                background-color: #121F39;
-            }
-
-            .item {
-                .dropdown {
-                    >a>img {
-                        filter: brightness(0) invert(1);
-                    }
-                }
-
-                .profile {
-                    background-color: #01143A;
-
-                    .burger {
-                        filter: brightness(0) invert(1);
-                    }
-                }
-            }
-        }
-
-        .content-dashboard {
-            background-color: #000C25;
-
-            .stat,
-            .es-item,
-            .logs,
-            .event-item,
-            .status-action,
-            .new-category {
-                background-color: #121F39 !important;
-                color: white;
-            }
-
-            .category-setting {
-                .sortable {
-                    .category-sort {
-                        background-color: #121F39;
-                        color: white;
-                    }
-                }
-            }
-
-            .ei-info {
-
-                .title,
-                .text-icon {
-                    color: white !important;
-                }
-
-                img {
-                    filter: brightness(0) invert(1);
-                }
-            }
-
-            .design-item {
-                background-color: #172748 !important;
-            }
-
-            .new-category {
-                border: 1px solid #4F689A;
-
-                .img-placeholder {
-                    background-color: #395489 !important;
-                }
-
-                .form-control {
-                    background: #223863;
-                    border: 1px solid #688EBF;
-                }
-            }
-
-            .contact-dashboard {
-                .table {
-                    color: white;
-
-                    tbody tr {
-                        background-color: #121F39;
-                    }
-                }
-            }
-
-            .create-home-setting {
-                background-color: transparent;
-                border: 1px solid #2E3C5A;
-
-                .img-container {
-                    background-color: #1A2336;
-                }
-            }
-        }
-    }
 
     .footer {
 
