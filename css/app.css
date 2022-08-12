@@ -11867,7 +11867,7 @@ p {
   .cta .container {
     border-radius: 0;
     padding: 76px 1rem;
-    padding-bottom: 220px;
+    padding-bottom: 170px;
     margin-bottom: 74px;
   }
   .cta .container .image-1,
@@ -16202,6 +16202,9 @@ p {
 [data-theme=dark] .offcanvas-sidebar {
   background-color: #000C25;
   color: white;
+}
+[data-theme=dark] .offcanvas-sidebar .offcanvas-body {
+  background-color: #000C25;
 }
 [data-theme=dark] .offcanvas-sidebar .sidebar-menu li a {
   color: white !important;
