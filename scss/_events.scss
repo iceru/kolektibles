@@ -503,9 +503,25 @@
         }
     }
 
-    .new-event>h4 {
-        text-align: center;
-        margin-bottom: 50px;
+    .new-event {
+        margin-bottom: 4rem;
+
+        >h4 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .form-label span {
+            color: red;
+        }
+
+        .promote {
+            margin-bottom: 2rem;
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
     }
 
     .form-group {

@@ -38,15 +38,26 @@
                 <a href="#" class="add-img">
                     <label for="image" class="add-img-label">
                         <img src="/images/icons/Image.svg" alt="">
-                        <div>Drag and drop an image, or <span>Browse</span></div>
+                        <div class="title">Drag and drop an image, or <span>Browse</span></div>
+                        <div class="desc">
+                            1200 x 900 pixels, file must less than 2 MB. Allowed file types: <strong>.png, .jpg,
+                                .jpeg</strong> and
+                            <strong>.bitmap</strong>
+                        </div>
                         <input type="file" name="image" id="image" style="display: none;">
                     </label>
                 </a>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="event-name" class="form-label">Event name</label>
                             <input type="text" class="form-control" name="event-name" id="event-name" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" name="location" id="location" placeholder="">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -61,6 +72,15 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
+                            <label for="open-time" class="form-label">Opening time</label>
+                            <div class="input-icon">
+                                <input type="time" class="form-control" name="open-time" id="open-time" placeholder="">
+                                <img src="/images/icons/Clock.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
                             <label for="end-date" class="form-label">End date</label>
                             <div class="input-icon">
                                 <input type="text" class="form-control" name="end-date" id="end-date" placeholder="">
@@ -68,30 +88,70 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="event-type" class="form-label">Event type</label>
-                            <select class="form-control" name="event-type" id="event-type">
+                            <label for="close-time" class="form-label">Closing time</label>
+                            <div class="input-icon">
+                                <input type="time" class="form-control" name="close-time" id="close-time"
+                                    placeholder="">
+                                <img src="/images/icons/Clock.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="video" class="form-label">Event Video Teaser (Optional) <span>*</span></label>
+                            <input type="text" class="form-control" name="video" id="video" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="video" class="form-label">Event Registration Form URL <span>*</span></label>
+                            <input type="text" class="form-control" name="video" id="video" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="video" class="form-label">Event Website (Optional)</label>
+                            <input type="text" class="form-control" name="video" id="video" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="target-audience" class="form-label">Target Audience <span>*</span></label>
+                            <select class="form-control" name="target-audience" id="target-audience">
                                 <option>Public</option>
                                 <option>Private</option>
                             </select>
                         </div>
                     </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="video" class="form-label">Zoom Meeting Link URL <span>*</span></label>
+                            <input type="text" class="form-control" name="video" id="video" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="video" class="form-label">Zoom Livestream URL <span>*</span></label>
+                            <input type="text" class="form-control" name="video" id="video" placeholder="">
+                        </div>
+                    </div>
                     <div class="col-12">
                         <div class="form-group textarea">
-                            <label for="short-desc" class="form-label">Short description</label>
+                            <label for="short-desc" class="form-label">Short description <span>*</span></label>
                             <textarea class="form-control" name="short-desc" id="short-desc" rows="4"></textarea>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group textarea">
-                            <label for="short-desc" class="form-label">Complete event description</label>
+                            <label for="short-desc" class="form-label">Complete event description <span>*</span></label>
                             <textarea class="form-control" name="short-desc" id="short-desc" rows="6"></textarea>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group textarea">
-                            <label for="short-desc" class="form-label">Images (optional)</label>
+                            <label for="short-desc" class="form-label">Previous Event Documentation (Optional)</label>
                             <div class="images">
                                 <div class="img-container">
                                     <img src="/images/icons/Image.svg" alt="">
@@ -109,6 +169,17 @@
                                     <img src="/images/icons/Image.svg" alt="">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-12 promote">
+                        <p>Promote this event?</p>
+                        <div class="form-check form-check-inline success">
+                            <input class="form-check-input" type="radio" name="promote" id="yes" value="yes" checked>
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline success">
+                            <input class="form-check-input" type="radio" name="promote" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
                         </div>
                     </div>
                     <div class="col-12">

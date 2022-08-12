@@ -268,6 +268,109 @@
         }
     }
 
+    .collection-list {
+        margin-bottom: 2rem;
+
+        .cl-item {
+            display: flex;
+            align-items: center;
+            border: 1px solid #E8E8E8;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 12px;
+
+            &:hover,
+            &:focus {
+                background-color: #00091C;
+                color: white;
+            }
+
+            .cl-img {
+                img {
+                    width: 128px;
+                    height: 128px;
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
+
+                }
+            }
+
+            .cl-content {
+                height: 128px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 1;
+
+                .cl-title {
+                    font-weight: bold;
+                    padding: 1rem 0;
+                    padding-left: 1rem;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #E8E8E8;
+                }
+
+                .cl-users {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 50%;
+                    padding: 1rem;
+
+                    .user {
+                        display: flex;
+                        align-items: center;
+                        margin-right: .5rem;
+
+                        img {
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            margin-right: 12px;
+
+                            &.icon {
+                                width: 24px;
+                                height: 24px;
+                                object-fit: contain;
+                                border-radius: 0;
+                            }
+                        }
+
+                        .name {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .time {
+                        font-size: 12px;
+                        color: #848484;
+                        text-align: right;
+                    }
+                }
+
+                @include breakpoint(mobileonly) {
+                    .cl-title {
+                        font-size: 14px;
+                    }
+
+                    .cl-users {
+                        .user {
+                            font-size: 12px;
+                        }
+
+                        .time {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .info {
         display: flex;
         color: #636363;
@@ -344,6 +447,10 @@
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 100px;
+
+    @include breakpoint(mobileonly) {
+        margin-bottom: 3rem;
+    }
 
     .step {
         text-align: center;

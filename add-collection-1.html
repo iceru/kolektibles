@@ -87,6 +87,47 @@
                             <input type="text" class="form-control" name="collection-name" id="collection-name"
                                 placeholder="">
                         </div>
+                        <div class="collection-list">
+                            <div class="cl-item">
+                                <div class="cl-img">
+                                    <img src="/images/collections/bakugo-3.png" alt="">
+                                </div>
+                                <div class="cl-content">
+                                    <div class="cl-title">
+                                        Bakugo 2204Z Katsuki Boku No Hero Academia Funko Red
+                                    </div>
+                                    <div class="cl-users">
+                                        <div class="user">
+                                            <img src="/images/user/user-3.png" alt="">
+                                            <div class="name">Anthony Salim</div>
+                                        </div>
+                                        <div class="time">
+                                            23 hours ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cl-item">
+                                <div class="cl-img">
+                                    <img src="/images/collections/bakugo-1.png" alt="">
+                                </div>
+                                <div class="cl-content">
+                                    <div class="cl-title">
+                                        Bakugo 2204Z Katsuki Boku No Hero Academia Funko Red
+                                    </div>
+                                    <div class="cl-users">
+                                        <div class="user">
+                                            <img class="icon" src="/images/icons/users.svg" alt="">
+                                            <div class=" name">Multiple Owners
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            23 hours ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12">
                         <div class="form-group">
@@ -127,7 +168,7 @@
                         <div class="form-group textarea">
                             <label for="collection-story" class="form-label">Collection story(optional)</label>
                             <textarea class="form-control" name="collection-story" id="collection-story"
-                                rows="3"></textarea>
+                                rows="5"></textarea>
                         </div>
                     </div>
                     <div class="col-12">
@@ -148,6 +189,17 @@
     $(document).ready(function () {
         $("*[data-includeHTML]").each(function () {
             $(this).load($(this).attr("data-includeHTML"));
+        });
+
+        $('.collection-list').hide();
+
+        $('#collection-name').keyup(function (e) {
+            if ($(this).val().includes('Bak')) {
+                $('.collection-list').slideDown();
+            } else {
+                $('.collection-list').slideUp();
+            }
+
         });
     });
 </script>

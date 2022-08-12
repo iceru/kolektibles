@@ -320,10 +320,15 @@ p {
         padding: 0;
         list-style-type: none;
         display: flex;
+        margin-right: 1rem;
 
         li {
             &:not(:last-child) {
-                margin-right: 3rem;
+                margin-right: 2.5rem;
+
+                @include breakpoint(largeDesktop) {
+                    margin-right: 3rem;
+                }
             }
 
             a {
@@ -343,10 +348,10 @@ p {
         display: block;
 
         .list-menu {
+            margin-bottom: .5rem;
             flex-wrap: nowrap;
             white-space: nowrap;
             overflow: auto;
-            margin-bottom: .5rem;
             padding-bottom: 1rem;
         }
     }
@@ -481,10 +486,9 @@ p {
     justify-content: center;
     border-radius: 1rem;
     background-color: #F5F5F5;
-    padding: 150px 100px;
+    padding: 81px 100px;
     cursor: pointer;
     margin-bottom: 4rem;
-
     position: relative;
 
     &::after {
@@ -500,12 +504,30 @@ p {
         transform: translate(-50%, -50%);
     }
 
+    .title {
+        font-size: 20px;
+    }
+
+    .desc {
+        color: #808080;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
     img {
         margin-bottom: 2rem;
     }
 
     @include breakpoint(untilTablet) {
         padding: 4rem;
+
+        .title {
+            font-size: 16px;
+        }
+
+        .desc {
+            font-size: 12px;
+        }
 
         >div {
             text-align: center;

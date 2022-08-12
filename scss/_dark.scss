@@ -290,6 +290,10 @@
             .item-info {
                 border-color: #00091C;
 
+                .item-title {
+                    color: white;
+                }
+
                 .po {
                     border: 1px solid $secondary;
                 }
@@ -461,6 +465,14 @@
         color: white;
     }
 
+    .add-img-label {
+        background-color: #1A2336;
+
+        .desc {
+            color: #404E69;
+        }
+    }
+
     &.add-collection {
 
         h4,
@@ -468,13 +480,6 @@
             color: white;
         }
 
-    }
-
-    .add-img-label {
-        background-color: #1A2336;
-    }
-
-    &.add-collection {
         .info {
             color: white;
 
@@ -489,6 +494,33 @@
                     background-color: #1A2336;
                 }
             }
+        }
+
+        .collection-list {
+            .cl-item {
+                border-color: #3D4555;
+                background-color: #00091C;
+
+                &:hover,
+                &:focus {
+                    background-color: white;
+                    color: black;
+
+
+                    img.icon {
+                        filter: none !important;
+                    }
+                }
+
+                .cl-title {
+                    border-color: #3D4555;
+                }
+
+                img.icon {
+                    @include invert();
+                }
+            }
+
         }
     }
 
@@ -546,6 +578,12 @@
                     color: #C3CAD7;
                 }
             }
+        }
+    }
+
+    .follows {
+        .follow-user {
+            background-color: #0D1A31;
         }
     }
 
