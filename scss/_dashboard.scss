@@ -212,6 +212,16 @@
                 padding: 6px;
             }
 
+            @include breakpoint(mobileonly) {
+                &.left {
+                    >* {
+                        &:nth-child(3) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
             @include breakpoint(untilTablet) {
                 &.right {
                     display: none;
@@ -227,10 +237,6 @@
                     >* {
                         margin-bottom: 1rem;
                         margin-right: 1rem;
-
-                        &:nth-child(3) {
-                            margin-right: 0;
-                        }
                     }
                 }
             }
@@ -628,6 +634,10 @@
 
                     .form-check {
                         margin-bottom: 12px;
+
+                        &.no-input {
+                            padding-left: 0;
+                        }
                     }
                 }
             }
@@ -727,11 +737,12 @@
     .card-stack {
         width: 100%;
         position: relative;
-        margin: 20px auto;
+        margin: 0 auto;
         height: 18vw;
 
         @include breakpoint(mobileonly) {
             height: 62vw;
+            margin-bottom: 2rem;
         }
 
         .buttons {
