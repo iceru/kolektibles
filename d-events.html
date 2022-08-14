@@ -101,135 +101,300 @@
         <div data-includeHTML="components/sidebar-offcanvas.html"> </div>
 
         <div class="events-dashboard">
-            <div class="event-item">
-                <div class="row">
-                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                        <div class="ei-img">
-                            <img src="/images/events/event-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <div class="ei-info">
-                            <div class="text-icon">
-                                <img src="/images/icons/Calendar.svg" alt="">
-                                October 10, 2021 - 10:00 WIB
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="waiting-tab" data-bs-toggle="tab" data-bs-target="#waiting"
+                        type="button" role="tab" aria-controls="waiting" aria-selected="false">Waiting</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="approved-tab" data-bs-toggle="tab" data-bs-target="#approved"
+                        type="button" role="tab" aria-controls="approved" aria-selected="false">Approved</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="held-tab" data-bs-toggle="tab" data-bs-target="#held" type="button"
+                        role="tab" aria-controls="held" aria-selected="false">Held(Done)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="promoted-tab" data-bs-toggle="tab" data-bs-target="#promoted"
+                        type="button" role="tab" aria-controls="promoted" aria-selected="false">Promoted Events</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-1.png" alt="">
+                                </div>
                             </div>
-                            <div class="text-icon">
-                                <img src="/images/icons/Location.svg" alt="">
-                                Gedung Olahraga Garuda, Kemenpora Kota Surabaya
-                            </div>
-                            <div class="title">
-                                Helloctober Festival Auction Season 2, 2021
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="ei-status">
-                            <div>
-                                <div class="status">
-                                    <div class="text">Status</div>
-                                    <div class="status-badge">
-                                        Waiting
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
                                     </div>
                                 </div>
-                                <div class="time">
-                                    <div class="text">Time submitted</div>
-                                    4 Oct 2021 - 10:34 WIB
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge">
+                                                Waiting
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <a href="/d-event-details.html" type="button"
+                                        class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
-                            <a href="/d-event-details.html" type="button" class="btn btn-outline-light btn-circle-next">
-                                <img src="/images/icons/chevron left.svg" alt="">
-                            </a>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge approved">
+                                                Approved
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge rejected">
+                                                Rejected
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="waiting" role="tabpanel" aria-labelledby="waiting-tab">
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge">
+                                                Waiting
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <a href="/d-event-details.html" type="button"
+                                        class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="approved" role="tabpanel" aria-labelledby="approved-tab">
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge approved">
+                                                Approved
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="held" role="tabpanel" aria-labelledby="held-tab"></div>
+                <div class="tab-pane fade" id="promoted" role="tabpanel" aria-labelledby="promoted-tab">
+                    <div class="event-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                <div class="ei-img">
+                                    <img src="/images/events/event-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="ei-info">
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Calendar.svg" alt="">
+                                        October 10, 2021 - 10:00 WIB
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/icons/Location.svg" alt="">
+                                        Gedung Olahraga Garuda, Kemenpora Kota Surabaya
+                                    </div>
+                                    <div class="title">
+                                        Helloctober Festival Auction Season 2, 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ei-status">
+                                    <div>
+                                        <div class="status">
+                                            <div class="text">Status</div>
+                                            <div class="status-badge approved">
+                                                Approved
+                                            </div>
+                                        </div>
+                                        <div class="time">
+                                            <div class="text">Time submitted</div>
+                                            4 Oct 2021 - 10:34 WIB
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-light btn-circle-next">
+                                        <img src="/images/icons/chevron left.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="event-item">
-                <div class="row">
-                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                        <div class="ei-img">
-                            <img src="/images/events/event-2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <div class="ei-info">
-                            <div class="text-icon">
-                                <img src="/images/icons/Calendar.svg" alt="">
-                                October 10, 2021 - 10:00 WIB
-                            </div>
-                            <div class="text-icon">
-                                <img src="/images/icons/Location.svg" alt="">
-                                Gedung Olahraga Garuda, Kemenpora Kota Surabaya
-                            </div>
-                            <div class="title">
-                                Helloctober Festival Auction Season 2, 2021
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="ei-status">
-                            <div>
-                                <div class="status">
-                                    <div class="text">Status</div>
-                                    <div class="status-badge approved">
-                                        Approved
-                                    </div>
-                                </div>
-                                <div class="time">
-                                    <div class="text">Time submitted</div>
-                                    4 Oct 2021 - 10:34 WIB
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-outline-light btn-circle-next">
-                                <img src="/images/icons/chevron left.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-item">
-                <div class="row">
-                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                        <div class="ei-img">
-                            <img src="/images/events/event-3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <div class="ei-info">
-                            <div class="text-icon">
-                                <img src="/images/icons/Calendar.svg" alt="">
-                                October 10, 2021 - 10:00 WIB
-                            </div>
-                            <div class="text-icon">
-                                <img src="/images/icons/Location.svg" alt="">
-                                Gedung Olahraga Garuda, Kemenpora Kota Surabaya
-                            </div>
-                            <div class="title">
-                                Helloctober Festival Auction Season 2, 2021
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="ei-status">
-                            <div>
-                                <div class="status">
-                                    <div class="text">Status</div>
-                                    <div class="status-badge rejected">
-                                        Rejected
-                                    </div>
-                                </div>
-                                <div class="time">
-                                    <div class="text">Time submitted</div>
-                                    4 Oct 2021 - 10:34 WIB
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-outline-light btn-circle-next">
-                                <img src="/images/icons/chevron left.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </body>

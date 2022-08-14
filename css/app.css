@@ -14907,6 +14907,25 @@ p {
   border-radius: 50%;
   background-color: #00FFB9;
 }
+.content-dashboard .events-dashboard .nav {
+  border-bottom: 0;
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+}
+.content-dashboard .events-dashboard .nav .nav-item .nav-link {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0;
+  border: none !important;
+}
+.content-dashboard .events-dashboard .nav .nav-item .nav-link:hover, .content-dashboard .events-dashboard .nav .nav-item .nav-link:focus, .content-dashboard .events-dashboard .nav .nav-item .nav-link:focus-visible, .content-dashboard .events-dashboard .nav .nav-item .nav-link:visited {
+  border-radius: 0 !important;
+  outline: none;
+}
+.content-dashboard .events-dashboard .nav .nav-item .nav-link.active {
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+}
 .content-dashboard .events-dashboard .event-item {
   padding: 1.5rem;
   background-color: white;
@@ -16685,6 +16704,9 @@ p {
 [data-theme=dark].dashboard .content-dashboard .status-action,
 [data-theme=dark].dashboard .content-dashboard .new-category {
   background-color: #121F39 !important;
+  color: white;
+}
+[data-theme=dark].dashboard .content-dashboard .events-dashboard .nav .nav-item .nav-link {
   color: white;
 }
 [data-theme=dark].dashboard .content-dashboard .category-setting .sortable .category-sort {

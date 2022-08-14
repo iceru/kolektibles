@@ -407,6 +407,35 @@
     }
 
     .events-dashboard {
+        .nav {
+            border-bottom: 0;
+            margin-bottom: 2rem;
+            margin-left: -2rem;
+
+            .nav-item {
+
+                .nav-link {
+                    padding: 0.5rem 2rem;
+                    margin-bottom: 0;
+                    border: none !important;
+
+                    &:hover,
+                    &:focus,
+                    &:focus-visible,
+                    &:visited {
+                        border-radius: 0 !important;
+                        outline: none;
+                    }
+
+                    &.active {
+                        background-color: transparent;
+                        font-weight: bold;
+                        border: none;
+                    }
+                }
+            }
+        }
+
         .event-item {
             padding: 1.5rem;
             background-color: white;
