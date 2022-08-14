@@ -10938,6 +10938,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bootstrap-tagsinput {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  border-color: #DBDEE2;
+}
+.bootstrap-tagsinput .tag {
+  color: #5C5C5C;
+  background-color: #DDE5F4;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
 h1, .h1,
 h2,
 .h2,
@@ -16172,9 +16185,13 @@ p {
 }
 
 [data-theme=dark] .form-control,
-[data-theme=dark] .form-select {
+[data-theme=dark] .form-select,
+[data-theme=dark] .bootstrap-tagsinput {
   background-color: #1A2336;
   border-color: #626262;
+  color: white;
+}
+[data-theme=dark] .bootstrap-tagsinput input {
   color: white;
 }
 [data-theme=dark] .offcanvas-body {

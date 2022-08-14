@@ -1,9 +1,14 @@
 [data-theme="dark"] {
 
     .form-control,
-    .form-select {
+    .form-select,
+    .bootstrap-tagsinput {
         background-color: #1A2336;
         border-color: #626262;
+        color: white;
+    }
+
+    .bootstrap-tagsinput input {
         color: white;
     }
 
