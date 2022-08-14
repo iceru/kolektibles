@@ -15216,12 +15216,12 @@ p {
   margin: 0 auto;
 }
 .content-dashboard .card-stack .card-list li:nth-child(1) {
-  top: 72px;
+  top: 96px;
   width: 60%;
   /* animation: scaleCard 100ms; */
 }
 .content-dashboard .card-stack .card-list li:nth-child(2) {
-  top: 36px;
+  top: 48px;
   width: 70%;
 }
 .content-dashboard .card-stack .card-list li:nth-child(3) {

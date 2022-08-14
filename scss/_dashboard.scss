@@ -802,13 +802,13 @@
                 margin: 0 auto;
 
                 &:nth-child(1) {
-                    top: ($default-diff * 6);
+                    top: ($default-diff * 8);
                     width: $default-width - $default-min * 4;
                     /* animation: scaleCard 100ms; */
                 }
 
                 &:nth-child(2) {
-                    top: ($default-diff * 3);
+                    top: ($default-diff * 4);
                     width: $default-width - $default-min * 3;
                 }
 
