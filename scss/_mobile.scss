@@ -1001,7 +1001,6 @@
 .bottom-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     bottom: 0;
     padding: 10px 25px;
@@ -1015,7 +1014,6 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            height: 52px;
         }
 
         &.active {

@@ -16179,7 +16179,6 @@ p {
 .bottom-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   bottom: 0;
   padding: 10px 25px;
@@ -16191,7 +16190,6 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 52px;
 }
 .bottom-nav .icon.active svg path {
   stroke: #00BF8B;
