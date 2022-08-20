@@ -937,19 +937,24 @@
 }
 
 .sidebar-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 4rem;
+    width: 90vw !important;
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .top-section {
+        padding-top: 4rem;
+
         .user {
             padding: 0 1rem;
             margin: 0 -1rem;
             padding-bottom: 24px;
             margin-bottom: 2rem;
             border-bottom: 1px solid #d9d9d9;
-            width: 99vw;
+            width: 90vw;
         }
 
         .menu {
@@ -977,7 +982,7 @@
             padding-bottom: 24px;
             margin-bottom: 16px;
             border-bottom: 1px solid #d9d9d9;
-            width: 99vw;
+            width: 90vw;
 
             .dropdown-switch {
                 padding: 0;

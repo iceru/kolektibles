@@ -121,7 +121,7 @@
             }
 
             .create-home-setting {
-                background-color: transparent;
+                background-color: #121F39;
                 border: 1px solid #2E3C5A;
 
                 .img-container {
@@ -162,8 +162,28 @@
             color: #9D9D9D;
         }
 
-        .sidebar-mobile .top-section .menu ul li a {
-            color: white;
+        .offcanvas.offcanvas-start {
+            border-right: 0;
+        }
+
+        .sidebar-mobile {
+            background-color: transparent;
+
+            .top-section {
+                .menu ul li a {
+                    color: white;
+                }
+
+                .user {
+                    border-bottom: 1px solid #434343;
+                }
+            }
+
+            .bottom-section {
+                .switch {
+                    border-bottom: 1px solid #434343;
+                }
+            }
         }
 
         .tabs {
