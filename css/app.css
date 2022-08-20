@@ -35,9 +35,6 @@
   color: #617193;
   border-color: #617193;
 }
-.btn.btn-outline-success:hover {
-  color: white;
-}
 .btn.btn-outline-light {
   border-color: #A4A4A4;
   color: #A4A4A4;
@@ -15410,8 +15407,11 @@ p {
   margin-bottom: 1rem;
   font-size: 18px;
 }
+.mobile .btn {
+  font-size: 14px;
+}
 .mobile .body-wrapper {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .mobile .likes {
   display: flex;
