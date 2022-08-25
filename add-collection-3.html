@@ -108,6 +108,10 @@
             <div class="vt-img">
                 <canvas id="myChart" width="400" height="120" style="border-radius: 32px"></canvas>
                 <script>
+                    var ratio = 3
+                    if ($(window).width() <= 992) {
+                        ratio = 1.5
+                    }
                     const ctx = document.getElementById('myChart').getContext('2d');
                     var gradient = ctx.createLinearGradient(0, 0, 0, 400);
                     gradient.addColorStop(0, 'rgba(0, 255, 185, 0.16)');
@@ -118,6 +122,12 @@
                     gradientLine.addColorStop(0.3, 'rgba(183, 213, 236, 1)');
                     gradientLine.addColorStop(0.6, 'rgba(180, 214, 239, 0.9)');
                     gradientLine.addColorStop(1, 'rgba(180, 214, 239, 0)');
+
+                    $(window).resize(function () {
+                        if ($(window).width() <= 992) {
+                            ratio = 1.5
+                        }
+                    });
 
                     const plugin = {
                         id: 'custom_canvas_background_color',
@@ -175,6 +185,8 @@
                             }]
                         },
                         options: {
+                            maintainAspectRatio: true,
+                            aspectRatio: ratio,
                             plugins: {
                                 legend: {
                                     display: false
