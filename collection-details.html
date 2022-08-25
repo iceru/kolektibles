@@ -112,6 +112,12 @@
                     gradient.addColorStop(0, 'rgba(0, 255, 185, 0.16)');
                     gradient.addColorStop(1, 'rgba(0, 255, 185, 0)');
 
+                    var gradientLine = ctx.createLinearGradient(0, 0, 0, 800);
+                    gradientLine.addColorStop(0, 'rgba(185, 217, 241, 0.24)');
+                    gradientLine.addColorStop(0.3, 'rgba(183, 213, 236, 1)');
+                    gradientLine.addColorStop(0.6, 'rgba(180, 214, 239, 0.9)');
+                    gradientLine.addColorStop(1, 'rgba(180, 214, 239, 0)');
+
                     const plugin = {
                         id: 'custom_canvas_background_color',
                         beforeDraw: (chart) => {
@@ -136,7 +142,7 @@
                                 ],
                                 fill: {
                                     target: 'origin',
-                                    above: gradient,   // Area will be red above the origin
+                                    above: gradient,
                                 },
                                 borderColor: [
                                     'rgb(7, 215, 158)',
@@ -155,7 +161,7 @@
                                 ],
                                 fill: {
                                     target: 'origin',
-                                    above: gradient,   // Area will be red above the origin
+                                    above: gradient,
                                 },
                                 borderColor: [
                                     'rgb(123, 97, 255)',
@@ -168,13 +174,18 @@
                             }]
                         },
                         options: {
+                            plugins: {
+                                legend: {
+                                    display: false
+                                },
+                            },
                             layout: {
                                 padding: 32
                             },
                             scales: {
                                 x: {
                                     grid: {
-                                        color: 'rgb(133, 133, 133)'
+                                        color: gradientLine
                                     },
                                 },
                                 y: {
