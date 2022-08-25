@@ -145,7 +145,26 @@
                                 pointRadius: 8,
                                 pointBorderColor: 'rgba(255,255,255)',
                                 borderWidth: 5,
-                                tension: 0.2
+                                tension: 0.1
+                            },
+                            {
+                                label: '',
+                                data: [75, 75, 75, 75, 75, 75, 75, 75],
+                                backgroundColor: [
+                                    'rgb(123, 97, 255)',
+                                ],
+                                fill: {
+                                    target: 'origin',
+                                    above: gradient,   // Area will be red above the origin
+                                },
+                                borderColor: [
+                                    'rgb(123, 97, 255)',
+                                ],
+                                pointBorderWidth: 4,
+                                pointRadius: 0,
+                                pointBorderColor: 'rgba(255,255,255)',
+                                borderWidth: 5,
+                                tension: 0.1
                             }]
                         },
                         options: {
