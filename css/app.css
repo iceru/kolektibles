@@ -12016,14 +12016,21 @@ p {
 }
 .categories .item .cat-img img {
   width: 100%;
+  max-height: 189px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .categories .item .cat-info {
   display: flex;
   justify-content: space-between;
 }
+.categories .item .cat-info h6, .categories .item .cat-info .h6 {
+  margin-right: 0.5rem;
+}
 .categories .item .cat-info p {
   display: block;
   font-size: 14px;
+  white-space: nowrap;
 }
 @media (max-width: 576px) {
   .categories .counts {
