@@ -11004,6 +11004,10 @@ p {
   padding: 0.75rem;
 }
 
+.form-select {
+  padding-right: 2rem;
+}
+
 .btn-more {
   display: flex;
   justify-content: center;
@@ -12424,7 +12428,7 @@ p {
 .collection-detail .value-tracker {
   margin-bottom: 108px;
 }
-.collection-detail .value-tracker h4, .collection-detail .value-tracker .h4 {
+.collection-detail .value-tracker .title {
   margin-bottom: 2rem;
 }
 .collection-detail .value-tracker .vt-img img {

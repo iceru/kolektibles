@@ -104,13 +104,21 @@
         </div>
 
         <div class="value-tracker">
-            <h4>Value tracker for all similar</h4>
+            <div class="title d-flex justify-content-between align-items-center flex-wrap">
+                <h4 class="mb-2 mb-lg-0">Value tracker for all similar</h4>
+                <div class="form-group mb-0">
+                    <select class="form-select" name="year" id="year">
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+            </div>
             <div class="vt-img">
                 <canvas id="myChart" width="400" height="120" style="border-radius: 32px"></canvas>
                 <script>
                     var ratio = 3
                     if ($(window).width() <= 992) {
-                        ratio = 1.5
+                        ratio = 1
                     }
                     const ctx = document.getElementById('myChart').getContext('2d');
                     var gradient = ctx.createLinearGradient(0, 0, 0, 400);
@@ -125,7 +133,7 @@
 
                     $(window).resize(function () {
                         if ($(window).width() <= 992) {
-                            ratio = 1.5
+                            ratio = 1
                         }
                     });
 
@@ -191,6 +199,21 @@
                                 legend: {
                                     display: false
                                 },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function (context) {
+                                            let label = context.dataset.label || '';
+
+                                            if (label) {
+                                                label += ': ';
+                                            }
+                                            if (context.parsed.y !== null) {
+                                                label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                            }
+                                            return label;
+                                        }
+                                    }
+                                },
                             },
                             layout: {
                                 padding: 32
@@ -203,13 +226,15 @@
                                 },
                                 y: {
                                     beginAtZero: true,
+                                    ticks: {
+                                        callback: function (value, index, values) {
+                                            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
+                                        }
+                                    },
                                     grid: {
                                         display: false,
                                     },
                                     max: 200,
-                                    ticks: {
-                                        display: false
-                                    }
                                 }
                             }
                         },
