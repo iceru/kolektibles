@@ -12576,6 +12576,10 @@ p {
   margin-right: 2rem;
 }
 
+#myChart {
+  border: 1px solid #c1d6e2;
+}
+
 .collection-bid {
   text-align: center;
 }
@@ -16502,6 +16506,10 @@ p {
 }
 [data-theme=dark] .ed-footer .back img {
   filter: brightness(0) invert(1);
+}
+[data-theme=dark] #myChart {
+  background-color: #151D2E;
+  border: none;
 }
 [data-theme=dark].events-page .filter-events .filter-title,
 [data-theme=dark].events-page .filter-events .form-check,
