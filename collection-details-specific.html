@@ -105,8 +105,27 @@
         </div>
 
         <div class="value-tracker">
-            <div class="title d-flex justify-content-between align-items-center flex-wrap">
+            <div class="title">
                 <h4 class="mb-2 mb-lg-0">Value tracker for all similar</h4>
+            </div>
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">1M</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">3M</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">6M</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">1Y</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">All</a>
+                    </li>
+                </ul>
                 <div class="form-group mb-0">
                     <select class="form-select" name="year" id="year">
                         <option>2021</option>
@@ -114,23 +133,6 @@
                     </select>
                 </div>
             </div>
-            <ul class="nav nav-tabs mb-3">
-                <li class="nav-item">
-                    <a class="nav-link " href="#">1M</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">3M</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">6M</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">1Y</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">All</a>
-                </li>
-            </ul>
             <div class="vt-img">
                 <canvas id="myChart" width="400" height="120" style="border-radius: 32px"></canvas>
                 <script>

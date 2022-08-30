@@ -12434,6 +12434,7 @@ p {
   justify-content: center;
   border: 1px solid #DBDEE2;
   flex-wrap: nowrap;
+  width: 50%;
 }
 .collection-detail .value-tracker .nav-tabs .nav-item {
   width: 100%;
@@ -12448,6 +12449,11 @@ p {
 .collection-detail .value-tracker .nav-tabs .nav-item .nav-link.active, .collection-detail .value-tracker .nav-tabs .nav-item .nav-link:hover {
   background-color: #01143A;
   color: #37FFC8;
+}
+@media (max-width: 576px) {
+  .collection-detail .value-tracker .nav-tabs {
+    width: 100%;
+  }
 }
 .collection-detail .value-tracker .title {
   margin-bottom: 2rem;
@@ -16410,6 +16416,10 @@ p {
 }
 [data-theme=dark].collection-detail .status-action {
   background-color: #121F39;
+}
+[data-theme=dark].collection-detail .value-tracker .nav-tabs .nav-item .nav-link.active, [data-theme=dark].collection-detail .value-tracker .nav-tabs .nav-item .nav-link:hover {
+  background-color: #37FFC8;
+  color: #01143A;
 }
 [data-theme=dark] .collection-detail-content .cd-info .cd-title,
 [data-theme=dark] .collection-detail-content .cd-info .cd-desc,

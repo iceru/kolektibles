@@ -239,6 +239,21 @@
         .status-action {
             background-color: #121F39;
         }
+
+        .value-tracker {
+            .nav-tabs {
+                .nav-item {
+                    .nav-link {
+
+                        &.active,
+                        &:hover {
+                            background-color: $secondary;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .collection-detail-content {

@@ -252,6 +252,7 @@
             justify-content: center;
             border: 1px solid #DBDEE2;
             flex-wrap: nowrap;
+            width: 50%;
 
             .nav-item {
                 width: 100%;
@@ -269,6 +270,12 @@
                         color: $secondary;
                     }
                 }
+            }
+        }
+
+        @include breakpoint(mobileonly) {
+            .nav-tabs {
+                width: 100%;
             }
         }
 
