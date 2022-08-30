@@ -202,14 +202,14 @@
 
                     .cd-actions {
                         margin-bottom: 42px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 20px;
 
                         .btn {
                             padding: 18px 80px;
                             font-weight: bold;
-
-                            &:first-child {
-                                margin-right: 20px;
-                            }
+                            width: 100%;
                         }
                     }
 
@@ -235,7 +235,6 @@
                         .cd-actions {
                             .btn {
                                 padding: 1rem;
-                                width: 45%;
                             }
                         }
                     }
@@ -246,6 +245,32 @@
 
     .value-tracker {
         margin-bottom: 108px;
+
+        .nav-tabs {
+            border-radius: .5rem;
+            border-bottom: none;
+            justify-content: center;
+            border: 1px solid #DBDEE2;
+            flex-wrap: nowrap;
+
+            .nav-item {
+                width: 100%;
+
+                .nav-link {
+                    border: none;
+                    border-radius: .5rem;
+                    text-align: center;
+                    font-weight: bold;
+                    color: gray;
+
+                    &.active,
+                    &:hover {
+                        background-color: $primary;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
 
         .title {
             margin-bottom: 2rem;
