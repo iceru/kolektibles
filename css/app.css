@@ -12011,7 +12011,6 @@ p {
   padding-top: 3px;
   margin-bottom: 26px;
   display: block;
-  transition: background 0.2s;
 }
 .categories .item:hover {
   background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, #e7efff 100%);
@@ -12030,7 +12029,6 @@ p {
   max-height: 189px;
   -o-object-fit: contain;
      object-fit: contain;
-  transition: transform 0.2s;
 }
 .categories .item .cat-info {
   display: flex;
@@ -16374,6 +16372,9 @@ p {
 }
 [data-theme=dark] .categories .item {
   background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
+}
+[data-theme=dark] .categories .item:hover {
+  background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, #1c2c4c 100%);
 }
 [data-theme=dark] .categories .item .cat-info p {
   color: #A2B1D1;

@@ -151,6 +151,10 @@
         .item {
             background: linear-gradient(180deg, rgba(21, 33, 57, 0) 0%, #152139 100%);
 
+            &:hover {
+                background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, lighten(#152139, 5%) 100%);
+            }
+
             .cat-info {
                 p {
                     color: #A2B1D1;

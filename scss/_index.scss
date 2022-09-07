@@ -259,6 +259,16 @@
         margin-bottom: 26px;
         display: block;
 
+        &:hover {
+            background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, darken(#F6F9FF, 3%)100%);
+
+            .cat-img {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
         .cat-img {
             margin-bottom: 27px;
             text-align: center;
