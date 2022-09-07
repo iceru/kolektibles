@@ -12011,6 +12011,13 @@ p {
   padding-top: 3px;
   margin-bottom: 26px;
   display: block;
+  transition: background 0.2s;
+}
+.categories .item:hover {
+  background: linear-gradient(180deg, rgba(246, 249, 255, 0) 0%, #e7efff 100%);
+}
+.categories .item:hover .cat-img img {
+  transform: scale(1.05);
 }
 .categories .item .cat-img {
   margin-bottom: 27px;
@@ -12023,6 +12030,7 @@ p {
   max-height: 189px;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: transform 0.2s;
 }
 .categories .item .cat-info {
   display: flex;
