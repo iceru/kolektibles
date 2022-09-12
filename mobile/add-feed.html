@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="mobile add-feed">
+    <div class="detail-nav">
+        <div class="back">
+            <a href="/mobile/home-activities.html">
+                <img src="/images/icons/chevron left.svg" alt="">
+            </a>
+        </div>
+        <div class="title">
+            New Feed
+        </div>
+        <div class="fill">
+            <a href="/mobile/add-feed-2.html" type="button" class="btn btn-secondary">Next</a>
+        </div>
+    </div>
+    <div class="images-container">
+        <div class="selected-img">
+            <img src="/images/mobile/activity-1.png" alt="">
+        </div>
+        <div class="images">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+        </div>
+    </div>
+    <div data-includeHTML="../components/sidebar-mobile.html">
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>

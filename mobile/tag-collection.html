@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="mobile add-feed">
+    <div class="detail-nav tc">
+        <div class="back">
+            <a href="/mobile/add-feed-2.html">
+                <img src="/images/icons/chevron left.svg" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" class="form-control" placeholder="">
+            <div class="search-img">
+                <img src="/images/mobile/Search.svg" alt="Search">
+            </div>
+        </div>
+        <div class="fill">
+            <button type="button" class="btn btn-secondary"><span class="count">2</span> OK</button>
+        </div>
+    </div>
+    <div class="tag-collections">
+        <div class="tc-header">
+            <div class="item-found">
+                8 items <span>found</span>
+            </div>
+            <div class="action">
+                <img src="/images/mobile/sort.png" alt="">
+                <img src="/images/mobile/filter.png" alt="">
+            </div>
+        </div>
+        <div class="tc-items">
+            <div class="item">
+                <div class="item-info">
+                    <img src="/images/mobile/Tag Collections/tc (1).png" alt="">
+                    Bumble Bee
+                    Special Movie
+                </div>
+                <div class="item-action">
+                    <button type="button" class="btn btn-secondary">
+                        <img src="/images/mobile/check-badge-2.png" alt="">
+                        Tagged
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="/images/mobile/Tag Collections/tc (2).png" alt="">
+                    Bumble Bee Transformer
+                </div>
+                <div class="item-action">
+                    <button type="button" class="btn btn-outline-light">
+                        <img src="/images/mobile/plus-gray.png" alt="">
+                        Tag
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="/images/mobile/Tag Collections/tc (3).png" alt="">
+                    Bumble Bee
+                    Special Movie
+                </div>
+                <div class="item-action">
+                    <button type="button" class="btn btn-secondary">
+                        <img src="/images/mobile/check-badge-2.png" alt="">
+                        Tagged
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <img src="/images/mobile/Tag Collections/tc (4).png" alt="">
+                    Bumble Bee Yellow
+                </div>
+                <div class="item-action">
+                    <button type="button" class="btn btn-outline-light">
+                        <img src="/images/mobile/plus-gray.png" alt="">
+                        Tag
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-includeHTML="../components/sidebar-mobile.html">
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <title>Kolektibles</title>
+</head>
+
+<body class="mobile add-feed">
+    <div class="detail-nav">
+        <div class="back">
+            <a href="/mobile/add-feed.html">
+                <img src="/images/icons/chevron left.svg" alt="">
+            </a>
+        </div>
+        <div class="title">
+            New Feed
+        </div>
+        <div class="fill">
+            <button type="button" class="btn btn-secondary">Next</button>
+        </div>
+    </div>
+    <div class="add-feed-data">
+        <div class="user">
+            <img src="/images/user/user-6.png" alt="">
+            Anthony Salim Wijaya <span>(You)</span>
+        </div>
+
+        <div class="add-feed-img">
+            <img src="/images/mobile/activity-1.png" alt="">
+            <div class="info-count">
+                1/3
+            </div>
+            <div class="info-type">
+                <img src="/images/icons/Activity.png" alt="">
+            </div>
+        </div>
+        <div class="add-feed-forms">
+            <div class="form-group">
+                <label for="" class="form-label">Title</label>
+                <input type="text" class="form-control" name="" id="" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Short Description</label>
+                <textarea class="form-control" name="" id="" rows="5"></textarea>
+                <p class="form-text text-muted text-end mt-2">
+                    0/150 Characters
+                </p>
+            </div>
+        </div>
+        <div class="add-feed-footer">
+            Tag my collection items
+            <img src="/images/icons/chevron right.svg" alt="">
+        </div>
+    </div>
+    <div data-includeHTML="../components/sidebar-mobile.html">
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("*[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+
+</html>
