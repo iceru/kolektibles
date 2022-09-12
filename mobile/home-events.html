@@ -39,8 +39,28 @@
     </div>
     <div class="events body-wrapper">
         <div class="event-item">
+            <div class="feed-header">
+                <div class="feed-user">
+                    <div class="user-img">
+                        <img src="/images/user/user-2.png" alt="">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">
+                            Anthony Salim Sanjaya
+                        </div>
+                        <div class="user-time">
+                            <span>Event</span>, 23 hours ago
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#bottomsheet">
+                        <img src="/images/icons/more.png" alt="">
+                    </button>
+                </div>
+            </div>
             <div class="ei-img">
-                <img src="/images/events/event-1.png" alt="">
+                <img src="/images/mobile/event-banner.png" alt="">
             </div>
             <div class="ei-content">
                 <div class="ei-actions">
@@ -179,6 +199,31 @@
                     Assets
                 </div>
             </a>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bottomsheet" id="bottomsheet" tabindex="-1" role="dialog" aria-labelledby="bottomsheetId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="bs-item">
+                        <a href="#">
+                            Copy link
+                        </a>
+                    </div>
+                    <div class="bs-item">
+                        <a href="#">
+                            Unfollow
+                        </a>
+                    </div>
+                    <div class="bs-item red">
+                        <a href="#">Report this event</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

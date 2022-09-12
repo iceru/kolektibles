@@ -31,77 +31,174 @@
     </div>
     <div class="tabs">
         <div class="tab active">
-            Feeds
+            All
         </div>
         <div class="tab">
-            <a href="/mobile/home-events.html">Events</a>
+            <a href="#">Photos</a>
+        </div>
+        <div class="tab">
+            <a href="#">Videos</a>
+        </div>
+        <div class="tab">
+            <a href="#">Collection</a>
+        </div>
+        <div class="tab">
+            <a href="#">Events</a>
         </div>
     </div>
     <div class="activities body-wrapper">
         <div class="activity-item">
-            <div class="ai-user">
-                <div class="user">
-                    <div class="img">
-                        <img src="/images/user/user-3.png" alt="">
-                    </div>
-                    <div class="name">
-                        Anthony Salim
-                    </div>
-                    <div class="time">
-                        23 hours ago
-                    </div>
-                </div>
-                <div class="more">
-                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#bottomsheet">
-                        <img src="/images/icons/more.png" alt="">
-                    </button>
-                </div>
-            </div>
             <div class="ai-img">
                 <img src="/images/collections/bakugo-1.png" alt="">
+                <div class="info-count">
+                    1/5
+                </div>
             </div>
             <div class="ai-content">
                 <div class="ai-actions">
                     <div class="left-side">
-                        <div class="likes">
-                            <img src="/images/icons/Heart2.svg" alt="">
-                            <span>1,204</span> Likes
-                        </div>
-                        <div class="icon">
-                            <img src="/images/icons/Chat.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="/images/icons/Bookmark.svg" alt="">
-                        </div>
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.08835 0.173234C3.83235 0.173234 -0.182647 6.53723 0.539353 7.25923C1.26135 7.98123 8.84635 8.05023 9.63735 7.25923C10.4284 6.46723 6.34335 0.173234 5.08835 0.173234Z"
+                                fill="#797979" />
+                        </svg>
+                        18%
                     </div>
                     <div class="right-side">
-                        <a href="/mobile/collection-detail.html" type="button" class="btn btn-secondary">
-                            Detail <img src="/images/mobile/icon-arrow.png" alt="">
-                        </a>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#own">
+                            <img src="/images/icons/Plus.png" alt="">
+                            I own this
+                        </button>
+                        <button type="button" class="btn btn-outline-light">
+                            <img src="/images/icons/Wishlist.svg" alt=""> Wishlist
+                        </button>
+
+                        <button type="button" class="btn btn-secondary">
+                            <img src="/images/mobile/icon-arrow.png" alt="">
+                        </button>
                     </div>
                 </div>
                 <div class="ai-title">
-                    Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                    <div class="title">
+                        Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                    </div>
+                    <div class="more">
+                        <img src="/images/icons/more.png" alt="">
+                    </div>
                 </div>
-                <div class="discussions">
-                    <div class="user"><a href="#">Nathaniel Sutono</a> wah wah keren banget ini</div>
+                <div class="ai-description">
+                    Painted ABS&PVC non-scale articulated figure with stand included. Approximately 100mm in height.
+                    <div class="see-more">
+                        See more
+                    </div>
                 </div>
-                <div class="ai-discussions">
-                    See all 9 discussions
+                <div class="ai-user">
+                    <div class="img">
+                        <img src="/images/mobile/user-collection.png" alt="">
+                    </div>
+                    <div class="user">
+                        <div class="user-info">
+                            <div class="user-name">
+                                Anthony Salim
+                            </div>
+                            <div class="user-time">
+                                23 hours ago
+                            </div>
+                        </div>
+                        <div class="user-image">
+                            <img src="/images/user/user-6.png" alt="">
+                            <div class="user-badge">
+                                <img src="/images/mobile/check-badge.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-socials">
+                    <div class="icon-text">
+                        <div class="emoji">
+                            <img src="/images/mobile/emoji-set-kolektibles.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-1.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-2.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-3.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-4.png" alt="">
+                        </div>
+                        <span>1,204</span> Reactions
+                    </div>
+                    <div class="icon-text">
+                        <img src="/images/icons/Chat.svg" alt="">
+                        <span>954</span> Comments
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="activity-item">
-            <div class="ai-user">
-                <div class="user">
-                    <div class="img">
+            <div class="feed-header">
+                <div class="feed-user">
+                    <div class="user-img">
+                        <img src="/images/user/user-5.png" alt="">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">
+                            Lincoln Dias
+                        </div>
+                        <div class="user-time">
+                            <span>Activity</span>,
+                            23 hours ago
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <img src="/images/icons/more.png" alt="">
+                </div>
+            </div>
+            <div class="ai-img">
+                <img src="/images/mobile/activity-1.png" alt="">
+                <div class="info-count">
+                    1/3
+                </div>
+                <div class="info-type">
+                    <img src="/images/icons/Activity.png" alt="">
+                </div>
+            </div>
+            <div class="ai-content">
+                <div class="ai-title">
+                    <div class="title">
+                        Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                    </div>
+                </div>
+                <div class="ai-description">
+                    Semua keren karena kekuatannya dan kostumnya yang terlihat menarik dan keren
+                </div>
+                <div class="ai-socials">
+                    <div class="icon-text">
+                        <img src="/images/icons/Heart2.svg" alt="">
+                        <span>954</span> Likes
+                    </div>
+                    <div class="icon-text">
+                        <img src="/images/icons/Chat.svg" alt="">
+                        <span>954</span> Comments
+                    </div>
+                    <div>
+                        <img src="/images/icons/Bookmark-Light.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="feed-header">
+                <div class="feed-user">
+                    <div class="user-img">
                         <img src="/images/user/user-2.png" alt="">
                     </div>
-                    <div class="name">
-                        Anthony Salim
-                    </div>
-                    <div class="time">
-                        23 hours ago
+                    <div class="user-info">
+                        <div class="user-name">
+                            Anthony Salim
+                        </div>
+                        <div class="user-time">
+                            23 hours ago
+                        </div>
                     </div>
                 </div>
                 <div class="more">
@@ -114,31 +211,125 @@
             <div class="ai-content">
                 <div class="ai-actions">
                     <div class="left-side">
-                        <div class="likes">
-                            <img src="/images/icons/Heart2.svg" alt="">
-                            <span>1,204</span> Likes
-                        </div>
-                        <div class="icon">
-                            <img src="/images/icons/Chat.svg" alt="">
-                        </div>
-                        <div class="icon">
-                            <img src="/images/icons/Bookmark.svg" alt="">
-                        </div>
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.08835 0.173234C3.83235 0.173234 -0.182647 6.53723 0.539353 7.25923C1.26135 7.98123 8.84635 8.05023 9.63735 7.25923C10.4284 6.46723 6.34335 0.173234 5.08835 0.173234Z"
+                                fill="#797979" />
+                        </svg>
+                        18%
                     </div>
                     <div class="right-side">
+                        <button type="button" class="btn btn-outline-light">
+                            <img src="/images/icons/Plus.png" alt="">
+                            I own this
+                        </button>
+                        <button type="button" class="btn btn-outline-light">
+                            <img src="/images/icons/Wishlist.svg" alt=""> Wishlist
+                        </button>
+
                         <button type="button" class="btn btn-secondary">
-                            Detail <img src="/images/mobile/icon-arrow.png" alt="">
+                            <img src="/images/mobile/icon-arrow.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="ai-title">
-                    Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                    <div class="title">
+                        Action Figure Nendoroid No.705 Bakugo Katsuki Boku No Hero Academia
+                    </div>
+                    <div class="more">
+                        <img src="/images/icons/more.png" alt="">
+                    </div>
                 </div>
-                <div class="discussions">
-                    <div class="user"><a href="#">Nathaniel Sutono</a> wah wah keren banget ini</div>
+                <div class="ai-description">
+                    Painted ABS&PVC non-scale articulated figure with stand included. Approximately 100mm in height.
+                    <div class="see-more">
+                        See more
+                    </div>
                 </div>
-                <div class="ai-discussions">
-                    See all 9 discussions
+                <div class="ai-user">
+                    <div class="img">
+                        <img src="/images/mobile/user-collection.png" alt="">
+                    </div>
+                    <div class="user">
+                        <div class="user-info">
+                            <div class="user-name">
+                                Anthony Salim
+                            </div>
+                            <div class="user-time">
+                                23 hours ago
+                            </div>
+                        </div>
+                        <div class="user-image">
+                            <img src="/images/user/user-6.png" alt="">
+                            <div class="user-badge">
+                                <img src="/images/mobile/check-badge.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-socials">
+                    <div class="icon-text">
+                        <div class="emoji">
+                            <img src="/images/mobile/emoji-set-kolektibles.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-1.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-2.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-3.png" alt="">
+                            <img src="/images/mobile/emoji-set-kolektibles-4.png" alt="">
+                        </div>
+                        <span>1,204</span> Reactions
+                    </div>
+                    <div class="icon-text">
+                        <img src="/images/icons/Chat.svg" alt="">
+                        <span>954</span> Comments
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="create-new-bg"></div>
+    <div class="create-new">
+        <div class="cn-header">
+            Create new
+        </div>
+        <div class="cn-body">
+            <div class="item">
+                <div class="item-img">
+                    <img src="/images/icons/Photo.png" alt="">
+                </div>
+                <div class="text">
+                    Photos feed
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="/images/icons/Video.png" alt="">
+                </div>
+                <div class="text">
+                    Video feed
+                </div>
+            </div>
+        </div>
+
+        <div class="cn-other">
+            <div class="other-img">
+                <img src="/images/icons/Activity-2.svg" alt="">
+            </div>
+            <div class="text">
+                Add new collection
+                <div class="desc">
+                    Share your item to the world
+                </div>
+            </div>
+        </div>
+        <div class="cn-other">
+            <div class="other-img">
+                <img src="/images/icons/Event.svg" alt="">
+            </div>
+            <div class="text">
+                Add new event
+                <div class="desc">
+                    Publish your collector event
                 </div>
             </div>
         </div>
@@ -179,7 +370,7 @@
             </a>
         </div>
 
-        <div class="icon add">
+        <div class="icon add" id="add_new">
             <a href="#">
                 <div class="icon-svg">
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,11 +433,45 @@
         </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg">
-        Launch
-    </button>
-
+    <div class="modal fade" id="own" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="own_item" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="own_item">Own this item</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="text">
+                        If you have this item too, enter the price and the year you bought it!
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Currency</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Price (the time of purchase)</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Buying date</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Condition</label>
+                        <select class="form-select" name="" id="">
+                            <option selected>MISB (Mint In Sealed Box)</option>
+                            <option> BIB (Back In Box)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text">Are you sure you have this item?</div>
+                    <button type="button" class="btn btn-secondary">Yes, I Have</button>
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">No, Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal fade bottomsheet" id="bottomsheet" tabindex="-1" role="dialog" aria-labelledby="bottomsheetId"
         aria-hidden="true">
@@ -291,6 +516,21 @@
     $(document).ready(function () {
         $("*[data-includeHTML]").each(function () {
             $(this).load($(this).attr("data-includeHTML"));
+        });
+
+        $('.create-new-bg').hide();
+        $('.create-new').hide();
+
+        $('#add_new').click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+                $('.create-new-bg').fadeIn();
+                $('.create-new').slideDown();
+            } else {
+                $('.create-new-bg').fadeOut();
+                $('.create-new').slideUp();
+            }
         });
     });
 </script>
