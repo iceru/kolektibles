@@ -15648,6 +15648,9 @@ p {
 .mobile.collection-detail > .container {
   padding: 0 16px;
 }
+.mobile.collection-detail .collection-detail-content {
+  margin-bottom: 1rem;
+}
 .mobile.collection-detail .cd-content {
   padding: 1rem;
 }
@@ -16068,7 +16071,7 @@ p {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #EAECF0;
-  margin: 0 -12px;
+  margin: 0 -16px;
   padding: 0;
   padding-right: 16px;
 }
@@ -17353,6 +17356,15 @@ p {
 [data-theme=dark].mobile .mobile-nav .notif img {
   filter: brightness(0) invert(1);
 }
+[data-theme=dark].mobile .icon-text {
+  color: white;
+}
+[data-theme=dark].mobile .icon-text span {
+  color: white;
+}
+[data-theme=dark].mobile .icon-text > img {
+  filter: brightness(0) invert(1);
+}
 [data-theme=dark].mobile .detail-nav .back img {
   filter: brightness(0) invert(1);
 }
@@ -17378,9 +17390,51 @@ p {
 [data-theme=dark].mobile .sidebar-mobile .bottom-section .switch {
   border-bottom: 1px solid #434343;
 }
-[data-theme=dark].mobile .tabs .tab,
 [data-theme=dark].mobile .tabs .active {
+  color: #01143A;
+}
+[data-theme=dark].mobile .tabs .tab {
   color: white;
+}
+[data-theme=dark].mobile .bottom-nav .icon.add.active .icon-svg {
+  background-color: white;
+}
+[data-theme=dark].mobile.add-feed .add-feed-data .add-feed-footer {
+  color: white;
+}
+[data-theme=dark].mobile.add-feed .add-feed-data .add-feed-footer img {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark].mobile.add-feed .tag-collections .tc-header .item-found {
+  color: white;
+}
+[data-theme=dark].mobile.add-feed .tag-collections .tc-header img {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark].mobile .text-muted, [data-theme=dark].mobile.add-feed .tag-collections .tc-items .item .item-info {
+  color: white !important;
+}
+[data-theme=dark].mobile.add-feed .tag-collections .tc-items .item .item-action .btn-secondary img {
+  filter: none;
+}
+[data-theme=dark].mobile .create-new {
+  background-color: #01143A;
+  color: white;
+}
+[data-theme=dark].mobile .create-new::after {
+  border-top-color: #01143A;
+}
+[data-theme=dark].mobile .create-new .cn-header,
+[data-theme=dark].mobile .create-new .text {
+  color: white;
+}
+[data-theme=dark].mobile .create-new .item-img,
+[data-theme=dark].mobile .create-new .other-img {
+  background-color: #1A2336;
+}
+[data-theme=dark].mobile .create-new .item-img img,
+[data-theme=dark].mobile .create-new .other-img img {
+  filter: brightness(0) invert(1);
 }
 [data-theme=dark].mobile .activities .activity-item .ai-actions .likes,
 [data-theme=dark].mobile .activities .activity-item .ai-actions .likes span {
@@ -17391,6 +17445,16 @@ p {
 }
 [data-theme=dark].mobile .activities .activity-item .ai-actions img {
   filter: brightness(0) invert(1);
+}
+[data-theme=dark].mobile .activities .activity-item .ai-actions .right-side .btn-outline-light {
+  color: white;
+}
+[data-theme=dark].mobile .activities .activity-item .ai-actions .right-side .btn-outline-light img {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark].mobile .activities .activity-item .ai-user .user .user-info .user-name,
+[data-theme=dark].mobile .activities .activity-item .ai-user .user .user-info .user-time {
+  color: white;
 }
 [data-theme=dark].mobile .user,
 [data-theme=dark].mobile .user a,

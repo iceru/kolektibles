@@ -145,6 +145,18 @@
             }
         }
 
+        .icon-text {
+            color: white;
+
+            span {
+                color: white
+            }
+
+            >img {
+                @include invert();
+            }
+        }
+
         .detail-nav {
             .back img {
                 @include invert();
@@ -188,9 +200,68 @@
 
         .tabs {
 
-            .tab,
             .active {
+                color: $primary;
+            }
+
+            .tab {
                 color: white;
+            }
+        }
+
+        .bottom-nav .icon.add.active .icon-svg {
+            background-color: white;
+        }
+
+        &.add-feed .add-feed-data .add-feed-footer {
+            color: white;
+
+            img {
+                @include invert();
+            }
+        }
+
+        &.add-feed .tag-collections .tc-header {
+            .item-found {
+                color: white
+            }
+
+            img {
+                @include invert();
+            }
+        }
+
+        .text-muted,
+        &.add-feed .tag-collections .tc-items .item .item-info {
+            color: white !important;
+        }
+
+        &.add-feed .tag-collections .tc-items .item .item-action .btn-secondary {
+            img {
+                filter: none;
+            }
+        }
+
+        .create-new {
+            background-color: #01143A;
+            color: white;
+
+            &::after {
+                border-top-color: #01143A;
+            }
+
+            .cn-header,
+            .text {
+                color: white;
+            }
+
+            .item-img,
+            .other-img {
+                background-color: #1A2336;
+
+                img {
+                    @include invert();
+                }
             }
         }
 
@@ -209,6 +280,26 @@
 
                     img {
                         @include invert();
+                    }
+
+                    .right-side {
+                        .btn-outline-light {
+                            color: white;
+
+                            img {
+                                @include invert();
+                            }
+                        }
+                    }
+                }
+
+                .ai-user {
+                    .user .user-info {
+
+                        .user-name,
+                        .user-time {
+                            color: white;
+                        }
                     }
                 }
             }
