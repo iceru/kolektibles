@@ -394,6 +394,35 @@
         }
     }
 
+    &.add-event-page {
+        .text-muted {
+            color: #98A2B3 !important;
+            font-size: 13px;
+        }
+
+        .form-label {
+            font-size: 16px;
+        }
+
+        .form-control,
+        .form-select {
+            font-size: 14px;
+
+            &::placeholder {
+                color: #D0D5DD;
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                color: #D0D5DD;
+            }
+
+            &::-ms-input-placeholder {
+                color: #D0D5DD;
+            }
+        }
+    }
+
     &.add-collection {
         >.container {
             padding: 0 16px;

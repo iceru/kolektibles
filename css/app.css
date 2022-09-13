@@ -15761,6 +15761,38 @@ p {
   padding: 11px;
   font-weight: bold;
 }
+.mobile.add-event-page .text-muted {
+  color: #98A2B3 !important;
+  font-size: 13px;
+}
+.mobile.add-event-page .form-label {
+  font-size: 16px;
+}
+.mobile.add-event-page .form-control,
+.mobile.add-event-page .form-select {
+  font-size: 14px;
+}
+.mobile.add-event-page .form-control::-moz-placeholder, .mobile.add-event-page .form-select::-moz-placeholder {
+  color: #D0D5DD;
+  opacity: 1;
+}
+.mobile.add-event-page .form-control:-ms-input-placeholder, .mobile.add-event-page .form-select:-ms-input-placeholder {
+  color: #D0D5DD;
+  opacity: 1;
+}
+.mobile.add-event-page .form-control::placeholder,
+.mobile.add-event-page .form-select::placeholder {
+  color: #D0D5DD;
+  opacity: 1;
+}
+.mobile.add-event-page .form-control:-ms-input-placeholder,
+.mobile.add-event-page .form-select:-ms-input-placeholder {
+  color: #D0D5DD;
+}
+.mobile.add-event-page .form-control::-ms-input-placeholder,
+.mobile.add-event-page .form-select::-ms-input-placeholder {
+  color: #D0D5DD;
+}
 .mobile.add-collection > .container {
   padding: 0 16px;
 }
