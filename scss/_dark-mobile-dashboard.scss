@@ -200,12 +200,14 @@
 
         .tabs {
 
-            .active {
-                color: $primary;
-            }
-
             .tab {
+
+                &.active {
+                    color: $primary;
+                }
+
                 color: white;
+                border-color: #2E3C5A;
             }
         }
 

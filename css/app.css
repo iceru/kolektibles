@@ -15651,14 +15651,14 @@ p {
 .mobile.collection-detail .collection-detail-content {
   margin-bottom: 1rem;
 }
-.mobile.collection-detail .cd-content {
-  padding: 1rem;
-}
 .mobile.collection-detail .cd-img {
   margin: 0 -1rem;
 }
 .mobile.collection-detail .cd-img img {
   width: 100%;
+}
+.mobile.collection-detail .cd-content {
+  margin-bottom: 1rem;
 }
 .mobile.collection-detail .cd-actions {
   padding: 1rem 0;
@@ -15685,6 +15685,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 .mobile.collection-detail .cd-users .user {
   display: flex;
@@ -15707,14 +15708,12 @@ p {
   color: #848484;
 }
 .mobile.collection-detail .collection-owned {
-  padding: 0 1rem;
   margin-bottom: 2rem;
 }
 .mobile.collection-detail .collection-owned .co-img img {
   width: 100%;
 }
 .mobile.collection-detail .story {
-  padding: 0 1rem;
   margin-bottom: 2rem;
 }
 .mobile.collection-detail .story p {
@@ -15723,11 +15722,13 @@ p {
 .mobile.collection-detail .story-comments h5, .mobile.collection-detail .story-comments .h5 {
   font-size: 24px;
 }
+.mobile.collection-detail .value-tracker {
+  margin-bottom: 2rem;
+}
 .mobile.collection-detail .value-tracker h4, .mobile.collection-detail .value-tracker .h4 {
   font-size: 24px;
 }
 .mobile.collection-detail .cd-discussions {
-  padding: 0 1rem;
   padding-bottom: 7rem;
 }
 .mobile.collection-detail .cd-discussions .title {
@@ -17390,11 +17391,12 @@ p {
 [data-theme=dark].mobile .sidebar-mobile .bottom-section .switch {
   border-bottom: 1px solid #434343;
 }
-[data-theme=dark].mobile .tabs .active {
-  color: #01143A;
-}
 [data-theme=dark].mobile .tabs .tab {
   color: white;
+  border-color: #2E3C5A;
+}
+[data-theme=dark].mobile .tabs .tab.active {
+  color: #01143A;
 }
 [data-theme=dark].mobile .bottom-nav .icon.add.active .icon-svg {
   background-color: white;

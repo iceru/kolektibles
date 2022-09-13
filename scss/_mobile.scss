@@ -252,16 +252,16 @@
             margin-bottom: 1rem;
         }
 
-        .cd-content {
-            padding: 1rem;
-        }
-
         .cd-img {
             margin: 0 -1rem;
 
             img {
                 width: 100%;
             }
+        }
+
+        .cd-content {
+            margin-bottom: 1rem;
         }
 
         .cd-actions {
@@ -295,6 +295,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 2rem;
+            margin-top: 1rem;
 
             .user {
                 display: flex;
@@ -323,7 +324,6 @@
         }
 
         .collection-owned {
-            padding: 0 1rem;
             margin-bottom: 2rem;
 
             .co-img {
@@ -334,7 +334,6 @@
         }
 
         .story {
-            padding: 0 1rem;
             margin-bottom: 2rem;
 
             p {
@@ -348,12 +347,15 @@
             }
         }
 
-        .value-tracker h4 {
-            font-size: 24px;
+        .value-tracker {
+            margin-bottom: 2rem;
+
+            h4 {
+                font-size: 24px;
+            }
         }
 
         .cd-discussions {
-            padding: 0 1rem;
             padding-bottom: 7rem;
 
             .title {
