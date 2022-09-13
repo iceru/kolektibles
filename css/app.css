@@ -13098,6 +13098,49 @@ p {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
+.add-collection .collection-list .cl-item .cl-users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  padding: 1rem;
+}
+.add-collection .collection-list .cl-item .cl-users .user {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.add-collection .collection-list .cl-item .cl-users .user img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 12px;
+}
+.add-collection .collection-list .cl-item .cl-users .user img.icon {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0;
+}
+.add-collection .collection-list .cl-item .cl-users .user .name {
+  font-weight: bold;
+}
+.add-collection .collection-list .cl-item .cl-users .time {
+  font-size: 12px;
+  color: #848484;
+  text-align: right;
+}
+@media (max-width: 576px) {
+  .add-collection .collection-list .cl-item .cl-users .user {
+    font-size: 12px;
+  }
+  .add-collection .collection-list .cl-item .cl-users .time {
+    font-size: 10px;
+  }
+}
 .add-collection .collection-list .cl-item .cl-content {
   height: 128px;
   display: flex;
@@ -13114,50 +13157,9 @@ p {
   align-items: center;
   border-bottom: 1px solid #E8E8E8;
 }
-.add-collection .collection-list .cl-item .cl-content .cl-users {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50%;
-  padding: 1rem;
-}
-.add-collection .collection-list .cl-item .cl-content .cl-users .user {
-  display: flex;
-  align-items: center;
-  margin-right: 0.5rem;
-}
-.add-collection .collection-list .cl-item .cl-content .cl-users .user img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 12px;
-}
-.add-collection .collection-list .cl-item .cl-content .cl-users .user img.icon {
-  width: 24px;
-  height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 0;
-}
-.add-collection .collection-list .cl-item .cl-content .cl-users .user .name {
-  font-weight: bold;
-}
-.add-collection .collection-list .cl-item .cl-content .cl-users .time {
-  font-size: 12px;
-  color: #848484;
-  text-align: right;
-}
 @media (max-width: 576px) {
   .add-collection .collection-list .cl-item .cl-content .cl-title {
     font-size: 14px;
-  }
-  .add-collection .collection-list .cl-item .cl-content .cl-users .user {
-    font-size: 12px;
-  }
-  .add-collection .collection-list .cl-item .cl-content .cl-users .time {
-    font-size: 10px;
   }
 }
 .add-collection .info {
@@ -15643,95 +15645,107 @@ p {
 .mobile .faq .accordion {
   padding-top: 2rem;
 }
-.mobile .collection-detail .cd-content {
+.mobile.collection-detail > .container {
+  padding: 0 16px;
+}
+.mobile.collection-detail .cd-content {
   padding: 1rem;
 }
-.mobile .collection-detail .cd-img {
+.mobile.collection-detail .cd-img {
   margin: 0 -1rem;
 }
-.mobile .collection-detail .cd-img img {
+.mobile.collection-detail .cd-img img {
   width: 100%;
 }
-.mobile .collection-detail .cd-actions {
+.mobile.collection-detail .cd-actions {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.mobile .collection-detail .cd-actions .icons {
+.mobile.collection-detail .cd-actions .icons {
   display: flex;
   justify-content: flex-end;
 }
-.mobile .collection-detail .cd-actions .icons .icon {
+.mobile.collection-detail .cd-actions .icons .icon {
   margin-left: 2rem;
 }
-.mobile .collection-detail .cd-title {
+.mobile.collection-detail .cd-title h4, .mobile.collection-detail .cd-title .h4 {
   font-weight: bold;
   padding: 12px 0;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0;
 }
-.mobile .collection-detail .cd-users {
+.mobile.collection-detail .cd-users {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
 }
-.mobile .collection-detail .cd-users .user {
+.mobile.collection-detail .cd-users .user {
   display: flex;
   align-items: center;
 }
-.mobile .collection-detail .cd-users .user .img {
+.mobile.collection-detail .cd-users .user .img {
   margin-right: 12px;
 }
-.mobile .collection-detail .cd-users .user .img img {
+.mobile.collection-detail .cd-users .user .img img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
-.mobile .collection-detail .cd-users .user .name {
+.mobile.collection-detail .cd-users .user .name {
   font-weight: bold;
   color: #474747;
 }
-.mobile .collection-detail .cd-users .time {
+.mobile.collection-detail .cd-users .time {
   font-size: 12px;
   color: #848484;
 }
-.mobile .collection-detail .collection-owned {
+.mobile.collection-detail .collection-owned {
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
-.mobile .collection-detail .collection-owned .co-img img {
+.mobile.collection-detail .collection-owned .co-img img {
   width: 100%;
 }
-.mobile .collection-detail .story {
+.mobile.collection-detail .story {
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
-.mobile .collection-detail .story p {
+.mobile.collection-detail .story p {
   color: black;
 }
-.mobile .collection-detail .cd-discussions {
+.mobile.collection-detail .story-comments h5, .mobile.collection-detail .story-comments .h5 {
+  font-size: 24px;
+}
+.mobile.collection-detail .value-tracker h4, .mobile.collection-detail .value-tracker .h4 {
+  font-size: 24px;
+}
+.mobile.collection-detail .cd-discussions {
   padding: 0 1rem;
   padding-bottom: 7rem;
 }
-.mobile .collection-detail .cd-discussions .title {
+.mobile.collection-detail .cd-discussions .title {
   font-weight: bold;
   color: #474747;
   margin-bottom: 1rem;
 }
-.mobile .collection-detail .cd-discussions .user {
+.mobile.collection-detail .cd-discussions .user {
   font-size: 12px;
   margin-bottom: 1.5rem;
 }
-.mobile .collection-detail .cd-discussions .user a {
+.mobile.collection-detail .cd-discussions .user a {
   color: #474747;
   font-weight: bold;
 }
-.mobile .collection-detail .cd-discussions .add-comment {
+.mobile.collection-detail .cd-discussions .add-comment {
   color: #00AA5B;
   font-weight: bold;
   font-size: 12px;
 }
-.mobile .collection-detail .cd-nav {
+.mobile.collection-detail .cd-nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 12px 19px;
@@ -15743,9 +15757,42 @@ p {
   background-color: white;
   gap: 1rem;
 }
-.mobile .collection-detail .cd-nav .btn {
+.mobile.collection-detail .cd-nav .btn {
   padding: 11px;
   font-weight: bold;
+}
+.mobile.add-collection > .container {
+  padding: 0 16px;
+}
+.mobile.add-collection h4, .mobile.add-collection .h4 {
+  font-size: 24px;
+  line-height: 1;
+}
+.mobile.add-collection .form-label {
+  font-size: 16px;
+}
+.mobile.add-collection .form-select,
+.mobile.add-collection .form-control {
+  font-size: 14px;
+}
+.mobile.add-collection .cl-item {
+  display: block;
+}
+.mobile.add-collection .cl-item .cl-content {
+  flex-direction: row;
+  height: auto;
+}
+.mobile.add-collection .cl-item .cl-content .cl-img img {
+  width: 76px;
+  height: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mobile.add-collection .btn-secondary {
+  margin-right: 0;
+}
+.mobile .steps {
+  margin-top: 24px;
 }
 
 .mobile-nav {
@@ -16243,6 +16290,11 @@ p {
 }
 .add-feed .tag-collections .tc-items .item .item-info img {
   margin-right: 12px;
+  height: 48px;
+  width: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 .add-feed .tag-collections .tc-items .item .item-action .btn {
   padding: 7px 12px;

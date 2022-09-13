@@ -9,7 +9,7 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -26,9 +26,19 @@
     <title>Kolektibles</title>
 </head>
 
-<body class="collection-detail">
-    <nav data-includeHTML="components/navigation.html">
-    </nav>
+<body class="collection-detail mobile">
+    <div class="detail-nav">
+        <div class="back">
+            <a href="/mobile/add-collection-2.html">
+                <img src="/images/icons/chevron left.svg" alt="">
+            </a>
+        </div>
+        <div class="title">
+            Add New Collection
+        </div>
+        <div class="fill">
+        </div>
+    </div>
     <div class="container">
         <div class="steps">
             <div class="step done">
@@ -36,7 +46,7 @@
                     <img src="/images/icons/check-step.png" alt="">
                 </div>
                 <div class="text">
-                    Description & story
+                    Description
                 </div>
             </div>
             <div class="step done">
@@ -64,8 +74,11 @@
 
         <div class="collection-detail-content">
             <div class="row align-items-start">
-                <div class="col-12 col-lg-6 cd-img">
-                    <img src="/images/collections/bakugo-1.png" alt="">
+                <div class="col-12 col-lg-6 ">
+                    <div class="cd-img">
+
+                        <img src="/images/collections/bakugo-1.png" alt="">
+                    </div>
                 </div>
                 <div class="col-12 col-lg-5 offset-lg-1 cd-info my-collection">
                     <div class="cd-title">
@@ -311,11 +324,11 @@
             <span>Preview Collection</span> - End
         </div>
 
-        <div class="btn-groups d-flex align-items-center justify-content-between mb-5 ac-3">
-            <button type="button" class="btn btn-outline-light fw-bold">Discard all</button>
-            <div>
-                <button type="button" class="btn btn-outline-light me-3 fw-bold">Back</button>
-                <button type="button" class="btn btn-secondary fw-bold">Submit</button>
+        <div class="mb-5 ac-3">
+            <button type=" button" class="btn btn-outline-danger fw-bold mb-3 w-100">Discard all</button>
+            <div class="btn-groups d-flex align-items-center justify-content-between">
+                <button type=" button" class="btn btn-outline-light me-3 fw-bold w-100">Back</button>
+                <button type="button" class="btn btn-secondary fw-bold w-100">Submit</button>
             </div>
         </div>
     </div>

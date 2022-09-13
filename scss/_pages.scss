@@ -296,6 +296,55 @@
                 }
             }
 
+            .cl-users {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50%;
+                padding: 1rem;
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    margin-right: .5rem;
+
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-right: 12px;
+
+                        &.icon {
+                            width: 24px;
+                            height: 24px;
+                            object-fit: contain;
+                            border-radius: 0;
+                        }
+                    }
+
+                    .name {
+                        font-weight: bold;
+                    }
+                }
+
+                .time {
+                    font-size: 12px;
+                    color: #848484;
+                    text-align: right;
+                }
+
+                @include breakpoint(mobileonly) {
+                    .user {
+                        font-size: 12px;
+                    }
+
+                    .time {
+                        font-size: 10px;
+                    }
+                }
+            }
+
             .cl-content {
                 height: 128px;
                 display: flex;
@@ -313,58 +362,10 @@
                     border-bottom: 1px solid #E8E8E8;
                 }
 
-                .cl-users {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 50%;
-                    padding: 1rem;
-
-                    .user {
-                        display: flex;
-                        align-items: center;
-                        margin-right: .5rem;
-
-                        img {
-                            width: 2rem;
-                            height: 2rem;
-                            border-radius: 50%;
-                            object-fit: cover;
-                            margin-right: 12px;
-
-                            &.icon {
-                                width: 24px;
-                                height: 24px;
-                                object-fit: contain;
-                                border-radius: 0;
-                            }
-                        }
-
-                        .name {
-                            font-weight: bold;
-                        }
-                    }
-
-                    .time {
-                        font-size: 12px;
-                        color: #848484;
-                        text-align: right;
-                    }
-                }
 
                 @include breakpoint(mobileonly) {
                     .cl-title {
                         font-size: 14px;
-                    }
-
-                    .cl-users {
-                        .user {
-                            font-size: 12px;
-                        }
-
-                        .time {
-                            font-size: 10px;
-                        }
                     }
                 }
             }

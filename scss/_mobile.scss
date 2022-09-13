@@ -243,7 +243,10 @@
         }
     }
 
-    .collection-detail {
+    &.collection-detail {
+        >.container {
+            padding: 0 16px;
+        }
 
         .cd-content {
             padding: 1rem;
@@ -274,8 +277,13 @@
         }
 
         .cd-title {
-            font-weight: bold;
-            padding: 12px 0;
+            h4 {
+                font-weight: bold;
+                padding: 12px 0;
+                font-size: 24px;
+                line-height: 36px;
+                padding: 0;
+            }
         }
 
         .cd-users {
@@ -330,6 +338,16 @@
             }
         }
 
+        .story-comments {
+            h5 {
+                font-size: 24px;
+            }
+        }
+
+        .value-tracker h4 {
+            font-size: 24px;
+        }
+
         .cd-discussions {
             padding: 0 1rem;
             padding-bottom: 7rem;
@@ -374,6 +392,52 @@
                 font-weight: bold;
             }
         }
+    }
+
+    &.add-collection {
+        >.container {
+            padding: 0 16px;
+        }
+
+        h4 {
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .form-label {
+            font-size: 16px;
+        }
+
+        .form-select,
+        .form-control {
+            font-size: 14px;
+        }
+
+        .cl-item {
+            display: block;
+
+            .cl-content {
+                flex-direction: row;
+                height: auto;
+
+                .cl-img {
+                    img {
+
+                        width: 76px;
+                        height: 76px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .btn-secondary {
+            margin-right: 0;
+        }
+    }
+
+    .steps {
+        margin-top: 24px;
     }
 
 }
@@ -993,6 +1057,10 @@
 
                     img {
                         margin-right: 12px;
+                        height: 48px;
+                        width: 48px;
+                        object-fit: cover;
+                        border-radius: 10px;
                     }
                 }
 
