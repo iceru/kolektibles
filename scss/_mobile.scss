@@ -689,6 +689,10 @@
             padding-top: 100%;
             position: relative;
 
+            &.ratio3x2 {
+                padding-top: 125%;
+            }
+
             >img {
                 height: 100%;
                 width: 100%;

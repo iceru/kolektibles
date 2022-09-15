@@ -15996,6 +15996,9 @@ p {
   padding-top: 100%;
   position: relative;
 }
+.activities .activity-item .ai-img.ratio3x2 {
+  padding-top: 125%;
+}
 .activities .activity-item .ai-img > img {
   height: 100%;
   width: 100%;
