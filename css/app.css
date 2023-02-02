@@ -12927,6 +12927,9 @@ p {
   font-weight: 500;
   margin-bottom: 28px;
 }
+.faq .faq-header.no-bar {
+  margin-bottom: 5rem;
+}
 .faq .search-bar-faq {
   width: 60%;
   margin: auto;
@@ -12965,6 +12968,9 @@ p {
 }
 .faq .accordion {
   margin-bottom: 100px;
+}
+.faq .accordion a {
+  color: blue;
 }
 .faq .accordion .accordion-title {
   font-weight: bold;

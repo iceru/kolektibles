@@ -71,6 +71,10 @@
             font-weight: 500;
             margin-bottom: 28px;
         }
+
+        &.no-bar {
+            margin-bottom: 5rem;
+        }
     }
 
     .search-bar-faq {
@@ -121,6 +125,10 @@
 
     .accordion {
         margin-bottom: 100px;
+
+        a {
+            color: blue;
+        }
 
         .accordion-title {
             font-weight: bold;
