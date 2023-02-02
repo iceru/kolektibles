@@ -122,6 +122,13 @@
     .accordion {
         margin-bottom: 100px;
 
+        .accordion-title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+        }
+
         .accordion-item {
             border: none;
         }
@@ -129,11 +136,15 @@
         .accordion-button {
             border-radius: 0 !important;
             border: none;
-            border-bottom: 1px solid #E9E9E9;
             font-weight: 500;
             color: #3E4553;
             background-color: white !important;
             box-shadow: none !important;
+
+            &.collapsed {
+
+                border-bottom: 1px solid #E9E9E9;
+            }
         }
 
         .accordion-body {
