@@ -12929,6 +12929,7 @@ p {
 }
 .faq .faq-header.no-bar {
   margin-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .faq .search-bar-faq {
   width: 60%;
